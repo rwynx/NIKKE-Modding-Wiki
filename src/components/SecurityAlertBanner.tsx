@@ -33,7 +33,7 @@ export const SecurityAlertBanner: React.FC = () => {
             <div className="space-y-1 min-w-0">
               <div className="flex items-center gap-2.5 flex-wrap">
                 <span className="font-mono text-[10px] sm:text-xs uppercase font-extrabold px-2.5 py-0.5 rounded-full bg-red-500/25 text-red-300 border border-red-500/50 tracking-wider">
-                  Security Advisory
+                  Security Breach
                 </span>
                 <h4 className="font-sans font-extrabold text-white text-sm sm:text-base tracking-tight">
                   NIKKE PC Client Compromise Reported!
