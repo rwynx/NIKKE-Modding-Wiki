@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Volume2, VolumeX, Play, Pause, Download, ChevronRight, Terminal, ArrowUpRight, Github } from 'lucide-react';
+import { SecurityAlertBanner } from './SecurityAlertBanner';
 
 interface HeroCinematicProps {
   onExploreWorkshop: () => void;
@@ -98,7 +99,7 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onExploreWorkshop 
     <section
       id="overview"
       ref={containerRef}
-      className="relative w-full h-[85vh] min-h-[640px] max-h-[900px] flex items-end justify-start overflow-hidden bg-[#090a0f]"
+      className="relative w-full min-h-[90vh] flex items-end justify-start overflow-hidden bg-[#090a0f] pt-24 sm:pt-32 pb-16 sm:pb-20"
     >
       {/* bg video */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
@@ -133,6 +134,8 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onExploreWorkshop 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20">
         <div className="max-w-3xl space-y-6">
           
+          <SecurityAlertBanner />
+
           <h1 className="font-sans font-extrabold text-4xl sm:text-6xl lg:text-7xl text-white tracking-tighter leading-[1.04]">
             Faster modding.<br />
             <span className="text-neutral-400 font-bold">A cleaner framework. </span>
