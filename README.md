@@ -7,7 +7,7 @@
 <br />
 
 [![Status](https://img.shields.io/badge/STATUS-online-success?style=for-the-badge)](https://nikkemodding.rwyn.app)
-[![Release](https://img.shields.io/badge/VERSION-beta--1.0-success?style=for-the-badge)](https://github.com/rwynx/NIKKE-Modding-Wiki/releases)
+[![Release](https://img.shields.io/badge/VERSION-beta--1.2-success?style=for-the-badge)](https://github.com/rwynx/NIKKE-Modding-Wiki/releases)
 [![License](https://img.shields.io/badge/LICENSE-MIT-informational?style=for-the-badge)](LICENSE)
 [![Discord](https://img.shields.io/badge/DC-Nikke_Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/nikke)
 <br />
@@ -98,7 +98,7 @@ Thanks **Nix** for compiling the guide for modern modding tools.<br>
 Thanks **Skuqre**, live character sync uses **NKAS.**
 
 And special thanks to all great minds! Tool authors, engineers and community curators who made modding possible in the first place. You can see the full list of contributors in the **[CREDITS](https://nikkemodding.rwyn.app/#credits)** section on the live site.
-> Gemini assisted in UI layout and Vite & React optimizations.<br>As of Beta 1, Gemini DeepMind's total contributions:<br>**764 lines - around %8** of the current codebase.
+> Gemini assisted in UI layout and Vite & React optimizations.<br>As of Beta 1.2, Gemini DeepMind's total contributions:<br>**861 lines - around %8** of the current codebase.
 
 
 
@@ -108,7 +108,7 @@ And special thanks to all great minds! Tool authors, engineers and community cur
 
 We have massive respect for SHIFT UP and Level Infinite! We love NIKKE and built this wiki purely out of passion for the game and its creative community. 
 
-This is a strictly non-commercial, fan-operated educational project. If you are a representative of **SHIFT UP or Level Infinite** and have concerns regarding any material documented here, please reach out to us by opening an issue or contacting us directly. We will gladly and promptly comply by taking down or adjusting any requested content without hesitation.
+This is a strictly non-commercial, fan-operated educational project. If you are a representative of **SHIFT UP or Level Infinite** and have concerns regarding any material documented here, please reach out to us at **[support@rwyn.app](mailto:support@rwyn.app)** or by opening an issue. We will gladly and promptly comply by taking down or adjusting any requested content without hesitation.
 
 ## License
 

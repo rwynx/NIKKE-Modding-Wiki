@@ -15,7 +15,7 @@ import { TutorialWorkbench } from './components/TutorialWorkbench';
 import { SectionNavRail } from './components/SectionNavRail';
 import { LegalNoticePage } from './pages/LegalNoticePage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
-import { ShieldCheck, ShieldAlert } from 'lucide-react';
+import { ShieldCheck, ShieldAlert, Mail } from 'lucide-react';
 
 export const App: React.FC = () => {
   const [view, setView] = useState<'home' | 'workbench' | 'notice' | 'privacy'>('home');
@@ -368,7 +368,15 @@ export const App: React.FC = () => {
               </p>
             </div>
 
-            <div className="flex items-center gap-2.5 shrink-0 text-[11px] font-mono">
+            <div className="flex items-center gap-2.5 shrink-0 text-[11px] font-mono flex-wrap">
+              <a 
+                href="mailto:support@rwyn.app"
+                className="px-2.5 py-1.5 rounded-lg bg-white/[0.04] hover:bg-white/[0.09] text-neutral-300 hover:text-white border border-white/[0.08] transition-colors cursor-pointer flex items-center gap-1.5"
+                title="Contact Support"
+              >
+                <Mail className="w-3.5 h-3.5 text-neutral-400" />
+                <span>support@rwyn.app</span>
+              </a>
               <button 
                 onClick={openNotice} 
                 className="px-3 py-1.5 rounded-lg bg-white/[0.06] hover:bg-white/[0.12] text-white border border-white/[0.1] transition-colors cursor-pointer flex items-center gap-1.5"
@@ -393,13 +401,13 @@ export const App: React.FC = () => {
               </p>
               <p className="text-neutral-400 text-[11.5px]">
                 Built, verified, and maintained by <a href="https://github.com/rwynx" target="_blank" rel="noopener noreferrer" className="text-white hover:text-indigo-300 underline underline-offset-2 decoration-white/30 hover:decoration-indigo-300 transition-colors font-semibold">Rwyn</a>. Gemini assisted in UI layout and React & Vite optimizations.
-              <br />As of Beta 1, Gemini DeepMind's total contributions:
-              <strong className="text-white"> 764 lines - around %8 </strong> of the current codebase.
+              <br />As of Beta 1.2, Gemini DeepMind's total contributions:
+              <strong className="text-white"> 861 lines - around %8 </strong> of the current codebase.
               </p>
             </div>
 
             <div className="text-neutral-400 font-mono text-[10.5px]">
-              <span>Beta-1.0 · 2026</span>
+              <span>Beta-1.2 · 2026</span>
             </div>
           </div>
 

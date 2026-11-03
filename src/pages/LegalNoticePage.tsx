@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, ShieldCheck, ShieldAlert, FileText, ExternalLink, HardDrive, AlertTriangle, Scale } from 'lucide-react';
+import { ArrowLeft, ShieldCheck, ShieldAlert, FileText, ExternalLink, HardDrive, AlertTriangle, Scale, Mail } from 'lucide-react';
 
 interface LegalNoticePageProps {
   onBack: () => void;
@@ -115,7 +115,7 @@ export const LegalNoticePage: React.FC<LegalNoticePageProps> = ({ onBack }) => {
             <h2>5. Copyright Inquiries & Takedown Requests</h2>
           </div>
           <p className="text-neutral-400">
-            We respect the intellectual property rights of all copyright holders and creators. If you are an intellectual property owner or an authorized agent thereof and believe that any content, link, or reference on this documentation site infringes upon your copyright, please reach out via our community contact channels with:
+            We have huge respect for the intellectual property rights of all copyright holders and creators. If you are an intellectual property owner or an authorized agent thereof and believe that any content, link, or reference on this documentation site infringes upon your copyright, please direct your inquiry directly to our designated contact address at <a href="mailto:support@rwyn.app" className="text-white underline underline-offset-2 hover:text-rose-400 transition-colors font-mono">support@rwyn.app</a> with:
           </p>
           <ol className="list-decimal list-inside space-y-1 text-neutral-400 pl-1 text-xs sm:text-sm">
             <li>Identification of the copyrighted work claimed to have been infringed.</li>
