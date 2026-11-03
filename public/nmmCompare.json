@@ -1,0 +1,120 @@
+[
+  {
+    "name": "Danieru NMM",
+    "maintainer": "Danieru",
+    "features": [
+      "Aim/Cover/Standing Mod",
+      "Burst Animation Mod",
+      "Lobby Animation Mod",
+      "Lobby Background Mod",
+      "Portrait Mod",
+      "Icon Mod",
+      "Favorite Item Mod",
+      "Effect Remove Mod",
+      "Physics Fix Mod",
+      "Asset Downloader"
+    ],
+    "downloads": [
+      {
+        "label": "Direct",
+        "href": "/downloads/NMM.zip",
+        "download": true
+      },
+      {
+        "label": "Google Drive",
+        "href": "https://drive.google.com/drive/folders/1mxmIDBhpHKhGm7he5nq7trAIZUsByi92?usp=sharing"
+      },
+      {
+        "label": "MEGA",
+        "href": "https://mega.nz/folder/DVNzmLDK#nBifrfbKSPuxmNBujfBxnQ"
+      }
+    ]
+  },
+  {
+    "name": "Na0h NMM",
+    "note": "Free version not updated",
+    "maintainer": "Na0h",
+    "features": [
+      "Aim/Cover/Standing Mod",
+      "Burst Animation Mod ($)",
+      "Lobby Animation Mod ($)",
+      "Lobby Background Mod",
+      "Portrait Mod",
+      "Icon Mod ($)",
+      "Favorite Item Mod ($)",
+      "Effect Remove Mod",
+      "Physics Fix Mod",
+      "Mod Preview",
+      "Mod Desktop Viewer/Wallpaper",
+      "Mods List Preset",
+      "Remove Old Catalogs",
+      "Built-in Skin Swapper ($)",
+      "Built-in Portrait Swapper ($)",
+      "Built-in Icon Swapper ($)",
+      "3Dmigoto Mod ($)"
+    ],
+    "downloads": [
+      {
+        "label": "Google Drive",
+        "href": "https://drive.google.com/file/d/1TpcfDmMa_oxVmDPmrqQ15frhsEW5pgXJ/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "name": "Chizuru NMM",
+    "maintainer": "Chizuru",
+    "features": [
+      "Aim/Cover/Standing Mod",
+      "Burst Animation Mod",
+      "Lobby Animation Mod",
+      "Lobby Background Mod",
+      "Full-Screen Lobby and Burst Animations",
+      "Favorite Item Mod",
+      "Built-in Skin Swapper",
+      "Built-in Repacker",
+      "Built-in Asset Downloader",
+      "Effect Remove Mod",
+      "Portrait Mod",
+      "Icon Mod",
+      "Physics Fix Mod",
+      "Hot-reloading Mods",
+      "Mods List Preset",
+      "Auto File Sorting",
+      "Spine Viewer / Mod Preview",
+      "Built-in Text Editor",
+      "Built-in Events Calendar",
+      "Built-in Maintenance Reminder",
+      "Particle Atlas Mode (Fullscreen BG)",
+      "Voiceovers and Subtitles"
+    ],
+    "downloads": [
+      {
+        "label": "Google Drive",
+        "href": "https://drive.google.com/file/d/1AFG8MK3koseG5g_xy4ENtiPu1vRjj0Tr/view?usp=sharing"
+      }
+    ],
+    "version": "v1.2.1"
+  },
+  {
+    "name": "SkinnyMan Mod Dock",
+    "maintainer": "SkinnyMan",
+    "disclaimer": "Due to how Nikke on Android works, not all mods work due to database size limitations.",
+    "features": [
+      "Aim/Cover/Standing Mod",
+      "Icon Mod",
+      "Lobby Mod",
+      "Burst Mod"
+    ],
+    "unsupportedText": "Full-screen cutscenes, favorite items, effect removal, physics fixes...",
+    "downloads": [
+      {
+        "label": "MEGA",
+        "href": "https://mega.nz/folder/6bJnkQqR#uKpBcNgpQxheDYb4pkApUA"
+      },
+      {
+        "label": "MediaFire",
+        "href": "https://app.mediafire.com/folder/iu44v3bigrnmv"
+      }
+    ]
+  }
+]
