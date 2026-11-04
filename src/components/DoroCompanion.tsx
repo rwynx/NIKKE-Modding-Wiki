@@ -5,14 +5,13 @@ const punchQuotes = [
   "DORO PUNCH!! 💥",
   "RAAH LET ME SOLO THE QUEEN! 💢",
   "IMMA JUMP THAT QUEEN!! 💥",
-  "",
   "ORA ORA ORA ORA!!",
   "COMMANDER! HANDS OFF!! 💢"
 ];
 
 const walkQuotesRTL = [
   "*humming* ...on starry night, I'll be your twinkle star! 🎵",
-  "Count on me like 123, spell on you like ABC! 🎵",
+  "Count on me like 123, spell on you like ABC! 🎵 Twinkle twinkle...",
   "A real one would never speak ill of Chizuru!",
   "Twins banner when...?",
   "*Hypnotizes you* You want to MLB the new Dorothy~!",
@@ -28,7 +27,7 @@ const walkQuotesLTR = [
   "I'll admit, I might be an Anis fan...",
   "Thank you everyone for supporting the modding community!",
   "*humming* ...on starry night, I'll be your twinkle star! 🎵",
-  "Count on me like 123, spell on you like ABC! 🎵",
+  "Count on me like 123, spell on you like ABC! Twinkle twinkle... 🎵",
   "Want to contribute? Hit the Github link and submit a PR!",
 ];
 
