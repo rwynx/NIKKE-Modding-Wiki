@@ -254,7 +254,7 @@ export const ModernModMakingSection: React.FC<ModernModMakingSectionProps> = ({ 
             </p>
           </div>
           <p className="text-[11px] text-rose-300/80">
-            ⚠️ <strong>Important:</strong> Nikke requires LZ4. Uncompressed or LZMA bundles will cause black screens or infinite loading.
+            ⚠️ <strong>Important:</strong> NIKKE requires LZ4. Uncompressed or LZMA bundles will cause black screens or infinite loading.
           </p>
         </div>
       )
@@ -410,7 +410,7 @@ export const ModernModMakingSection: React.FC<ModernModMakingSectionProps> = ({ 
                 <span>Faster - Automated Process</span>
               </h3>
               <p className="text-xs text-neutral-400 font-sans mt-0.5">
-                Nikke Modding Assistant (NMA / former Nix Multitool) quick swap and repacker.
+                NIKKE Modding Assistant (NMA / former Nix Multitool) quick swap and repacker.
               </p>
             </div>
             <span className="text-[10px] font-mono text-[rgb(95,227,103)] uppercase tracking-wider px-2 py-0.5 rounded bg-[rgb(95,227,103)]/10 border border-[rgb(95,227,103)]/25">
@@ -422,7 +422,7 @@ export const ModernModMakingSection: React.FC<ModernModMakingSectionProps> = ({ 
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/[0.08] pb-5">
               <div className="space-y-1">
                 <h4 className="font-sans font-bold text-xl text-white tracking-tight">
-                  Nikke Modding Assistant (NMA)
+                  NIKKE Modding Assistant (NMA)
                 </h4>
                 <p className="text-xs sm:text-[13px] text-neutral-300 font-sans leading-relaxed max-w-2xl">
                   Eliminates manual repacking & asset extraction, and LZ4 compression. Perfect for swift skin swaps and quick packaging.

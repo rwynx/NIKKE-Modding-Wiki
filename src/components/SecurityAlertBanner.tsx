@@ -126,7 +126,7 @@ export const SecurityAlertBanner: React.FC = () => {
                 </h4>
               </div>
               <p className="text-xs sm:text-[13px] text-neutral-300 font-sans leading-relaxed">
-                The situation appears stable for now while developers are actively investigating. You can see the tweet from NIKKE on the right side and the community scanner tool to scan your system for an active/ongoing threat. And in the meantime, if you haven't already, change all your passwords from a different, clean device.
+                The situation appears stable for now while developers are actively investigating. You can see the tweet from NIKKE on the right side and the community scanner tool to scan your system for an active/ongoing threat. And in the meantime, if you haven't already, change all your passwords from a different, clean device and don't launch the game until they announce a fix. 
               </p>
             </div>
           </div>
@@ -148,7 +148,7 @@ export const SecurityAlertBanner: React.FC = () => {
                 href="https://gist.github.com/MotherSphere/d6c049a09ba8ac3085c51ee9df24a4e5"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-between gap-2 px-3 py-1.5 rounded-lg bg-white/[0.06] hover:bg-white/[0.12] text-neutral-200 hover:text-white border border-white/[0.12] text-xs font-mono font-medium transition-all duration-200 whitespace-nowrap active:scale-95"
+                className="inline-flex items-center justify-between gap-2 px-3 py-1.5 rounded-lg bg-indigo-500/25 hover:bg-indigo-500/40 text-indigo-100 hover:text-white border border-indigo-400/50 text-xs font-mono font-semibold transition-all duration-200 shadow-[0_0_12px_rgba(56,189,248,0.2)] hover:shadow-[0_0_18px_rgba(56,189,248,0.35)] whitespace-nowrap active:scale-95"
               >
                 <span>Community PC Scanner</span>
                 <ExternalLink className="w-3 h-3 text-neutral-400 shrink-0" />

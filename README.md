@@ -14,7 +14,7 @@
 <br>
 
 _**Cosmetics only. We hate cheaters.**<br>
-We respect SHIFT UP and their efforts to keep NIKKE's competitive integrity together. We do not support, host or discuss cheats, damage modifiers, or stat hacks. Keep it visual and clean._
+We respect SHIFT UP and their efforts to keep NIKKE's competitive integrity together. We do not<br> support, host or discuss cheats, damage modifiers, or stat hacks. Keep it visual and clean._
 
 </div>
 <br>

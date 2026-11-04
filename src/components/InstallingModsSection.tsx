@@ -65,14 +65,14 @@ export const InstallingModsSection: React.FC = () => {
     {
       step: '01',
       title: 'Close Nikke & Delete Crash Handler',
-      desc: 'Close the game completely. Ensure the Nikke Launcher/icon is closed in the system tray, and kill `UnityCrashHandler64.exe` in Task Manager.',
+      desc: 'Close the game completely. Ensure the NIKKE Launcher/icon is closed in the system tray, and kill `UnityCrashHandler64.exe` in Task Manager.',
       icon: AlertTriangle,
       badge: 'PROCESS KILL'
     },
     {
       step: '02',
       title: 'Place on same storage drive',
-      desc: 'Extract Danieru NMM onto the exact same drive partition as your Nikke installation (e.g., both on C: drive or both on D: drive) to allow symbolic link creation.',
+      desc: 'Extract Danieru NMM onto the exact same drive partition as your NIKKE installation (e.g., both on C: drive or both on D: drive) to allow symbolic link creation.',
       icon: Wrench,
       badge: 'SAME DRIVE'
     },
@@ -93,7 +93,7 @@ export const InstallingModsSection: React.FC = () => {
     {
       step: '05',
       title: 'Place mods & Apply',
-      desc: 'Drop mod folders into Danieru\'s "mods" folder. Click "Refresh Mod List" in the manager, check the mods you want to activate, and click "Apply Mods". Launch Nikke!',
+      desc: 'Drop mod folders into Danieru\'s "mods" folder. Click "Refresh Mod List" in the manager, check the mods you want to activate, and click "Apply Mods". Launch NIKKE!',
       icon: CheckCircle2,
       badge: 'APPLY'
     }
@@ -124,7 +124,7 @@ export const InstallingModsSection: React.FC = () => {
     {
       step: '04',
       title: 'Link Shizuku with Mod Dock',
-      desc: 'Launch SkinnyMan Mod Dock and accept the Shizuku authorization dialog to grant permission to Nikke\'s application data folder.',
+      desc: 'Launch SkinnyMan Mod Dock and accept the Shizuku authorization dialog to grant permission to NIKKE\'s application data folder.',
       icon: CheckCircle2,
       badge: 'SHIZUKU LINK'
     },

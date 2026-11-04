@@ -66,7 +66,7 @@ export const suggestionsSections: GuideSection[] = [
     id: 'pro-examples',
     title: 'Professional Modder Walkthroughs',
     badge: 'PRO VIDEOS',
-    description: 'Watch experienced community creators craft custom Nikkes from scratch.',
+    description: 'Watch experienced community creators craft custom mods from scratch.',
     steps: [
       {
         text: 'Demonstration 1: Full character overhaul WITHOUT Spine (pure atlas repainting & UV alignment):',

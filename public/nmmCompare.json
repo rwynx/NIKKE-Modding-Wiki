@@ -98,7 +98,7 @@
   {
     "name": "SkinnyMan Mod Dock",
     "maintainer": "SkinnyMan",
-    "disclaimer": "Due to how Nikke on Android works, not all mods work due to database size limitations.",
+    "disclaimer": "Due to how NIKKE on Android works, not all mods work due to database size limitations.",
     "features": [
       "Aim/Cover/Standing Mod",
       "Icon Mod",

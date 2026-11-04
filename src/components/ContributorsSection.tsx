@@ -25,7 +25,7 @@ export const ContributorsSection: React.FC = () => {
         </BlurRevealTitle>
 
         <p className="text-neutral-400 text-base sm:text-lg leading-relaxed font-sans">
-          The developers, guide authors, wiki maintainers, modders and archivers who built <br></br>the tools, wrote the original guides, and keep the Nikke modding community active.
+          The developers, guide authors, wiki maintainers, modders and archivers who built <br></br>the tools, wrote the original guides, and keep the NIKKE modding community active.
         </p>
       </div>
 
@@ -89,7 +89,7 @@ export const ContributorsSection: React.FC = () => {
       <div className="epic-card p-8 text-center max-w-xl mx-auto space-y-2">
         <Heart className="w-5 h-5 text-neutral-400 mx-auto" />
         <h4 className="font-bold text-white text-base tracking-tight">
-          Thank you to the entire Nikke modding community
+          Thank you to the entire NIKKE modding community
         </h4>
         <p className="text-xs text-neutral-400 leading-relaxed font-sans">
           To all artists, engineers, and commanders creating and sharing mods freely across the globe.

@@ -154,7 +154,7 @@ export const WorkshopMasterclasses: React.FC<WorkshopMasterclassesProps> = ({
                 rel="noopener noreferrer"
                 className="flex items-center justify-between p-2 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] text-neutral-300 hover:text-white transition-colors"
               >
-                <span>Nikke Modding Assistant - NMA</span>
+                <span>NIKKE Modding Assistant - NMA</span>
                 <ExternalLink className="w-3.5 h-3.5 text-neutral-400" />
               </a>
               <a

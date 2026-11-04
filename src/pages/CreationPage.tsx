@@ -59,7 +59,7 @@ export const CreationPage: React.FC<CreationPageProps> = ({
               className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-nikke-cyan font-mono text-xs border border-nikke-border hover:border-nikke-cyan transition-colors flex items-center gap-2 cursor-pointer"
             >
               <Sparkles className="w-4 h-4 text-nikke-cyan" />
-              <span>Browse All Nikke Character Codes</span>
+              <span>Browse All NIKKE Character Codes</span>
             </button>
           </div>
         </div>

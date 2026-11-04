@@ -90,7 +90,7 @@ export const CreditsPage: React.FC = () => {
       <div className="cyber-panel p-8 rounded-2xl border border-nikke-border/80 text-center max-w-2xl mx-auto space-y-3">
         <Heart className="w-8 h-8 text-nikke-accent mx-auto animate-pulse" />
         <h4 className="font-display font-bold text-lg text-white">
-          A Massive Thank You to the Whole Nikke Modding Community
+          A Massive Thank You to the Whole NIKKE Modding Community
         </h4>
         <p className="text-sm text-slate-400 font-sans">
           And thanks to all commanders, modders, and artists who continuously share their insights, bug fixes, and stunning creations!
