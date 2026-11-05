@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Volume2, VolumeX, Play, Pause, Download, ChevronRight, Terminal, ArrowUpRight, Github } from 'lucide-react';
+import { Play, Pause, Download, ChevronRight, Terminal, ArrowUpRight, Github } from 'lucide-react';
 import { SecurityAlertBanner } from './SecurityAlertBanner';
 
 interface HeroCinematicProps {
@@ -10,8 +10,6 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onExploreWorkshop 
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
-  const [isMuted, setIsMuted] = useState(true);
-  const [volume, setVolume] = useState(0.5);
   const [isPlaying, setIsPlaying] = useState(true);
   const [videoError, setVideoError] = useState(false);
 
@@ -81,13 +79,6 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onExploreWorkshop 
     return () => clearInterval(timer);
   }, [isMobile, isHeroInView, mobileBackgrounds.length]);
 
-  // default volume
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.volume = 0.5;
-    }
-  }, []);
-
   // pause on scroll
   useEffect(() => {
     const video = videoRef.current;
@@ -124,33 +115,6 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onExploreWorkshop 
     observer.observe(container);
     return () => observer.disconnect();
   }, [videoError]);
-
-  const toggleMute = () => {
-    if (videoRef.current) {
-      const next = !isMuted;
-      videoRef.current.muted = next;
-      setIsMuted(next);
-      if (!next && volume === 0) {
-        setVolume(0.5);
-        videoRef.current.volume = 0.5;
-      }
-    }
-  };
-
-  const handleVolumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const val = parseFloat(e.target.value);
-    setVolume(val);
-    if (videoRef.current) {
-      videoRef.current.volume = val;
-      if (val === 0) {
-        videoRef.current.muted = true;
-        setIsMuted(true);
-      } else if (isMuted) {
-        videoRef.current.muted = false;
-        setIsMuted(false);
-      }
-    }
-  };
 
   const togglePlay = () => {
     if (videoRef.current) {
@@ -193,7 +157,7 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onExploreWorkshop 
             src="/videos/nikke-opening-new.webm"
             autoPlay
             loop
-            muted={isMuted}
+            muted
             playsInline
             onError={() => {
               setVideoError(true);
@@ -337,46 +301,14 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onExploreWorkshop 
       ) : (
         <div className="absolute bottom-6 right-6 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/[0.1] text-xs font-mono text-neutral-300">
           {!videoError ? (
-            <>
-              <button
-                onClick={togglePlay}
-                className="flex items-center gap-1.5 hover:text-white transition-colors cursor-pointer"
-                title={isPlaying ? 'Pause video' : 'Play video'}
-              >
-                {isPlaying ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
-                <span>{isPlaying ? 'Pause' : 'Play'}</span>
-              </button>
-
-              <span className="text-neutral-600">|</span>
-
-              <div className="flex items-center group/vol">
-                <button
-                  onClick={toggleMute}
-                  className="flex items-center gap-1.5 hover:text-white transition-colors cursor-pointer"
-                  title={isMuted ? 'Unmute video' : 'Mute video'}
-                >
-                  {isMuted || volume === 0 ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
-                  <span>{isMuted ? 'Unmute' : 'Mute'}</span>
-                </button>
-
-                {/* volume slider on hover */}
-                <div className="max-w-0 overflow-hidden opacity-0 group-hover/vol:max-w-[120px] group-hover/vol:opacity-100 group-hover/vol:ml-2.5 transition-all duration-300 ease-out flex items-center gap-1.5">
-                  <input
-                    type="range"
-                    min="0"
-                    max="1"
-                    step="0.05"
-                    value={isMuted ? 0 : volume}
-                    onChange={handleVolumeChange}
-                    className="w-14 h-1 bg-white/20 hover:bg-white/30 rounded-lg appearance-none cursor-pointer accent-[rgb(160,225,255)]"
-                    title={`Volume: ${Math.round((isMuted ? 0 : volume) * 100)}%`}
-                  />
-                  <span className="text-[10px] text-neutral-400 font-mono w-6 text-right">
-                    {Math.round((isMuted ? 0 : volume) * 100)}%
-                  </span>
-                </div>
-              </div>
-            </>
+            <button
+              onClick={togglePlay}
+              className="flex items-center gap-1.5 hover:text-white transition-colors cursor-pointer"
+              title={isPlaying ? 'Pause video' : 'Play video'}
+            >
+              {isPlaying ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
+              <span>{isPlaying ? 'Pause' : 'Play'}</span>
+            </button>
           ) : (
             <span className="flex items-center gap-1.5 text-[11px] text-neutral-400">
               <Terminal className="w-3 h-3 text-neutral-400" />
