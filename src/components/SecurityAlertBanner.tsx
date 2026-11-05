@@ -95,38 +95,38 @@ export const SecurityAlertBanner: React.FC = () => {
 
 
       {/* ========================================================================= */}
-      {/* 🔵 LIGHT BLUE / NEUTRAL (ACTIVE)                                          */}
+      {/* 🟢 LIME / ACID GREEN (#D0FF00) VARIANT — POSITIVE ANNOUNCEMENT (ACTIVE)   */}
       {/* PLEASE dont remove this if you forked the repo and adding or              */}
-      {/* editing something. this (🔵) section is for PENDING/NEUTRAL updates       */}
+      {/* editing something. this section is for RESOLVED / POSITIVE notices        */}
       {/* ========================================================================= */}
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-indigo-950/95 via-[#0b1c2d]/95 to-neutral-950/95 border-2 border-indigo-400/50 shadow-[0_12px_45px_rgba(56,189,248,0.25)] backdrop-blur-xl p-4 sm:p-5 text-neutral-200">
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r /95 via-[#0e1803]/95 to-neutral-950/95 border-2 border-[#D0FF00]/50 shadow-[0_12px_45px_rgba(208,255,0,0.2)] backdrop-blur-xl p-4 sm:p-5 text-neutral-200">
         
         {/* glowing top edge line */}
-        <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-indigo-400 to-transparent opacity-25" />
+        <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent to-transparent opacity-40" />
 
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           
           {/* left: icon & content */}
           <div className="flex items-start sm:items-center gap-3.5 sm:gap-4 min-w-0">
-            <div className="relative p-2.5 sm:p-3 rounded-2xl bg-indigo-500/15 border border-indigo-400/40 text-indigo-400 shrink-0 mt-0.5 sm:mt-0 shadow-[0_0_20px_rgba(56,189,248,0.3)]">
-              <Info className="w-6 h-6 sm:w-7 sm:h-7 text-indigo-400" />
+            <div className="relative p-2.5 sm:p-3 rounded-2xl bg-[#D0FF00]/15 border border-[#D0FF00]/40 text-[#D0FF00] shrink-0 mt-0.5 sm:mt-0 shadow-[0_0_20px_rgba(208,255,0,0.25)]">
+              <Sparkles className="w-6 h-6 sm:w-7 sm:h-7 text-[#D0FF00]" />
               <span className="absolute -top-1 -right-1 flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-indigo-400"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D0FF00] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-[#D0FF00]"></span>
               </span>
             </div>
 
             <div className="space-y-1.5 min-w-0">
               <div className="flex items-center gap-2.5 flex-wrap">
-                <span className="font-mono text-[10px] sm:text-xs uppercase font-extrabold px-2.5 py-0.5 rounded-full bg-indigo-500/25 text-indigo-300 border border-indigo-400/50 tracking-wider">
-                  Monitoring...
+                <span className="font-mono text-[10px] sm:text-xs uppercase font-extrabold px-2.5 py-0.5 rounded-full bg-[#D0FF00]/20 text-[#D0FF00] border border-[#D0FF00]/40 tracking-wider">
+                  Update: Launcher Clean ✓
                 </span>
                 <h4 className="font-sans font-extrabold text-white text-sm sm:text-base tracking-tight">
-                  Awaiting Clarification from SHIFTUP.
+                  Official PC Launcher is now safe to use!
                 </h4>
               </div>
               <p className="text-xs sm:text-[13px] text-neutral-300 font-sans leading-relaxed">
-                The situation appears stable for now while developers are actively investigating. You can see the tweet from NIKKE on the right side and the community scanner tool to scan your system for an active/ongoing threat. And in the meantime, if you haven't already, change all your passwords from a different, clean device and don't launch the game until they announce a fix. 
+                SHIFT UP and Level Infinite have officially announced that the PC launcher issue has been resolved and the client is safe to use again. However, if you launched the game between Nov 2–3, please run the community scanner and ensure your passwords/sessions have been reset from a clean device.
               </p>
             </div>
           </div>
@@ -135,23 +135,23 @@ export const SecurityAlertBanner: React.FC = () => {
           <div className="flex items-center gap-2.5 shrink-0 self-end sm:self-auto pt-1 sm:pt-0">
             <div className="flex flex-col gap-1.5 w-full sm:w-auto">
               <a
-                href="https://x.com/NIKKE_en/status/2117817602659770434"
+                href="https://x.com/NIKKE_en/status/2118116340225732677"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-between gap-2 px-3 py-1.5 rounded-lg bg-indigo-500/25 hover:bg-indigo-500/40 text-indigo-100 hover:text-white border border-indigo-400/50 text-xs font-mono font-semibold transition-all duration-200 shadow-[0_0_12px_rgba(56,189,248,0.2)] hover:shadow-[0_0_18px_rgba(56,189,248,0.35)] whitespace-nowrap active:scale-95"
+                className="inline-flex items-center justify-between gap-2 px-3 py-1.5 rounded-lg bg-[#D0FF00]/20 hover:bg-[#D0FF00]/30 text-white hover:text-white border border-[#D0FF00]/50 text-xs font-mono font-semibold transition-all duration-200 shadow-[0_0_12px_rgba(208,255,0,0.15)] hover:shadow-[0_0_18px_rgba(208,255,0,0.3)] whitespace-nowrap active:scale-95 group"
               >
-                <span>NIKKE EN - Official Statement</span>
-                <ExternalLink className="w-3 h-3 text-indigo-300 shrink-0" />
+                <span className="group-hover:text-white">Official Resolution Notice</span>
+                <ExternalLink className="w-3 h-3 text-[#D0FF00] group-hover:text-white shrink-0" />
               </a>
 
               <a
                 href="https://gist.github.com/MotherSphere/d6c049a09ba8ac3085c51ee9df24a4e5"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-between gap-2 px-3 py-1.5 rounded-lg bg-indigo-500/25 hover:bg-indigo-500/40 text-indigo-100 hover:text-white border border-indigo-400/50 text-xs font-mono font-semibold transition-all duration-200 shadow-[0_0_12px_rgba(56,189,248,0.2)] hover:shadow-[0_0_18px_rgba(56,189,248,0.35)] whitespace-nowrap active:scale-95"
+                className="inline-flex items-center justify-between gap-2 px-3 py-1.5 rounded-lg bg-[#D0FF00]/20 hover:bg-[#D0FF00]/30 text-white hover:text-white border border-[#D0FF00]/50 text-xs font-mono font-semibold transition-all duration-200 shadow-[0_0_12px_rgba(208,255,0,0.15)] hover:shadow-[0_0_18px_rgba(208,255,0,0.3)] whitespace-nowrap active:scale-95 group"
               >
                 <span>Community PC Scanner</span>
-                <ExternalLink className="w-3 h-3 text-neutral-400 shrink-0" />
+                <ExternalLink className="w-3 h-3 text-[#D0FF00] group-hover:text-white shrink-0" />
               </a>
             </div>
 
