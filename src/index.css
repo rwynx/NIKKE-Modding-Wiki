@@ -273,3 +273,59 @@ article li span,
 [data-multiline="true"] {
   white-space: pre-line;
 }
+
+/* ==========================================================================
+   these might come in handy later if i replace the video
+   ========================================================================== */
+
+/* active - dot mesh */
+.video-overlay-slot {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 4px 4px;
+}
+
+/* crosshatch stuff
+.video-overlay-slot {
+  background: 
+    linear-gradient(45deg, rgba(0, 0, 0, 0.4) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.4) 75%),
+    linear-gradient(45deg, rgba(0, 0, 0, 0.4) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.4) 75%);
+  background-size: 6px 6px;
+  background-position: 0 0, 3px 3px;
+}
+*/
+
+/* scanlines
+.video-overlay-slot {
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.45) 0px,
+    rgba(0, 0, 0, 0.45) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+}
+*/
+
+/* noise / grain
+.video-overlay-slot {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.15'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+*/
+
+/* rgb crt grid
+.video-overlay-slot {
+  background: 
+    linear-gradient(rgba(18, 16, 26, 0) 50%, rgba(0, 0, 0, 0.5) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.05), rgba(0, 255, 0, 0.03), rgba(0, 0, 255, 0.05));
+  background-size: 100% 3px, 4px 100%;
+}
+*/
+
+/* blur vignette
+.video-overlay-slot {
+  background: radial-gradient(circle at center, transparent 35%, rgba(9, 10, 15, 0.85) 100%);
+  backdrop-filter: blur(1.5px) contrast(1.1);
+}
+*/
+

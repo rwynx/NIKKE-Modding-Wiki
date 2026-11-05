@@ -15,40 +15,109 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onExploreWorkshop 
   const [isPlaying, setIsPlaying] = useState(true);
   const [videoError, setVideoError] = useState(false);
 
-  // default volume to 50%
+  // mobile check
+  const [isMobile, setIsMobile] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth < 768;
+    }
+    return false;
+  });
+
+  // mobile slides
+  const mobileBackgrounds = [
+    { id: 1, name: 'Anis', src: '/mobile-backgrounds/mbg-nikke-anis1.jpg' },
+    { id: 2, name: 'Modernia', src: '/mobile-backgrounds/mbg-nikke-modernia2.png' },
+    { id: 3, name: 'Behemoth', src: '/mobile-backgrounds/mbg-nikke-behemoth3.png' },
+    { id: 4, name: 'Indivilia', src: '/mobile-backgrounds/mbg-nikke-indivilia4.jpg' },
+    { id: 5, name: 'Rapi', src: '/mobile-backgrounds/mbg-nikke-rapi5.png' },
+    { id: 6, name: 'Chatterbox', src: '/mobile-backgrounds/mbg-nikke-yapperbox6.png' },
+    { id: 7, name: 'Raptures', src: '/mobile-backgrounds/mbg-nikke-raptures7.jpg' },
+  ];
+
+  // random start
+  const [activeMobileIdx, setActiveMobileIdx] = useState<number>(() => {
+    if (typeof window === 'undefined') return 0;
+    try {
+      const last = sessionStorage.getItem('nikke_last_mbg');
+      const lastIdx = last !== null ? parseInt(last, 10) : -1;
+      let nextIdx = Math.floor(Math.random() * 7);
+      if (nextIdx === lastIdx) {
+        nextIdx = (nextIdx + 1) % 7;
+      }
+      sessionStorage.setItem('nikke_last_mbg', nextIdx.toString());
+      return nextIdx;
+    } catch {
+      return Math.floor(Math.random() * 7);
+    }
+  });
+
+  const [isHeroInView, setIsHeroInView] = useState(true);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  // slide loop
+  useEffect(() => {
+    if (!isMobile || !isHeroInView) return;
+
+    const timer = setInterval(() => {
+      setActiveMobileIdx((prev) => {
+        const next = (prev + 1) % mobileBackgrounds.length;
+        try {
+          sessionStorage.setItem('nikke_last_mbg', next.toString());
+        } catch {
+          // ignore
+        }
+        return next;
+      });
+    }, 4000);
+
+    return () => clearInterval(timer);
+  }, [isMobile, isHeroInView, mobileBackgrounds.length]);
+
+  // default volume
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.volume = 0.5;
     }
   }, []);
 
-  // auto-pause when scrolled out 
+  // pause on scroll
   useEffect(() => {
     const video = videoRef.current;
     const container = containerRef.current;
-    if (!video || !container) return;
+    if (!container) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
-        if (!entry.isIntersecting) {
-          if (!video.paused) {
-            video.pause();
-            setIsPlaying(false);
-          }
-        } else {
-          // scrolled back into view
-          const playPromise = video.play();
-          if (playPromise !== undefined) {
-            playPromise
-              .then(() => setIsPlaying(true))
-              .catch(() => {
-              });
+        setIsHeroInView(entry.isIntersecting);
+
+        if (video) {
+          if (!entry.isIntersecting) {
+            if (!video.paused) {
+              video.pause();
+              setIsPlaying(false);
+            }
+          } else {
+            // scrolled back into view
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+              playPromise
+                .then(() => setIsPlaying(true))
+                .catch(() => {});
+            }
           }
         }
       },
       {
-        threshold: 0.2, 
+        threshold: 0.15,
       }
     );
 
@@ -101,12 +170,27 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onExploreWorkshop 
       ref={containerRef}
       className="relative w-full min-h-[90vh] flex items-end justify-start overflow-hidden bg-[#090a0f] pt-24 sm:pt-32 pb-16 sm:pb-20"
     >
-      {/* bg video */}
+      {/* bg media */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
-        {!videoError ? (
+        {isMobile ? (
+          <div className="relative w-full h-full">
+            {mobileBackgrounds.map((bg, idx) => (
+              <img
+                key={bg.src}
+                src={bg.src}
+                alt={bg.name}
+                className={`absolute inset-0 w-full h-full object-cover object-center scale-[1.02] transition-opacity duration-1000 ease-in-out ${
+                  idx === activeMobileIdx ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                }`}
+              />
+            ))}
+            {/* dark gradient */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#090a0f] via-[#090a0f]/45 to-transparent opacity-95 pointer-events-none" />
+          </div>
+        ) : !videoError ? (
           <video
             ref={videoRef}
-            src="/videos/nikke-opening.mp4"
+            src="/videos/nikke-opening-new.webm"
             autoPlay
             loop
             muted={isMuted}
@@ -127,7 +211,11 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onExploreWorkshop 
           </div>
         )}
 
-        <div className="hero-video-fade" />
+        {/* overlay slot */}
+        <div className="absolute inset-0 w-full h-full video-overlay-slot pointer-events-none z-[1]" />
+
+        {/* bottom fade */}
+        <div className="hero-video-fade z-[2]" />
       </div>
 
       {/* content */}
@@ -230,55 +318,73 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onExploreWorkshop 
       </div>
 
       {/* controls */}
-      <div className="absolute bottom-6 right-6 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/[0.1] text-xs font-mono text-neutral-300">
-        {!videoError ? (
-          <>
+      {isMobile ? (
+        <div className="absolute bottom-5 right-5 z-20 flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/[0.1] shadow-lg">
+          {mobileBackgrounds.map((bg, idx) => (
             <button
-              onClick={togglePlay}
-              className="flex items-center gap-1.5 hover:text-white transition-colors cursor-pointer"
-              title={isPlaying ? 'Pause video' : 'Play video'}
-            >
-              {isPlaying ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
-              <span>{isPlaying ? 'Pause' : 'Play'}</span>
-            </button>
-
-            <span className="text-neutral-600">|</span>
-
-            <div className="flex items-center group/vol">
+              key={bg.id}
+              onClick={() => setActiveMobileIdx(idx)}
+              className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
+                activeMobileIdx === idx
+                  ? 'w-4 bg-white'
+                  : 'w-1.5 bg-white/30 hover:bg-white/60'
+              }`}
+              title={`${idx + 1}/${mobileBackgrounds.length}: ${bg.name}`}
+              aria-label={`Switch to ${bg.name}`}
+            />
+          ))}
+        </div>
+      ) : (
+        <div className="absolute bottom-6 right-6 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/[0.1] text-xs font-mono text-neutral-300">
+          {!videoError ? (
+            <>
               <button
-                onClick={toggleMute}
+                onClick={togglePlay}
                 className="flex items-center gap-1.5 hover:text-white transition-colors cursor-pointer"
-                title={isMuted ? 'Unmute video' : 'Mute video'}
+                title={isPlaying ? 'Pause video' : 'Play video'}
               >
-                {isMuted || volume === 0 ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
-                <span>{isMuted ? 'Unmute' : 'Mute'}</span>
+                {isPlaying ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
+                <span>{isPlaying ? 'Pause' : 'Play'}</span>
               </button>
 
-              {/* volume slider on hover */}
-              <div className="max-w-0 overflow-hidden opacity-0 group-hover/vol:max-w-[120px] group-hover/vol:opacity-100 group-hover/vol:ml-2.5 transition-all duration-300 ease-out flex items-center gap-1.5">
-                <input
-                  type="range"
-                  min="0"
-                  max="1"
-                  step="0.05"
-                  value={isMuted ? 0 : volume}
-                  onChange={handleVolumeChange}
-                  className="w-14 h-1 bg-white/20 hover:bg-white/30 rounded-lg appearance-none cursor-pointer accent-[rgb(160,225,255)]"
-                  title={`Volume: ${Math.round((isMuted ? 0 : volume) * 100)}%`}
-                />
-                <span className="text-[10px] text-neutral-400 font-mono w-6 text-right">
-                  {Math.round((isMuted ? 0 : volume) * 100)}%
-                </span>
+              <span className="text-neutral-600">|</span>
+
+              <div className="flex items-center group/vol">
+                <button
+                  onClick={toggleMute}
+                  className="flex items-center gap-1.5 hover:text-white transition-colors cursor-pointer"
+                  title={isMuted ? 'Unmute video' : 'Mute video'}
+                >
+                  {isMuted || volume === 0 ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
+                  <span>{isMuted ? 'Unmute' : 'Mute'}</span>
+                </button>
+
+                {/* volume slider on hover */}
+                <div className="max-w-0 overflow-hidden opacity-0 group-hover/vol:max-w-[120px] group-hover/vol:opacity-100 group-hover/vol:ml-2.5 transition-all duration-300 ease-out flex items-center gap-1.5">
+                  <input
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.05"
+                    value={isMuted ? 0 : volume}
+                    onChange={handleVolumeChange}
+                    className="w-14 h-1 bg-white/20 hover:bg-white/30 rounded-lg appearance-none cursor-pointer accent-[rgb(160,225,255)]"
+                    title={`Volume: ${Math.round((isMuted ? 0 : volume) * 100)}%`}
+                  />
+                  <span className="text-[10px] text-neutral-400 font-mono w-6 text-right">
+                    {Math.round((isMuted ? 0 : volume) * 100)}%
+                  </span>
+                </div>
               </div>
-            </div>
-          </>
-        ) : (
-          <span className="flex items-center gap-1.5 text-[11px] text-neutral-400">
-            <Terminal className="w-3 h-3 text-neutral-400" />
-            <span>Drop video in /public/videos/nikke-opening.mp4</span>
-          </span>
-        )}
-      </div>
+            </>
+          ) : (
+            <span className="flex items-center gap-1.5 text-[11px] text-neutral-400">
+              <Terminal className="w-3 h-3 text-neutral-400" />
+              <span>Drop video in /public/videos/nikke-opening-new.webm</span>
+            </span>
+          )}
+        </div>
+      )}
     </section>
   );
 };

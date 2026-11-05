@@ -93,20 +93,18 @@ export const SecurityAlertBanner: React.FC = () => {
       </div>
       */}
 
-
       {/* ========================================================================= */}
       {/* 🟢 LIME / ACID GREEN (#D0FF00) VARIANT — POSITIVE ANNOUNCEMENT (ACTIVE)   */}
       {/* PLEASE dont remove this if you forked the repo and adding or              */}
       {/* editing something. this section is for RESOLVED / POSITIVE notices        */}
       {/* ========================================================================= */}
+      {/*
       <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r /95 via-[#0e1803]/95 to-neutral-950/95 border-2 border-[#D0FF00]/50 shadow-[0_12px_45px_rgba(208,255,0,0.2)] backdrop-blur-xl p-4 sm:p-5 text-neutral-200">
         
-        {/* glowing top edge line */}
         <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent to-transparent opacity-40" />
 
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           
-          {/* left: icon & content */}
           <div className="flex items-start sm:items-center gap-3.5 sm:gap-4 min-w-0">
             <div className="relative p-2.5 sm:p-3 rounded-2xl bg-[#D0FF00]/15 border border-[#D0FF00]/40 text-[#D0FF00] shrink-0 mt-0.5 sm:mt-0 shadow-[0_0_20px_rgba(208,255,0,0.25)]">
               <Sparkles className="w-6 h-6 sm:w-7 sm:h-7 text-[#D0FF00]" />
@@ -131,7 +129,6 @@ export const SecurityAlertBanner: React.FC = () => {
             </div>
           </div>
 
-          {/* right: actions */}
           <div className="flex items-center gap-2.5 shrink-0 self-end sm:self-auto pt-1 sm:pt-0">
             <div className="flex flex-col gap-1.5 w-full sm:w-auto">
               <a
@@ -166,8 +163,7 @@ export const SecurityAlertBanner: React.FC = () => {
           </div>
 
         </div>
-      </div>
-
+      </div> */}
 
       {/* ========================================================================= */}
       {/* 🟢 GREEN VARIANT — COMMUNITY ANNOUNCEMENT / RESOLVED NOTICE              */}
