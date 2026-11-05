@@ -97,6 +97,8 @@ Thanks **Lady** for compiling the legacy modding guides (moved from the old wiki
 Thanks **Nix** for compiling the guide for modern modding tools.<br>
 Thanks **Skuqre**, live character sync uses **NKAS.**
 
+Doro Posing/Dancing artwork by **[@Moongzzi_S2](https://x.com/Moongzzi_S2/status/1854472104646992121)**
+
 And special thanks to all great minds! Tool authors, engineers and community curators who made modding possible in the first place. You can see the full list of contributors in the **[CREDITS](https://nikkemodding.rwyn.app/#credits)** section on the live site.
 > Gemini assisted in UI layout and Vite & React optimizations.<br>As of Beta 1.2, Gemini DeepMind's total contributions:<br>**861 lines - around %8** of the current codebase.
 
