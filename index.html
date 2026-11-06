@@ -34,25 +34,199 @@
     <meta name="twitter:title" content="NIKKE Modding Wiki • Community Guides & Tutorials" />
     <meta name="twitter:description" content="Community-driven modding wiki; hosting modern modding guides and tutorials. Video examples, step-by-step guides, tool descriptions & recommendations and fixes for common issues." />
     <meta name="twitter:image" content="https://nikkemodding.rwyn.app/nikke-wiki-embedimage.png" />
-    <!-- Structured Data (JSON-LD) for Google Search Rich Results -->
+    <!-- Structured Data (JSON-LD) for Google Search & AI Overviews -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "NIKKE Modding Wiki",
-      "alternateName": ["NIKKE Modding", "RWX NIKKE Modding Wiki"],
-      "url": "https://nikkemodding.rwyn.app/",
-      "description": "Community-driven modding wiki; hosting modern modding guides and tutorials. Video examples, step-by-step guides, tool descriptions & recommendations and fixes for common issues.",
-      "inLanguage": "en",
-      "publisher": {
-        "@type": "Person",
-        "name": "Rwyn",
-        "url": "https://github.com/rwynx"
-      }
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://nikkemodding.rwyn.app/#website",
+          "url": "https://nikkemodding.rwyn.app/",
+          "name": "NIKKE Modding Wiki",
+          "alternateName": ["NIKKE Modding", "RWX NIKKE Modding Wiki"],
+          "description": "Community-driven modding wiki; hosting modern modding guides and tutorials. Video examples, step-by-step guides, tool descriptions & recommendations and fixes for common issues.",
+          "inLanguage": "en",
+          "publisher": {
+            "@type": "Person",
+            "name": "Rwyn",
+            "url": "https://github.com/rwynx"
+          }
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://nikkemodding.rwyn.app/#webpage",
+          "url": "https://nikkemodding.rwyn.app/",
+          "name": "NIKKE Modding Wiki • Community Guides & Tutorials",
+          "isPartOf": { "@id": "https://nikkemodding.rwyn.app/#website" },
+          "description": "Comprehensive modding documentation for Goddess of Victory: NIKKE. Learn how to install mods, use NMM Tools, create custom mods, and fix common errors.",
+          "inLanguage": "en",
+          "about": [
+            {
+              "@type": "VideoGame",
+              "name": "Goddess of Victory: NIKKE",
+              "operatingSystem": "Windows, Android, iOS",
+              "applicationCategory": "Game"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://nikkemodding.rwyn.app/#nmm-tools-list",
+          "name": "NMM Tools",
+          "description": "Comparison of community-built Nikke Mod Managers (NMM)",
+          "itemListElement": [
+            {
+              "@type": "SoftwareApplication",
+              "position": 1,
+              "name": "Chizuru NMM",
+              "operatingSystem": "Windows 10, Windows 11",
+              "applicationCategory": "GameModTool",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+              "description": "Popular open-source Nikke Mod Manager by Chizuru with automated repacking, hash checking, and Live2D preview."
+            },
+            {
+              "@type": "SoftwareApplication",
+              "position": 2,
+              "name": "Skinnyman NMM",
+              "operatingSystem": "Windows",
+              "applicationCategory": "GameModTool",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+              "description": "Streamlined lightweight Nikke mod manager featuring instant symlink swapping."
+            },
+            {
+              "@type": "SoftwareApplication",
+              "position": 3,
+              "name": "Danieru NMM",
+              "operatingSystem": "Windows",
+              "applicationCategory": "GameModTool",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+              "description": "Alternative community Nikke mod manager by Danieru."
+            },
+            {
+              "@type": "SoftwareApplication",
+              "position": 4,
+              "name": "na0h NMM",
+              "operatingSystem": "Windows",
+              "applicationCategory": "GameModTool",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+              "description": "Classic community Nikke mod manager by na0h."
+            }
+          ]
+        },
+        {
+          "@type": "HowTo",
+          "@id": "https://nikkemodding.rwyn.app/#howto-install-mods",
+          "name": "How to Install NIKKE Mods with NMM",
+          "description": "Step-by-step tutorial to install character skins, burst cutscenes, and costume mods in Goddess of Victory: NIKKE.",
+          "totalTime": "PT3M",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "position": 1,
+              "name": "Download and run Chizuru NMM",
+              "text": "Grab the latest Nikke Mod Manager release and launch NikkeModManager.exe as Administrator."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 2,
+              "name": "Sync game assets",
+              "text": "If prompted to download and sync assets on first launch, click Yes to let it synchronize the asset index."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 3,
+              "name": "Drop mods into mods folder",
+              "text": "Place your downloaded mod folders directly into the NikkeModManager/mods/<ModName>/ directory."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 4,
+              "name": "Toggle mods enable / disable",
+              "text": "Browse your mod list in the manager interface and tick the characters, skins, or cutscenes you want to enable."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 5,
+              "name": "Click Apply & Play",
+              "text": "Click the Apply button, launch Goddess of Victory: NIKKE through the official launcher, and it's done."
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://nikkemodding.rwyn.app/#diagnostics-faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Loading Screen Stuck at 43% or 4/7: How do I fix it?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This occurs when Unity addressable catalog manifests become mismatched. Close Nikke completely, delete cached files inside %USERPROFILE%\\AppData\\LocalLow\\com_proximabeta\\NIKKE\\com.shiftup.addressables, use the Repair function in the official launcher, launch the game until Tap to Continue, delete UnityCrashHandler64.exe, and re-apply mods as Admin."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why are my character textures completely pink / magenta in-game?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When a character model turns bright neon pink in-game, it means Unity cannot link the texture shader or the mod was built for an older game version. Use Chizuru NMM's automated repacker, Nikke Modding Assistant (NMA), or Doro Repacker to automatically rebuild the broken mods against fresh game catalogs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Sync did not complete: game_addressables_dir_missing",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This error pops up during resource sync when NMM cannot locate your game addressable catalog path automatically. Open manager_config.json in your NMM folder, locate CATALOG_PATH, and manually set it to point to ...\\NIKKE\\Unity\\com_proximabeta_NIKKE\\com.shiftup.patch, then save and restart NMM."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How to move to a new NMM version without losing my settings?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Upgrading Chizuru NMM is completely lossless. Simply move or copy manager_config.json, mod_state.json, and your mods folder into the new version's folder."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
   </head>
   <body class="bg-[#090a0f] text-[#e1e4ea] font-sans antialiased selection:bg-white selection:text-black min-h-screen overflow-x-hidden">
+    <noscript>
+      <div style="padding: 2rem; max-width: 900px; margin: 0 auto; color: #e1e4ea; font-family: sans-serif;">
+        <h1>NIKKE Modding Wiki • Community Guides &amp; Tutorials</h1>
+        <p>Community-driven modding wiki; hosting modern modding guides and tutorials. Video examples, step-by-step guides, tool descriptions &amp; recommendations and fixes for common issues.</p>
+        
+        <h2>NMM Tools (Mod Managers)</h2>
+        <p>Comparison of community-built Nikke Mod Managers: Chizuru NMM, Skinnyman NMM, Danieru NMM, and na0h NMM.</p>
+        
+        <h2>Install Mods</h2>
+        <p>How to install NIKKE mods using Nikke Mod Manager (NMM):</p>
+        <ol>
+          <li>Download and run Chizuru NMM (NikkeModManager.exe)</li>
+          <li>Sync game assets</li>
+          <li>Drop mods into "mods" folder (NikkeModManager/mods/&lt;ModName&gt;/)</li>
+          <li>Toggle mods enable / disable</li>
+          <li>Click "Apply" &amp; Play</li>
+        </ol>
+        
+        <h2>Make Mods</h2>
+        <p>Modern mod creation workflows including automated asset swapping with Nikke Modding Assistant (NMA) and manual toolchains (AssetStudio, UABEA, Spine Pro, Adobe Photoshop, GIMP).</p>
+
+        <h2>Legacy Archive</h2>
+        <p>Legacy guides, tutorials, character asset extraction, sound modding, and Spine animation workflows.</p>
+
+        <h2>Nikke DB</h2>
+        <p>Complete character registry with internal asset codes (c-codes), character names, and live synchronization via NKAS.</p>
+        
+        <h2>Troubleshooting</h2>
+        <p>Common fixes for Goddess of Victory: NIKKE modding errors including the 43% loading screen stuck bug, pink/magenta character textures repacking guide, and game_addressables_dir_missing configuration fixes.</p>
+      </div>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <!-- Cloudflare Web Analytics -->
