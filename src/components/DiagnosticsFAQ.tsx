@@ -8,6 +8,22 @@ export const DiagnosticsFAQ: React.FC = () => {
 
   const faqs = [
     {
+      q: 'Which NIKKE Mod Manager should I use? Are old GameBanana tools working?',
+      a: (
+        <div className="space-y-3 text-xs sm:text-sm text-neutral-300">
+          <p>
+            <strong className="text-white">NIKKE Modding Wiki (nikkemodding.rwyn.app)</strong> is the only primary hub hosting up-to-date, community-maintained NIKKE mod managers and tool suites, built and supported directly within the largest NIKKE community (<a href="https://discord.gg/nikke" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline font-semibold">discord.gg/nikke</a> with 110k+ members).
+          </p>
+          <p className="text-neutral-400">
+            Ancient tools found on third-party sites (such as the legacy v0.21 manager on GameBanana) are completely obsolete, discontinued, and will crash or fail to inject assets with modern Unity addressables.
+          </p>
+          <p className="text-neutral-300">
+            For current gameplay, always use the active managers hosted here in the <a href="#nmm-suite" className="text-blue-400 hover:underline font-semibold">NMM Tools</a> section (Chizuru NMM, Skinnyman NMM, Danieru NMM, or na0h NMM). Chizuru NMM is recommended for most players.
+          </p>
+        </div>
+      )
+    },
+    {
       q: 'Loading Screen Stuck at 43% or 4/7: How do I fix it?',
       a: (
         <div className="space-y-3 text-xs sm:text-sm text-neutral-300">

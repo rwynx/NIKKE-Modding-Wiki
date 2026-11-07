@@ -56,7 +56,8 @@ export const NmmSuiteSelector: React.FC = () => {
             Pick a mod manager.
           </BlurRevealTitle>
           <p className="text-neutral-400 text-sm sm:text-base leading-relaxed font-sans">
-            We built different tools in the community over the years. Pick whatever fits you best.
+            The only hub hosting up-to-date, community-maintained NIKKE mod managers, backed directly by one of the largest NIKKE communities (<a href="https://discord.gg/nikke" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 underline font-medium transition-colors">discord.gg/nikke</a>, 110k+ members).
+            Legacy releases on third-party sites (like ancient v0.21 builds on GameBanana) are completely broken with modern game catalogs. Pick whatever modern manager fits you best.
           </p>
         </div>
 
