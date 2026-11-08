@@ -168,7 +168,7 @@ export const BenchmarkSpeedBar: React.FC = () => {
 
           <div className="flex items-center justify-between text-xs text-neutral-400 pt-3 border-t border-white/[0.05]">
             <span>Evaluated across 21 standard modding features</span>
-            <a href="#nmm-tools" className="text-white hover:text-[rgb(95,227,103)] font-medium transition-colors">Compare Tools →</a>
+            <a href="#nmm-suite" className="text-white hover:text-[rgb(95,227,103)] font-medium transition-colors">Compare Tools →</a>
           </div>
         </div>
 

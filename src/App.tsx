@@ -65,7 +65,12 @@ export const App: React.FC = () => {
   // hash routing
   useEffect(() => {
     const handleHashRouting = () => {
-      const raw = window.location.hash.replace('#', '').trim().toLowerCase();
+      const raw = window.location.hash
+        .replace(/^#+/, '')
+        .split('?')[0]
+        .replace(/^\/+|\/+$/g, '')
+        .trim()
+        .toLowerCase();
       if (!raw) return;
 
       if (raw === 'workbench' || raw === 'video-lab' || raw === 'seireiko') {
@@ -111,6 +116,7 @@ export const App: React.FC = () => {
         'troubleshooting': 'diagnostics',
         'faq': 'diagnostics',
         'diagnostics': 'diagnostics',
+        'troubleshoot': 'diagnostics',
         'credits': 'credits',
         'contributors': 'credits',
         'engine': 'engine',
@@ -124,6 +130,11 @@ export const App: React.FC = () => {
       };
 
       const targetId = aliasMap[raw] || raw;
+
+      // clean trailing slashes without reloading allat
+      if (window.location.hash.includes('/')) {
+        window.history.replaceState(null, '', `#${targetId}`);
+      }
 
       setView('home');
       setTimeout(() => {

@@ -47,7 +47,7 @@ export const NmmSuiteSelector: React.FC = () => {
           <p className="text-xs font-sans font-medium tracking-wider text-neutral-400 uppercase flex items-center gap-2">
             <span className="text-white font-bold">[ 01 ]</span>
             <span>Mod Managers</span>
-            <SectionAnchor id="nmm-tools" label="nmm-tools" />
+            <SectionAnchor id="nmm-suite" label="nmm-suite" />
           </p>
           <BlurRevealTitle
             as="h2"
