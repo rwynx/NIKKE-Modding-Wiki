@@ -30,7 +30,7 @@ export const CharacterLookupPage: React.FC = () => {
         <div className="max-w-3xl space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-nikke-gold/10 border border-nikke-gold/30 text-nikke-gold text-xs font-mono">
             <Hash className="w-3.5 h-3.5" />
-            <span>AGENT DATABASE // LIVE ASSET CODES</span>
+            <span>CHARACTER DATABASE // LIVE ASSET CODES</span>
           </div>
 
           <h1 className="font-display font-black text-3xl sm:text-5xl text-white tracking-tight">
@@ -38,7 +38,7 @@ export const CharacterLookupPage: React.FC = () => {
           </h1>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            All {totalCount || 206} Goddess of Victory: NIKKE agents and their internal bundle identifiers (e.g., <code className="text-nikke-cyan font-mono bg-slate-900 px-1.5 py-0.5 rounded">c010</code> Dorothy, <code className="text-nikke-cyan font-mono bg-slate-900 px-1.5 py-0.5 rounded">c220</code> Modernia, <code className="text-nikke-cyan font-mono bg-slate-900 px-1.5 py-0.5 rounded">c511</code> Cinderella). Use these codes to target character models for asset extraction, spine modifications, and model swappers.
+            All {totalCount || 206} Goddess of Victory: NIKKE characters and their internal bundle identifiers (e.g., <code className="text-nikke-cyan font-mono bg-slate-900 px-1.5 py-0.5 rounded">c010</code> Dorothy, <code className="text-nikke-cyan font-mono bg-slate-900 px-1.5 py-0.5 rounded">c220</code> Modernia, <code className="text-nikke-cyan font-mono bg-slate-900 px-1.5 py-0.5 rounded">c511</code> Cinderella). Use these codes to target character models for asset extraction, spine modifications, and model swappers.
           </p>
         </div>
       </section>
@@ -84,7 +84,7 @@ export const CharacterLookupPage: React.FC = () => {
         </div>
       ) : filteredList.length === 0 ? (
         <div className="cyber-panel p-16 text-center text-slate-400 rounded-2xl">
-          <p>No agents found matching "{search}".</p>
+          <p>No characters found matching "{search}".</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">

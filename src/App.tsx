@@ -20,7 +20,7 @@ import { ShieldCheck, ShieldAlert, Mail } from 'lucide-react';
 export const App: React.FC = () => {
   const [view, setView] = useState<'home' | 'workbench' | 'notice' | 'privacy'>('home');
   const [workbenchVideoId, setWorkbenchVideoId] = useState<string | undefined>(undefined);
-  const [activeSection, setActiveSection] = useState<string>('overview');
+  const [activeSection, setActiveSection] = useState<string>('home');
   const [characterModalOpen, setCharacterModalOpen] = useState(false);
   const [activeVideo, setActiveVideo] = useState<{
     embedUrl: string;
@@ -33,18 +33,18 @@ export const App: React.FC = () => {
       const sectionIds = [
         'credits', 
         'diagnostics', 
-        'agents', 
+        'characters', 
         'legacy-guides', 
         'mod-making', 
         'installing-mods', 
         'nmm-suite', 
-        'overview'
+        'home'
       ];
       const triggerThreshold = window.innerHeight * 0.45;
 
       for (const id of sectionIds) {
-        if (id === 'overview') {
-          setActiveSection('overview');
+        if (id === 'home') {
+          setActiveSection('home');
           return;
         }
         const el = document.getElementById(id);
@@ -109,10 +109,19 @@ export const App: React.FC = () => {
         'legacy': 'legacy-guides',
         'legacy-guides': 'legacy-guides',
         'masterclasses': 'legacy-guides',
-        'nikke-db': 'agents',
-        'agents': 'agents',
-        'characters': 'agents',
-        'codes': 'agents',
+        'characters': 'characters',
+        'character': 'characters',
+        'nikke-db': 'characters',
+        'nikkedb': 'characters',
+        'nikkes': 'characters',
+        'nikke-id': 'characters',
+        'nikke-ids': 'characters',
+        'codes': 'characters',
+        'code': 'characters',
+        'agents': 'characters',
+        'agent': 'characters',
+        'lookup': 'characters',
+        'character-lookup': 'characters',
         'troubleshooting': 'diagnostics',
         'faq': 'diagnostics',
         'diagnostics': 'diagnostics',
@@ -121,8 +130,11 @@ export const App: React.FC = () => {
         'contributors': 'credits',
         'engine': 'engine',
         'feature-matrix': 'engine',
-        'overview': 'overview',
-        'home': 'overview',
+        'home': 'home',
+        'homepage': 'home',
+        'overview': 'home',
+        'hero': 'home',
+        'main': 'home',
         'tools': 'recommended-tools',
         'recommended-tools': 'recommended-tools',
         'required-tools': 'recommended-tools',
@@ -138,7 +150,7 @@ export const App: React.FC = () => {
 
       setView('home');
       setTimeout(() => {
-        if (targetId === 'overview') {
+        if (targetId === 'home' || targetId === 'overview') {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
           const el = document.getElementById(targetId);
@@ -160,7 +172,7 @@ export const App: React.FC = () => {
       setView('home');
       // wait for DOM to mount home sections
       setTimeout(() => {
-        if (sectionId === 'overview') {
+        if (sectionId === 'home' || sectionId === 'overview') {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
           const el = document.getElementById(sectionId);
@@ -168,7 +180,7 @@ export const App: React.FC = () => {
         }
       }, 60);
     } else {
-      if (sectionId === 'overview') {
+      if (sectionId === 'home' || sectionId === 'overview') {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         const el = document.getElementById(sectionId);
@@ -213,7 +225,7 @@ export const App: React.FC = () => {
               ? 'radial-gradient(ellipse 70% 50% at 70% 50%, rgba(160,225,255,0.065) 0%, transparent 70%)'
               : activeSection === 'legacy-guides' || activeSection === 'workshop'
               ? 'radial-gradient(ellipse 75% 55% at 40% 55%, rgba(255,180,50,0.05) 0%, rgba(160,225,255,0.03) 50%, transparent 75%)'
-              : activeSection === 'agents'
+              : activeSection === 'characters'
               ? 'radial-gradient(ellipse 70% 50% at 30% 60%, rgba(139,92,246,0.065) 0%, transparent 70%)'
               : activeSection === 'diagnostics'
               ? 'radial-gradient(ellipse 70% 50% at 70% 70%, rgba(255,0,128,0.07) 0%, transparent 70%)'
@@ -304,7 +316,7 @@ export const App: React.FC = () => {
             <div className="flex flex-col items-start gap-2.5 text-xs font-sans">
               {/* upper nav links: ending at Credits */}
               <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs text-neutral-400">
-                <button onClick={() => handleNavigateSection('overview')} className="hover:text-white transition-colors cursor-pointer">
+                <button onClick={() => handleNavigateSection('home')} className="hover:text-white transition-colors cursor-pointer">
                   Homepage
                 </button>
                 <button onClick={() => handleNavigateSection('nmm-suite')} className="hover:text-white transition-colors cursor-pointer">
@@ -322,7 +334,7 @@ export const App: React.FC = () => {
                 <button onClick={() => openWorkbench()} className="text-[rgb(160,225,255)] hover:underline cursor-pointer">
                   Video Lab
                 </button>
-                <button onClick={() => handleNavigateSection('agents')} className="hover:text-white transition-colors cursor-pointer">
+                <button onClick={() => handleNavigateSection('characters')} className="hover:text-white transition-colors cursor-pointer">
                   Nikke DB
                 </button>
                 <button onClick={() => handleNavigateSection('diagnostics')} className="hover:text-white transition-colors cursor-pointer">

@@ -130,7 +130,7 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onExploreWorkshop 
 
   return (
     <section
-      id="overview"
+      id="home"
       ref={containerRef}
       className="relative w-full min-h-[90vh] flex items-end justify-start overflow-hidden bg-[#090a0f] pt-24 sm:pt-32 pb-16 sm:pb-20"
     >

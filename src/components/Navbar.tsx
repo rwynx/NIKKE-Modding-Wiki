@@ -26,12 +26,12 @@ export const Navbar: React.FC<NavbarProps> = ({
   }, []);
 
   const navLinks = [
-    { label: 'Homepage', target: 'overview' },
+    { label: 'Homepage', target: 'home' },
     { label: 'NMM Tools', target: 'nmm-suite' },
     { label: 'Install Mods', target: 'installing-mods' },
     { label: 'Make Mods', target: 'mod-making' },
     { label: 'Legacy Archive', target: 'legacy-guides' },
-    { label: 'Nikke DB', target: 'agents' },
+    { label: 'Nikke DB', target: 'characters' },
     { label: 'Troubleshooting', target: 'diagnostics' },
     { label: 'Credits', target: 'credits' },
   ];
@@ -55,7 +55,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="flex items-center gap-3 sm:gap-4 flex-1 min-w-0">
           
           <button 
-            onClick={() => handleLinkClick('overview')} 
+            onClick={() => handleLinkClick('home')} 
             className="flex items-center gap-2.5 sm:gap-3 group cursor-pointer text-left shrink-0"
             title="Nikke Modding Wiki Home"
           >

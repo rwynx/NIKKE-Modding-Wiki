@@ -11,18 +11,18 @@ interface SectionNavRailProps {
 }
 
 const sections: SectionItem[] = [
-  { id: 'overview', number: 1, label: 'Homepage' },
+  { id: 'home', number: 1, label: 'Homepage' },
   { id: 'nmm-suite', number: 2, label: 'NMM Tools' },
   { id: 'installing-mods', number: 3, label: 'Install Mods' },
   { id: 'mod-making', number: 4, label: 'Make Mods' },
   { id: 'legacy-guides', number: 5, label: 'Legacy Archive' },
-  { id: 'agents', number: 6, label: 'Nikke DB' },
+  { id: 'characters', number: 6, label: 'Nikke DB' },
   { id: 'diagnostics', number: 7, label: 'Troubleshooting' },
   { id: 'credits', number: 8, label: 'Credits' },
 ];
 
 export const SectionNavRail: React.FC<SectionNavRailProps> = ({ onNavigateSection }) => {
-  const [activeId, setActiveId] = useState<string>('overview');
+  const [activeId, setActiveId] = useState<string>('home');
   const [visible, setVisible] = useState<boolean>(false);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
@@ -54,7 +54,7 @@ export const SectionNavRail: React.FC<SectionNavRailProps> = ({ onNavigateSectio
         }
       }
 
-      setActiveId('overview');
+      setActiveId('home');
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
