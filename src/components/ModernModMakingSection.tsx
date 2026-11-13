@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { SectionAnchor } from './SectionAnchor';
 import { BlurRevealTitle } from './BlurRevealTitle';
+import { NikkeIcon } from './NikkeIcon';
 import { 
   FolderDown, 
   Layers, 
   Binary, 
   ExternalLink, 
-  Sparkles, 
   AlertCircle, 
   Palette, 
   CheckCircle2,
@@ -330,7 +330,7 @@ export const ModernModMakingSection: React.FC<ModernModMakingSectionProps> = ({ 
                 : 'text-neutral-400 hover:text-white hover:bg-white/[0.04]'
             }`}
           >
-            <Sparkles className="w-3.5 h-3.5" />
+            <NikkeIcon className="w-3.5 h-3.5 text-current" />
             <span>With NMA</span>
             <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-black/20 font-bold uppercase">Fast</span>
           </button>
@@ -504,7 +504,7 @@ export const ModernModMakingSection: React.FC<ModernModMakingSectionProps> = ({ 
       <div className="relative rounded-2xl p-6 sm:p-8 bg-gradient-to-r from-[#171b29] via-[#12141f] to-[#0f1118] border border-[rgb(160,225,255)]/[0.25] shadow-xl overflow-hidden flex flex-col md:flex-row items-start md:items-center justify-between gap-6 group">
         <div className="space-y-2 max-w-2xl">
           <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-[rgb(160,225,255)]/[0.1] text-[rgb(160,225,255)] text-[11px] font-mono font-bold">
-            <Sparkles className="w-3.5 h-3.5" />
+            <NikkeIcon className="w-3.5 h-3.5 text-[rgb(160,225,255)]" />
             <span>FEATURED • SPINE VIDEO GUIDE</span>
           </div>
           <h3 className="font-sans font-extrabold text-2xl text-white tracking-tight">

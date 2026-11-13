@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { CharacterItem } from '../types';
-import { Search, Copy, Check, X, User, Sparkles } from 'lucide-react';
+import { Search, Copy, Check, X, User } from 'lucide-react';
+import { NikkeIcon } from './NikkeIcon';
 import { useCharacters } from '../hooks/useCharacters';
 
 interface CharacterLookupModalProps {
@@ -191,7 +192,7 @@ export const CharacterLookupModal: React.FC<CharacterLookupModalProps> = ({ isOp
         <div className="p-3 sm:px-4 bg-[#07090e] border-t border-white/[0.06] flex items-center justify-between text-[11px] text-neutral-400 font-mono">
           <span>Found {filteredList.length} ID(s)</span>
           <span className="flex items-center gap-1.5 text-neutral-400">
-            <Sparkles className="w-3 h-3 text-[rgb(160,225,255)]" />
+            <NikkeIcon className="w-3 h-3 text-[rgb(160,225,255)]" />
             <span>{isLiveSync ? 'via NKAS' : 'Bundled Registry'}</span>
           </span>
         </div>

@@ -15,7 +15,6 @@ import {
   Filter,
   Wrench,
   Code2,
-  Sparkles,
   Zap,
   FolderArchive
 } from 'lucide-react';

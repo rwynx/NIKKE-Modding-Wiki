@@ -1,7 +1,8 @@
 import React from 'react';
 import { suggestionsSections } from '../data/suggestionsData';
 import { GuideSectionCard } from '../components/GuideSectionCard';
-import { Sparkles, Layers, Image as ImageIcon } from 'lucide-react';
+import { Layers, Image as ImageIcon } from 'lucide-react';
+import { NikkeIcon } from '../components/NikkeIcon';
 
 interface SuggestionsPageProps {
   onOpenVideo: (video: { embedUrl: string; title: string }) => void;
@@ -14,7 +15,7 @@ export const SuggestionsPage: React.FC<SuggestionsPageProps> = ({ onOpenVideo })
       <section className="relative rounded-3xl p-8 sm:p-10 border border-nikke-border overflow-hidden bg-gradient-to-r from-[#17132a] via-[#110f20] to-[#0a0914]">
         <div className="max-w-3xl space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-nikke-accent/10 border border-nikke-accent/30 text-nikke-accent text-xs font-mono">
-            <Sparkles className="w-3.5 h-3.5" />
+            <NikkeIcon className="w-3.5 h-3.5" />
             <span>TEXTURE QUALITY & PROFESSIONAL STANDARDS</span>
           </div>
 

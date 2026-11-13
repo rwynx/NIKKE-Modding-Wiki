@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { ShieldAlert, Bell, Sparkles, Info, ExternalLink, X } from 'lucide-react';
+import { ShieldAlert, Bell, Info, ExternalLink, X } from 'lucide-react';
+import { NikkeIcon } from './NikkeIcon';
 
 export const SecurityAlertBanner: React.FC = () => {
   const [dismissed, setDismissed] = useState(false);
@@ -107,7 +108,7 @@ export const SecurityAlertBanner: React.FC = () => {
           
           <div className="flex items-start sm:items-center gap-3.5 sm:gap-4 min-w-0">
             <div className="relative p-2.5 sm:p-3 rounded-2xl bg-[#D0FF00]/15 border border-[#D0FF00]/40 text-[#D0FF00] shrink-0 mt-0.5 sm:mt-0 shadow-[0_0_20px_rgba(208,255,0,0.25)]">
-              <Sparkles className="w-6 h-6 sm:w-7 sm:h-7 text-[#D0FF00]" />
+              <NikkeIcon className="w-6 h-6 sm:w-7 sm:h-7 text-[#D0FF00]" />
               <span className="absolute -top-1 -right-1 flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D0FF00] opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-[#D0FF00]"></span>
@@ -179,7 +180,7 @@ export const SecurityAlertBanner: React.FC = () => {
           
           <div className="flex items-start sm:items-center gap-3.5 sm:gap-4 min-w-0">
             <div className="relative p-2.5 sm:p-3 rounded-2xl bg-emerald-500/15 border border-emerald-500/40 text-emerald-400 shrink-0 mt-0.5 sm:mt-0 shadow-[0_0_20px_rgba(16,185,129,0.3)]">
-              <Sparkles className="w-6 h-6 sm:w-7 sm:h-7 text-emerald-400 animate-pulse" />
+              <NikkeIcon className="w-6 h-6 sm:w-7 sm:h-7 text-emerald-400 animate-pulse" />
               <span className="absolute -top-1 -right-1 flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>

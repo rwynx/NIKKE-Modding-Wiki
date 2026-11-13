@@ -1,7 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import { creationSections } from '../data/creationData';
 import { GuideSectionCard } from '../components/GuideSectionCard';
-import { Wrench, Search, Filter, Sparkles, BookOpen } from 'lucide-react';
+import { Wrench, Search, Filter, BookOpen } from 'lucide-react';
+import { NikkeIcon } from '../components/NikkeIcon';
 
 interface CreationPageProps {
   onOpenVideo: (video: { embedUrl: string; title: string }) => void;
@@ -58,7 +59,7 @@ export const CreationPage: React.FC<CreationPageProps> = ({
               onClick={onOpenCharacterModal}
               className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-nikke-cyan font-mono text-xs border border-nikke-border hover:border-nikke-cyan transition-colors flex items-center gap-2 cursor-pointer"
             >
-              <Sparkles className="w-4 h-4 text-nikke-cyan" />
+              <NikkeIcon className="w-4 h-4 text-nikke-cyan" />
               <span>Browse All NIKKE Character Codes</span>
             </button>
           </div>

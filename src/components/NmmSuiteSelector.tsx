@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { NmmTool } from '../types';
-import { Download, Check, Sparkles, AlertCircle, DollarSign, Smartphone } from 'lucide-react';
+import { Download, Check, AlertCircle, DollarSign, Smartphone } from 'lucide-react';
 import { SectionAnchor } from './SectionAnchor';
 import { BlurRevealTitle } from './BlurRevealTitle';
+import { NikkeIcon } from './NikkeIcon';
 
 export const NmmSuiteSelector: React.FC = () => {
   const [tools, setTools] = useState<NmmTool[]>([]);
@@ -109,7 +110,7 @@ export const NmmSuiteSelector: React.FC = () => {
                   : 'text-neutral-400 hover:text-white'
               }`}
             >
-              <Sparkles className="w-3 h-3 text-neutral-400" />
+              <NikkeIcon className="w-3 h-3 text-current" />
               <span>Unique Only</span>
             </button>
           </div>

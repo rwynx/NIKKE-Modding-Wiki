@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NmmTool } from '../types';
-import { Download, Check, Sparkles, AlertTriangle, ShieldCheck, HardDrive } from 'lucide-react';
+import { Download, Check, AlertTriangle, ShieldCheck, HardDrive } from 'lucide-react';
+import { NikkeIcon } from './NikkeIcon';
 
 export const NmmComparisonMatrix: React.FC = () => {
   const [tools, setTools] = useState<NmmTool[]>([]);
@@ -81,7 +82,7 @@ export const NmmComparisonMatrix: React.FC = () => {
                 : 'text-slate-400 hover:text-white'
             }`}
           >
-            <Sparkles className="w-3.5 h-3.5" />
+            <NikkeIcon className="w-3.5 h-3.5 text-current" />
             Unique Features Only
           </button>
         </div>

@@ -8,7 +8,6 @@ import {
   ExternalLink, 
   Film, 
   CheckCircle2, 
-  Sparkles, 
   Code2, 
   Wrench, 
   FolderArchive, 
@@ -21,6 +20,7 @@ import {
   AlertCircle
 } from 'lucide-react';
 import { SectionAnchor } from './SectionAnchor';
+import { NikkeIcon } from './NikkeIcon';
 
 export interface TutorialVideo {
   id: string;
@@ -256,7 +256,7 @@ export const TutorialWorkbench: React.FC<TutorialWorkbenchProps> = ({ initialVid
               : 'text-neutral-400 hover:text-white hover:bg-white/[0.04]'
           }`}
         >
-          <Sparkles className="w-3.5 h-3.5" />
+          <NikkeIcon className="w-3.5 h-3.5 text-current" />
           <span>NMA Guide (by Nix)</span>
         </button>
 
