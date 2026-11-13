@@ -51,6 +51,7 @@ export const JukeboxPlayer: React.FC = () => {
 
   const playerRef = useRef<any>(null);
   const timeUpdateInterval = useRef<number | null>(null);
+  const wasPlayingBeforeHidden = useRef(false);
 
   const updateTrackData = (target: any) => {
     try {
@@ -217,6 +218,28 @@ export const JukeboxPlayer: React.FC = () => {
       }
     };
   }, [isPlaying, duration]);
+
+  // tab visibility
+  useEffect(() => {
+    const handleVisibility = () => {
+      if (!playerRef.current || typeof playerRef.current.pauseVideo !== 'function') return;
+
+      if (document.hidden) {
+        if (isPlaying) {
+          wasPlayingBeforeHidden.current = true;
+          playerRef.current.pauseVideo();
+        }
+      } else {
+        if (wasPlayingBeforeHidden.current) {
+          wasPlayingBeforeHidden.current = false;
+          playerRef.current.playVideo();
+        }
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibility);
+    return () => document.removeEventListener('visibilitychange', handleVisibility);
+  }, [isPlaying]);
 
   const togglePlay = () => {
     if (!playerRef.current || !isReady) return;

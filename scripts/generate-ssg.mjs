@@ -24,7 +24,7 @@ const routes = [
   {
     slug: '',
     title: 'NIKKE Modding Wiki • Community Guides, Tools & Database',
-    description: 'The primary community hub for Goddess of Victory: NIKKE modding. Modern PC managers (Chizuru NMM, Danieru, na0h), Android SkinnyMan ModDock, installation guides, and error fixes.',
+    description: 'The primary community hub for Goddess of Victory: NIKKE modding. Modern PC managers (Chizuru NMM, Danieru NMM, Na0h NMM), Android SkinnyMan ModDock, installation guides, and error fixes.',
     canonical: `${BASE_URL}/`,
     priority: '1.0',
     changefreq: 'daily',
