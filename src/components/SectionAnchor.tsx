@@ -29,7 +29,7 @@ export const SectionAnchor: React.FC<SectionAnchorProps> = ({ id, label, classNa
           ? 'bg-[rgb(95,227,103)]/20 text-[rgb(95,227,103)] border border-[rgb(95,227,103)]/40 shadow-sm'
           : 'bg-white/[0.04] hover:bg-white/[0.08] text-neutral-400 hover:text-white border border-white/[0.08]'
       } ${className}`}
-      title={`Click to copy direct permalink: #${id}`}
+      title={`Click to copy direct link: /${id}/`}
     >
       {copied ? (
         <>
@@ -39,7 +39,7 @@ export const SectionAnchor: React.FC<SectionAnchorProps> = ({ id, label, classNa
       ) : (
         <>
           <Link2 className="w-3 h-3 text-neutral-500 group-hover:text-white shrink-0 transition-colors" />
-          <span className="text-neutral-400 group-hover:text-neutral-200">#{label || id}</span>
+          <span className="text-neutral-400 group-hover:text-neutral-200">{label || id}</span>
         </>
       )}
     </button>

@@ -30,7 +30,7 @@ export const JukeboxPlayer: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [volume, setVolume] = useState(20);
+  const [volume, setVolume] = useState(10);
   const [isMuted, setIsMuted] = useState(false);
   const [isLoop, setIsLoop] = useState(true);
   const [isShuffle, setIsShuffle] = useState(false);
@@ -145,7 +145,7 @@ export const JukeboxPlayer: React.FC = () => {
             onReady: (event: any) => {
               setIsReady(true);
               try {
-                event.target.setVolume(20);
+                event.target.setVolume(10);
                 event.target.setLoop(isLoop);
                 updateTrackData(event.target);
                 // autoplay
@@ -172,7 +172,7 @@ export const JukeboxPlayer: React.FC = () => {
         // gesture fallback
         const tryPlayOnGesture = () => {
           if (playerRef.current && typeof playerRef.current.playVideo === 'function') {
-            playerRef.current.setVolume(20);
+            playerRef.current.setVolume(10);
             playerRef.current.playVideo();
           }
         };

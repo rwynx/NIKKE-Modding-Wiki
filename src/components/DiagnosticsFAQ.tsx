@@ -280,7 +280,7 @@ export const DiagnosticsFAQ: React.FC = () => {
         <p className="text-xs font-sans font-medium tracking-wider text-neutral-400 uppercase flex items-center gap-2">
           <span className="text-white font-bold">[ 06 ]</span>
           <span>Troubleshooting & FAQ</span>
-          <SectionAnchor id="diagnostics" label="troubleshooting" />
+          <SectionAnchor id="diagnostics" label="diagnostics" />
         </p>
 
         <BlurRevealTitle
