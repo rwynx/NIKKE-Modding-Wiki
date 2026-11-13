@@ -9,7 +9,7 @@ export interface UseCharactersResult {
   totalCount: number;
 }
 
-const NKAS_ENDPOINT = 'https://nkas.pages.dev/nk_data/nikkegg/characters.json';
+const NKAS_ENDPOINT = 'https://nkas-l2d.pages.dev/characters.json';
 const LOCAL_FALLBACK_ENDPOINT = '/api/characters.json';
 
 // In-memory cache so re-renders or page navigations stay instant
@@ -49,15 +49,26 @@ export function useCharacters(): UseCharactersResult {
         const liveRes = await fetch(NKAS_ENDPOINT, { cache: 'no-cache' });
         if (liveRes.ok) {
           const liveData = await liveRes.json();
-          if (Array.isArray(liveData)) {
+          if (liveData && typeof liveData === 'object') {
             const merged: Record<string, string> = { ...(cachedCharacters || {}) };
 
-            for (const item of liveData) {
-              if (!item || !item.img || !item.name) continue;
-              const match = item.img.match(/(c\d+)/i);
-              if (match) {
-                const code = match[1].toLowerCase();
-                merged[code] = item.name.trim();
+            if (Array.isArray(liveData)) {
+              for (const item of liveData) {
+                if (!item) continue;
+                if (item.id && item.name) {
+                  merged[item.id.toLowerCase()] = item.name.trim();
+                } else if (item.img && item.name) {
+                  const match = item.img.match(/(c\d+(_\d+)?)/i);
+                  if (match) {
+                    merged[match[1].toLowerCase()] = item.name.trim();
+                  }
+                }
+              }
+            } else {
+              for (const [code, name] of Object.entries(liveData)) {
+                if (typeof name === 'string' && name.trim()) {
+                  merged[code.toLowerCase()] = name.trim();
+                }
               }
             }
 
@@ -94,7 +105,7 @@ export function useCharacters(): UseCharactersResult {
     characterList,
     loading,
     isLiveSync,
-    totalCount: characterList.length || 206,
+    totalCount: characterList.length || 571,
   };
 }
 

@@ -31,7 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { label: 'Install Mods', target: 'installing-mods' },
     { label: 'Make Mods', target: 'mod-making' },
     { label: 'Legacy Archive', target: 'legacy-guides' },
-    { label: 'Nikke DB', target: 'characters' },
+    { label: 'Nikke IDs', target: 'characters' },
     { label: 'Troubleshooting', target: 'diagnostics' },
     { label: 'Credits', target: 'credits' },
   ];

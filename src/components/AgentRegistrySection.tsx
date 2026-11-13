@@ -34,7 +34,7 @@ export const AgentRegistrySection: React.FC = () => {
           <div className="flex items-center gap-3">
             <p className="text-xs font-mono font-medium tracking-wider text-neutral-400 uppercase flex items-center gap-2">
               <span className="text-white font-bold">[ 05 ]</span>
-              <span>Registry · {totalCount || 206} Nikkes</span>
+              <span>Registry · {totalCount || 570} Nikkes &amp; Skins</span>
               <SectionAnchor id="characters" label="characters" />
             </p>
             {isLiveSync && (
@@ -49,13 +49,13 @@ export const AgentRegistrySection: React.FC = () => {
             as="h2"
             className="font-sans font-bold text-3xl sm:text-5xl text-white tracking-tight leading-[1.1]"
           >
-            Character ID codes. <br />
+            Nikke &amp; Skin ID codes. <br />
             <span className="text-neutral-400">Quick model lookup.</span>
           </BlurRevealTitle>
 
           <p className="text-neutral-400 text-sm sm:text-base leading-relaxed font-sans">
-            Every character has an internal identifier (like <code className="text-white bg-white/[0.08] px-1.5 py-0.5 rounded text-xs">c233</code> for Dorothy or <code className="text-white bg-white/[0.08] px-1.5 py-0.5 rounded text-xs">c500</code> for Elegg).
-            <br></br>Look up and copy any code for model swapping and Spine asset modding.
+            Every character and costume variant has an internal identifier (like <code className="text-white bg-white/[0.08] px-1.5 py-0.5 rounded text-xs">c010_00</code> for Rapi or <code className="text-white bg-white/[0.08] px-1.5 py-0.5 rounded text-xs">c010_01</code> for White Promise).
+            <br></br>Look up and copy any code for model swapping, costume mods, and Spine asset modding.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ export const AgentRegistrySection: React.FC = () => {
           <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" />
           <input
             type="text"
-            placeholder="Search by Nikke name or ID..."
+            placeholder="Search by Nikke name, skin or ID (e.g. Rapi, c010, Red Hood)..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="w-full pl-10 pr-4 py-2.5 bg-[#12141c] border border-white/[0.08] rounded-xl text-xs sm:text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-white/[0.2] font-sans"
@@ -79,7 +79,7 @@ export const AgentRegistrySection: React.FC = () => {
         </div>
       ) : filteredList.length === 0 ? (
         <div className="epic-card p-12 text-center text-neutral-400 text-sm">
-          No Nikke found matching "{query}".
+          No Nikke or skin found matching "{query}".
         </div>
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -128,7 +128,7 @@ export const AgentRegistrySection: React.FC = () => {
       {/* status bar */}
       <div className="flex items-center justify-between text-xs font-mono text-neutral-400 pt-2 border-t border-white/[0.04]">
         <span>
-          Showing {filteredList.length} of {totalCount} Nikkes
+          Showing {filteredList.length} of {totalCount} characters &amp; skins
           {isLiveSync && ' · Synced with Skuqre NKAS'}
         </span>
         <span>Click any card to copy code to clipboard</span>

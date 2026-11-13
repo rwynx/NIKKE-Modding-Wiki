@@ -107,7 +107,7 @@ const routes = [
         <section class="space-y-4">
           <h2 class="text-2xl font-bold text-white">Character Database &amp; c-codes</h2>
           <p class="text-neutral-300">Registry of NIKKE character internal asset identifiers (c-codes like c010 Rapi, c070 Modernia, c100 Dorothy), costumes, and weapon categories.</p>
-          <a href="/characters/" class="inline-block text-blue-400 hover:underline font-semibold">Search Character Database &rarr;</a>
+          <a href="/characters/" class="inline-block text-blue-400 hover:underline font-semibold">Search Character &amp; Skin IDs &rarr;</a>
         </section>
 
         <section class="space-y-4">
@@ -472,8 +472,8 @@ const routes = [
   },
   {
     slug: 'characters',
-    title: 'NIKKE Character Database • Asset Codes (c-codes) & Outfits • NIKKE Modding Wiki',
-    description: 'Searchable NIKKE character database and registry. Look up internal character asset codes (c-codes), costume identifiers, weapon types, manufacturers, and Live2D asset names.',
+    title: 'NIKKE Character & Skin IDs • Asset Codes (c-codes) & Outfits • NIKKE Modding Wiki',
+    description: 'Searchable NIKKE character & skin IDs directory. Look up internal character asset codes (c-codes), costume identifiers, skins, and Live2D asset names.',
     canonical: `${BASE_URL}/characters/`,
     priority: '0.9',
     changefreq: 'weekly',
@@ -484,23 +484,23 @@ const routes = [
           "@type": "WebPage",
           "@id": `${BASE_URL}/characters/#webpage`,
           "url": `${BASE_URL}/characters/`,
-          "name": "NIKKE Character Database & c-codes Registry",
-          "description": "Internal asset code (c-code) directory for Goddess of Victory: NIKKE modding.",
+          "name": "NIKKE Character & Skin IDs Registry",
+          "description": "Internal asset code (c-code) directory for Goddess of Victory: NIKKE characters and skins.",
           "isPartOf": { "@id": `${BASE_URL}/#website` }
         },
         {
           "@type": "CollectionPage",
           "@id": `${BASE_URL}/characters/#database`,
-          "name": "NIKKE Character Directory",
-          "description": "Database of internal character IDs, c-codes, costumes, and weapons."
+          "name": "NIKKE Character & Skin Directory",
+          "description": "Directory of internal character IDs, c-codes, costumes, and skins."
         }
       ]
     },
     prerenderHtml: `
       <article class="ssg-content max-w-5xl mx-auto px-4 py-16 space-y-10">
         <header class="space-y-3">
-          <span class="text-xs font-mono uppercase tracking-widest text-cyan-400 font-semibold">[05] CHARACTER REGISTRY</span>
-          <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">NIKKE Character Database &amp; Asset Codes (c-codes)</h1>
+          <span class="text-xs font-mono uppercase tracking-widest text-cyan-400 font-semibold">[05] CHARACTER &amp; SKIN REGISTRY</span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">NIKKE Character &amp; Skin IDs (c-codes)</h1>
           <p class="text-neutral-300">Look up internal character IDs, costume variant codes, weapon classes, and manufacturers required for modding asset naming.</p>
         </header>
 
@@ -868,6 +868,8 @@ const aliases = [
   { from: 'make-mods', to: 'mod-making' },
   { from: 'workshop', to: 'legacy-guides' },
   { from: 'nikke-db', to: 'characters' },
+  { from: 'nikke-ids', to: 'characters' },
+  { from: 'nikke-id', to: 'characters' },
   { from: 'troubleshooting', to: 'diagnostics' },
   { from: 'contributors', to: 'credits' },
 ];

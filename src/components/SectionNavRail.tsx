@@ -16,7 +16,7 @@ const sections: SectionItem[] = [
   { id: 'installing-mods', number: 3, label: 'Install Mods' },
   { id: 'mod-making', number: 4, label: 'Make Mods' },
   { id: 'legacy-guides', number: 5, label: 'Legacy Archive' },
-  { id: 'characters', number: 6, label: 'Nikke DB' },
+  { id: 'characters', number: 6, label: 'Nikke IDs' },
   { id: 'diagnostics', number: 7, label: 'Troubleshooting' },
   { id: 'credits', number: 8, label: 'Credits' },
 ];

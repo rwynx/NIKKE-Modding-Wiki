@@ -68,10 +68,10 @@ export const CharacterLookupModal: React.FC<CharacterLookupModalProps> = ({ isOp
             <div>
               <div className="flex items-center gap-2">
                 <h3 className="font-sans font-bold text-white text-sm sm:text-base tracking-tight">
-                  Nikke Character ID Registry
+                  Nikke Character &amp; Skin IDs
                 </h3>
                 <span className="text-[11px] px-2 py-0.5 rounded-md font-mono bg-white/[0.06] text-neutral-300 border border-white/[0.08]">
-                  {totalCount || 206} Nikkes
+                  {totalCount || 570} IDs
                 </span>
                 {isLiveSync && (
                   <span className="text-[10px] px-2 py-0.5 rounded-md font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/25 flex items-center gap-1.5">
@@ -81,7 +81,7 @@ export const CharacterLookupModal: React.FC<CharacterLookupModalProps> = ({ isOp
                 )}
               </div>
               <p className="text-xs text-neutral-400 mt-0.5 font-sans">
-                Click any character card to copy its code.
+                Click any character or skin card to copy its code.
               </p>
             </div>
           </div>
@@ -103,7 +103,7 @@ export const CharacterLookupModal: React.FC<CharacterLookupModalProps> = ({ isOp
             <input
               type="text"
               autoFocus
-              placeholder="Search by name (Dorothy, Cinderella...) or code (c010, c220)..."
+              placeholder="Search by name (Dorothy, Red Hood, Summer...) or code (c010, c010_01)..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="w-full pl-10 pr-20 py-2.5 bg-white/[0.03] hover:bg-white/[0.05] focus:bg-white/[0.06] border border-white/[0.1] focus:border-[rgb(160,225,255)]/50 rounded-xl text-xs sm:text-sm text-white placeholder-neutral-500 focus:outline-none focus:ring-1 focus:ring-[rgb(160,225,255)]/30 font-sans transition-all"
@@ -133,7 +133,7 @@ export const CharacterLookupModal: React.FC<CharacterLookupModalProps> = ({ isOp
             </div>
           ) : filteredList.length === 0 ? (
             <div className="py-16 text-center text-neutral-400 text-xs sm:text-sm">
-              No character matched your query <span className="text-white font-mono">"{search}"</span>.
+              No character or skin matched your query <span className="text-white font-mono">"{search}"</span>.
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -189,7 +189,7 @@ export const CharacterLookupModal: React.FC<CharacterLookupModalProps> = ({ isOp
 
         {/* status footer */}
         <div className="p-3 sm:px-4 bg-[#07090e] border-t border-white/[0.06] flex items-center justify-between text-[11px] text-neutral-400 font-mono">
-          <span>Found {filteredList.length} Nikke(s)</span>
+          <span>Found {filteredList.length} ID(s)</span>
           <span className="flex items-center gap-1.5 text-neutral-400">
             <Sparkles className="w-3 h-3 text-[rgb(160,225,255)]" />
             <span>{isLiveSync ? 'via NKAS' : 'Bundled Registry'}</span>

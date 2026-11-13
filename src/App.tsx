@@ -69,7 +69,7 @@ export const App: React.FC = () => {
     'installing-mods': 'How to Install NIKKE Mods • Step-by-Step Tutorial • NIKKE Modding Wiki',
     'mod-making': 'NIKKE Mod Creation Guide • AssetStudio, UABEA & Spine • NIKKE Modding Wiki',
     'legacy-guides': 'NIKKE Legacy Archive & Video Masterclasses • NIKKE Modding Wiki',
-    characters: 'NIKKE Character Database • Asset Codes (c-codes) & Outfits • NIKKE Modding Wiki',
+    characters: 'NIKKE Character & Skin IDs • Asset Codes (c-codes) • NIKKE Modding Wiki',
     diagnostics: 'Fix NIKKE 43% Loading Screen & Pink Textures – Troubleshooting • NIKKE Modding Wiki',
     credits: 'Credits & Contributors • NIKKE Modding Wiki',
     workbench: 'Video Lab & Interactive Workbench • NIKKE Modding Wiki',
@@ -346,7 +346,7 @@ export const App: React.FC = () => {
               onOpenWorkbench={openWorkbench}
             />
 
-            {/* nikke db */}
+            {/* nikke ids */}
             <AgentRegistrySection />
 
             {/* diagnostics */}
@@ -400,7 +400,7 @@ export const App: React.FC = () => {
                   Video Lab
                 </button>
                 <button onClick={() => handleNavigateSection('characters')} className="hover:text-white transition-colors cursor-pointer">
-                  Nikke DB
+                  Nikke IDs
                 </button>
                 <button onClick={() => handleNavigateSection('diagnostics')} className="hover:text-white transition-colors cursor-pointer">
                   Troubleshooting
