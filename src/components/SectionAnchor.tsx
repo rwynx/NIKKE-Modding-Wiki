@@ -13,9 +13,9 @@ export const SectionAnchor: React.FC<SectionAnchorProps> = ({ id, label, classNa
   const handleCopy = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    const url = `${window.location.origin}${window.location.pathname}#${id}`;
+    const url = `${window.location.origin}/${id}/`;
     navigator.clipboard.writeText(url);
-    window.history.pushState(null, '', `#${id}`);
+    window.history.pushState(null, '', `/${id}/`);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };

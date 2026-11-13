@@ -11,6 +11,7 @@ import { ContributorsSection } from './components/ContributorsSection';
 import { VideoModal } from './components/VideoModal';
 import { CharacterLookupModal } from './components/CharacterLookupModal';
 import { DoroCompanion } from './components/DoroCompanion';
+import { JukeboxPlayer } from './components/JukeboxPlayer';
 import { TutorialWorkbench } from './components/TutorialWorkbench';
 import { SectionNavRail } from './components/SectionNavRail';
 import { LegalNoticePage } from './pages/LegalNoticePage';
@@ -62,53 +63,90 @@ export const App: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // hash routing
+  const routeTitles: Record<string, string> = {
+    home: 'NIKKE Modding Wiki • Community Guides & Tutorials',
+    'nmm-suite': 'NIKKE Mod Managers: Chizuru, Danieru, na0h & SkinnyMan ModDock • NIKKE Modding Wiki',
+    'installing-mods': 'How to Install NIKKE Mods • Step-by-Step Tutorial • NIKKE Modding Wiki',
+    'mod-making': 'NIKKE Mod Creation Guide • AssetStudio, UABEA & Spine • NIKKE Modding Wiki',
+    'legacy-guides': 'NIKKE Legacy Archive & Video Masterclasses • NIKKE Modding Wiki',
+    characters: 'NIKKE Character Database • Asset Codes (c-codes) & Outfits • NIKKE Modding Wiki',
+    diagnostics: 'Fix NIKKE 43% Loading Screen & Pink Textures – Troubleshooting • NIKKE Modding Wiki',
+    credits: 'Credits & Contributors • NIKKE Modding Wiki',
+    workbench: 'Video Lab & Interactive Workbench • NIKKE Modding Wiki',
+    notice: 'Legal Disclaimer • NIKKE Modding Wiki',
+    privacy: 'Privacy Policy • NIKKE Modding Wiki',
+  };
+
+  // location & section routing
   useEffect(() => {
-    const handleHashRouting = () => {
-      const raw = window.location.hash
+    const handleLocationRouting = () => {
+      const pathSlug = window.location.pathname
+        .replace(/^\/+|\/+$/g, '')
+        .split('?')[0]
+        .trim()
+        .toLowerCase();
+
+      const hashSlug = window.location.hash
         .replace(/^#+/, '')
         .split('?')[0]
         .replace(/^\/+|\/+$/g, '')
         .trim()
         .toLowerCase();
-      if (!raw) return;
 
-      if (raw === 'workbench' || raw === 'video-lab' || raw === 'seireiko') {
+      const slug = (pathSlug && pathSlug !== 'index.html') ? pathSlug : hashSlug;
+      if (!slug) {
+        if (view !== 'home') setView('home');
+        document.title = routeTitles.home;
+        return;
+      }
+
+      if (slug === 'workbench' || slug === 'video-lab' || slug === 'seireiko') {
         setView('workbench');
+        document.title = routeTitles.workbench;
         window.scrollTo({ top: 0, behavior: 'smooth' });
         return;
       }
 
-      if (raw === 'notice' || raw === 'disclaimer' || raw === 'legal' || raw === 'terms') {
+      if (slug === 'notice' || slug === 'disclaimer' || slug === 'legal' || slug === 'terms') {
         setView('notice');
+        document.title = routeTitles.notice;
         window.scrollTo({ top: 0, behavior: 'smooth' });
         return;
       }
 
-      if (raw === 'privacy' || raw === 'privacy-policy') {
+      if (slug === 'privacy' || slug === 'privacy-policy') {
         setView('privacy');
+        document.title = routeTitles.privacy;
         window.scrollTo({ top: 0, behavior: 'smooth' });
         return;
       }
 
       const aliasMap: Record<string, string> = {
+        'tools': 'nmm-suite',
         'nmm': 'nmm-suite',
         'nmm-tools': 'nmm-suite',
         'nmm-suite': 'nmm-suite',
         'mod-managers': 'nmm-suite',
+
         'install': 'installing-mods',
         'installing': 'installing-mods',
         'installing-mods': 'installing-mods',
         'installation': 'installing-mods',
+        'how-to-install': 'installing-mods',
+
+        'make-mods': 'mod-making',
+        'making-mods': 'mod-making',
         'mod-making': 'mod-making',
         'creation': 'mod-making',
-        'make-mods': 'mod-making',
+        'mod-creation': 'mod-making',
+
         'guides': 'legacy-guides',
         'guide': 'legacy-guides',
         'workshop': 'legacy-guides',
         'legacy': 'legacy-guides',
         'legacy-guides': 'legacy-guides',
         'masterclasses': 'legacy-guides',
+
         'characters': 'characters',
         'character': 'characters',
         'nikke-db': 'characters',
@@ -122,33 +160,34 @@ export const App: React.FC = () => {
         'agent': 'characters',
         'lookup': 'characters',
         'character-lookup': 'characters',
+
         'troubleshooting': 'diagnostics',
+        'troubleshoot': 'diagnostics',
         'faq': 'diagnostics',
         'diagnostics': 'diagnostics',
-        'troubleshoot': 'diagnostics',
+        'bugs': 'diagnostics',
+        'errors': 'diagnostics',
+        'fixes': 'diagnostics',
+
         'credits': 'credits',
         'contributors': 'credits',
-        'engine': 'engine',
-        'feature-matrix': 'engine',
+
         'home': 'home',
         'homepage': 'home',
         'overview': 'home',
         'hero': 'home',
         'main': 'home',
-        'tools': 'recommended-tools',
-        'recommended-tools': 'recommended-tools',
-        'required-tools': 'recommended-tools',
-        'mod-tools': 'recommended-tools',
       };
 
-      const targetId = aliasMap[raw] || raw;
+      const targetId = aliasMap[slug] || slug;
 
-      // clean trailing slashes without reloading allat
-      if (window.location.hash.includes('/')) {
-        window.history.replaceState(null, '', `#${targetId}`);
+      if (window.location.hash && window.location.hash.includes('/')) {
+        window.history.replaceState(null, '', `/${targetId}/`);
       }
 
       setView('home');
+      document.title = routeTitles[targetId] || routeTitles.home;
+
       setTimeout(() => {
         if (targetId === 'home' || targetId === 'overview') {
           window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -161,18 +200,25 @@ export const App: React.FC = () => {
       }, 100);
     };
 
-    handleHashRouting();
-    window.addEventListener('hashchange', handleHashRouting);
-    return () => window.removeEventListener('hashchange', handleHashRouting);
+    handleLocationRouting();
+    window.addEventListener('popstate', handleLocationRouting);
+    window.addEventListener('hashchange', handleLocationRouting);
+    return () => {
+      window.removeEventListener('popstate', handleLocationRouting);
+      window.removeEventListener('hashchange', handleLocationRouting);
+    };
   }, []);
 
   const handleNavigateSection = (sectionId: string) => {
-    window.history.pushState(null, '', `#${sectionId}`);
+    const isHome = sectionId === 'home' || sectionId === 'overview';
+    const targetPath = isHome ? '/' : `/${sectionId}/`;
+    window.history.pushState(null, '', targetPath);
+    document.title = routeTitles[sectionId] || routeTitles.home;
+
     if (view !== 'home') {
       setView('home');
-      // wait for DOM to mount home sections
       setTimeout(() => {
-        if (sectionId === 'home' || sectionId === 'overview') {
+        if (isHome) {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
           const el = document.getElementById(sectionId);
@@ -180,7 +226,7 @@ export const App: React.FC = () => {
         }
       }, 60);
     } else {
-      if (sectionId === 'home' || sectionId === 'overview') {
+      if (isHome) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         const el = document.getElementById(sectionId);
@@ -191,18 +237,22 @@ export const App: React.FC = () => {
 
   const openWorkbench = (videoId?: string) => {
     setWorkbenchVideoId(videoId);
+    window.history.pushState(null, '', '/workbench/');
+    document.title = routeTitles.workbench;
     setView('workbench');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const openNotice = () => {
-    window.history.pushState(null, '', '#notice');
+    window.history.pushState(null, '', '/notice/');
+    document.title = routeTitles.notice;
     setView('notice');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const openPrivacy = () => {
-    window.history.pushState(null, '', '#privacy');
+    window.history.pushState(null, '', '/privacy/');
+    document.title = routeTitles.privacy;
     setView('privacy');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -246,16 +296,31 @@ export const App: React.FC = () => {
         <main className="pt-20">
           <TutorialWorkbench 
             initialVideoId={workbenchVideoId}
-            onBack={() => { setView('home'); window.history.pushState(null, '', '#'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} 
+            onBack={() => { 
+              setView('home'); 
+              window.history.pushState(null, '', '/'); 
+              document.title = routeTitles.home;
+              window.scrollTo({ top: 0, behavior: 'smooth' }); 
+            }} 
           />
         </main>
       ) : view === 'notice' ? (
         <main className="pt-20">
-          <LegalNoticePage onBack={() => { setView('home'); window.history.pushState(null, '', '#'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} />
+          <LegalNoticePage onBack={() => { 
+            setView('home'); 
+            window.history.pushState(null, '', '/'); 
+            document.title = routeTitles.home;
+            window.scrollTo({ top: 0, behavior: 'smooth' }); 
+          }} />
         </main>
       ) : view === 'privacy' ? (
         <main className="pt-20">
-          <PrivacyPolicyPage onBack={() => { setView('home'); window.history.pushState(null, '', '#'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} />
+          <PrivacyPolicyPage onBack={() => { 
+            setView('home'); 
+            window.history.pushState(null, '', '/'); 
+            document.title = routeTitles.home;
+            window.scrollTo({ top: 0, behavior: 'smooth' }); 
+          }} />
         </main>
       ) : (
         <>
@@ -444,6 +509,7 @@ export const App: React.FC = () => {
         onClose={() => setCharacterModalOpen(false)}
       />
       <DoroCompanion />
+      <JukeboxPlayer />
 
     </div>
   );

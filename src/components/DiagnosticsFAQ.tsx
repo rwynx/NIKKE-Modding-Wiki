@@ -18,7 +18,7 @@ export const DiagnosticsFAQ: React.FC = () => {
             Ancient tools found on third-party sites (such as the legacy v0.21 manager on GameBanana) are completely obsolete, discontinued, and will crash or fail to inject assets with modern Unity addressables.
           </p>
           <p className="text-neutral-300">
-            For current gameplay, always use the active managers hosted here in the <a href="#nmm-suite" className="text-blue-400 hover:underline font-semibold">NMM Tools</a> section (Chizuru NMM, Skinnyman NMM, Danieru NMM, or na0h NMM). Chizuru NMM is recommended for most players.
+            For current gameplay, always use the active tools hosted here in the <a href="/nmm-suite/" className="text-blue-400 hover:underline font-semibold">NMM Tools</a> section (Chizuru NMM, Danieru NMM, na0h NMM for PC, or SkinnyMan ModDock for Android). Chizuru NMM is recommended for most PC players.
           </p>
         </div>
       )

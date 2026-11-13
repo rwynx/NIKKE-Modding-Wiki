@@ -290,8 +290,8 @@ export const DoroCompanion: React.FC = () => {
 
   return (
     <>
-      {/* bottom-left doro toggle button */}
-      <div className="fixed bottom-4 left-4 z-40 flex items-center gap-2.5 select-none pointer-events-auto">
+      {/* doro toggle */}
+      <div className="fixed bottom-12 sm:bottom-13 left-4 z-40 flex items-center gap-2.5 select-none pointer-events-auto">
         <button
           onClick={toggleDoro}
           className="relative cursor-pointer transition-transform duration-200 hover:scale-110 active:scale-90 focus:outline-none p-0.5"
