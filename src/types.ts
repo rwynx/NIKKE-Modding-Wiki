@@ -20,6 +20,19 @@ export interface CharacterItem {
   name: string;
 }
 
+export interface CharacterSkin {
+  id: string;
+  name: string;
+}
+
+export interface CharacterGroup {
+  id: string;
+  baseCode: string;
+  name: string;
+  isNpc?: boolean;
+  skins: CharacterSkin[];
+}
+
 export type PageId = 'installation' | 'creation' | 'characters' | 'suggestions' | 'credits';
 
 export interface GuideStep {

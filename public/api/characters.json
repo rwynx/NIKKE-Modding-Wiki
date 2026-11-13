@@ -1,573 +1,3350 @@
 {
-  "c010_00": "Rapi",
-  "c010_01": "Rapi - White Promise",
-  "c010_02": "Rapi - Classic Vacation",
-  "c011_00": "Neon",
-  "c011_01": "Neon - Bling Bullet",
-  "c012_00": "Anis",
-  "c013_00": "Marian",
-  "c014_00": "Neon: Blue Ocean",
-  "c015_00": "Anis: Sparkling Summer",
-  "c016_00": "Rapi: Red Hood",
-  "c016_01": "Rapi: Red Hood - Red Flavor",
-  "c016_02": "Rapi: Red Hood - Cherished Red",
-  "c016_03": "Rapi: Red Hood - Shining Light",
-  "c017_00": "Anis: Star",
-  "c017_01": "Anis: Star - Starlight",
-  "c017_02": "Anis: Star - T.T. STAR",
-  "c018_00": "Neon: Vision Eye",
-  "c018_01": "Neon: Vision Eye - Dear Grace",
-  "c019_00": "Marian: Queen",
-  "c019_01": "Marian: Queen - Last Affection",
-  "c020_00": "Delta",
-  "c022_00": "Signal",
-  "c022_01": "Signal - Dramatic Chocolate",
-  "c023_00": "Delta: Ninja Thief",
-  "c023_01": "Delta: Ninja Thief - Undercover Santa",
-  "c030_00": "Poli",
-  "c030_01": "Poli - Sweet Holic",
-  "c030_02": "Poli - Cheer Up Police",
-  "c032_00": "Miranda",
-  "c032_01": "Miranda - Thief of Justice",
-  "c033_00": "Quiry",
-  "c040_00": "D",
-  "c041_00": "K",
-  "c041_01": "K - Undercover",
-  "c043_00": "D: Killer Wife",
-  "c043_01": "D: Killer Wife - Secret Party Cleaner",
-  "c043_02": "D: Killer Wife - Secret Police",
-  "c060_00": "Belorta",
-  "c061_00": "Mica",
-  "c062_00": "Mica: Snow Buddy",
-  "c063_00": "Belorta: Pumpkin Witch",
-  "c070_00": "Brid",
-  "c070_01": "Brid - Model Worker",
-  "c070_02": "Brid - Black Moon",
-  "c071_00": "Soline",
-  "c072_00": "Diesel",
-  "c072_01": "Diesel - Strawberry Flower",
-  "c072_02": "Diesel - Black Sunday",
-  "c072_04": "Diesel - Midnight Strawberry",
-  "c073_00": "Brid: Silent Track",
-  "c074_00": "Soline: Frost Ticket",
-  "c075_00": "Diesel: Winter Sweets",
-  "c080_00": "Centi",
-  "c080_01": "Centi - Supreme Holiday",
-  "c080_02": "Centi - Ocean Repair",
-  "c082_00": "Liter",
-  "c082_01": "Liter - Guardfish",
-  "c082_02": "Liter - Cute Sunflower",
-  "c090_00": "Emma",
-  "c090_01": "Emma - Color me Red",
-  "c090_02": "Emma - Office Therapy",
-  "c091_00": "Vesti",
-  "c091_01": "Vesti - Ark Mage",
-  "c092_00": "Eunhwa",
-  "c093_00": "Emma: Tactical Upgrade",
-  "c093_01": "Emma: Tactical Upgrade - Secret Therapy",
-  "c094_00": "Vesti: Tactical Upgrade",
-  "c094_01": "Vesti: Tactical Upgrade - Pure Beginner",
-  "c095_00": "Eunhwa: Tactical Upgrade",
-  "c095_01": "Eunhwa: Tactical Upgrade - Day Off",
-  "c100_00": "Laplace",
-  "c101_00": "Drake",
-  "c101_01": "Drake - Villain Racer",
-  "c101_02": "Drake - Maid For Villain",
-  "c102_00": "Maxwell",
-  "c102_01": "Maxwell - Mechanic White",
-  "c103_00": "Laplace: Ultimate Hero",
-  "c103_01": "Laplace: Ultimate Hero - Prototype Hero",
-  "c104_00": "Drake: Great Villain",
-  "c105_00": "Maxwell: Ordinary Mechanic",
-  "c105_01": "Maxwell: Ordinary Mechanic - Chief Researcher",
-  "c110_00": "Crow",
-  "c111_00": "Jackal",
-  "c111_01": "Jackal - Class Troublemaker",
-  "c112_00": "Viper",
-  "c112_01": "Viper - Toxic Rabbit",
-  "c112_02": "Viper - Shine of Love",
-  "c112_03": "Viper - Punky Street",
-  "c113_00": "E.H.",
-  "c113_01": "E.H. - Junkyard Vanguard",
-  "c120_00": "N102",
-  "c121_00": "Anne: Miracle Fairy",
-  "c130_00": "Mary",
-  "c130_01": "Mary - Medical Rabbit",
-  "c131_00": "Pepper",
-  "c131_01": "Pepper - Ocean Vitamin",
-  "c132_00": "Mary: Bay Goddess",
-  "c140_00": "Sugar",
-  "c140_01": "Sugar - Hard-Boiled",
-  "c140_02": "Sugar - Wild Backyard",
-  "c140_03": "Sugar - Killer Rabbit",
-  "c141_00": "Milk",
-  "c141_01": "Milk - Extreme Fighter",
-  "c142_00": "Frima",
-  "c142_01": "Frima - Sea of Sloth",
-  "c143_00": "Milk: Blooming Bunny",
-  "c150_00": "Julia",
-  "c150_01": "Julia - Mild Nocturne",
-  "c150_02": "Julia - Summer Romance",
-  "c160_00": "Yuni",
-  "c160_01": "Yuni - Pretty in Pink",
-  "c161_00": "Mihara",
-  "c162_00": "Mihara: Bonding Chain",
-  "c162_01": "Mihara: Bonding Chain - Pain Eater",
-  "c170_00": "Privaty",
-  "c170_01": "Privaty - Government Grunt",
-  "c170_02": "Privaty - Banquet Princess",
-  "c170_03": "Privaty - Destined in Blue",
-  "c170_04": "Privaty - Sharp Lesson",
-  "c171_00": "Yulha",
-  "c172_00": "Admi",
-  "c180_00": "Guillotine",
-  "c180_01": "Guillotine - Dark Tracer",
-  "c181_00": "Maiden",
-  "c181_01": "Maiden - Covert Nurse",
-  "c181_02": "Maiden - Under The Sun",
-  "c182_00": "Guillotine: Winter Slayer",
-  "c183_00": "Maiden: Ice Rose",
-  "c190_00": "Ludmilla",
-  "c191_00": "Alice",
-  "c191_01": "Alice - Sweet Home",
-  "c191_02": "Alice - Märchen Dream",
-  "c192_00": "Tove",
-  "c192_01": "Tove - Baseball Fan",
-  "c192_02": "Tove - Sunblaze",
-  "c193_00": "Neve",
-  "c194_00": "Ludmilla: Winter Owner",
-  "c195_00": "Alice: Wonderland Bunny",
-  "c200_00": "Rupee",
-  "c200_01": "Rupee - Rabbit Deluxe",
-  "c201_00": "Yan",
-  "c201_01": "Yan - Sunrise Market",
-  "c202_00": "Dolla",
-  "c202_01": "Dolla - Dark Rose",
-  "c203_00": "Rupee: Winter Shopper",
-  "c210_00": "Exia",
-  "c210_01": "Exia - Joy to the Nerds",
-  "c210_02": "Exia - Gamer",
-  "c210_03": "Exia - Hacker Rabbit",
-  "c212_00": "Novel",
-  "c212_01": "Novel - Penguin Holmes",
-  "c212_02": "Novel - Detective Nurse",
-  "c220_00": "Snow White",
-  "c220_01": "Snow White - White Knight",
-  "c221_00": "Rapunzel",
-  "c222_00": "Scarlet",
-  "c222_01": "Scarlet - Racer's High",
-  "c223_00": "Nayuta",
-  "c223_01": "Nayuta - Wu Wei",
-  "c223_02": "Nayuta - Trivisa",
-  "c224_00": "Snow White: Innocent Days",
-  "c225_00": "Scarlet: Black Shadow",
-  "c225_01": "Scarlet: Black Shadow - Longing Flower",
-  "c226_00": "Rapunzel: Pure Grace",
-  "c227_00": "Pinocchio",
-  "c230_00": "Harran",
-  "c230_01": "Harran - Banquet Witch",
-  "c231_00": "Isabel",
-  "c231_01": "Isabel - Honeymoon Party",
-  "c232_00": "Noah",
-  "c233_00": "Dorothy",
-  "c233_01": "Dorothy - Nostalgia",
-  "c233_02": "Dorothy - Luna Light",
-  "c234_00": "Dorothy: Serendipity",
-  "c235_00": "Noah (Reborn)",
-  "c236_00": "Papillon (Reborn)",
-  "c240_00": "Rumani",
-  "c241_00": "Epinel",
-  "c242_00": "Folkwang",
-  "c242_01": "Folkwang - Moist Rabbit",
-  "c250_00": "Mass-Produced Red",
-  "c251_00": "Mass-Produced Blue",
-  "c252_00": "Mass-Produced Orange",
-  "c253_00": "Mass-Produced Green",
-  "c254_00": "Mass-Produced Purple",
-  "c255_00": "Mass-Produced White",
-  "c260_00": "Modernia",
-  "c260_01": "Modernia - First Affection",
-  "c260_02": "Modernia - Second Affection",
-  "c261_00": "Nihilister",
-  "c262_00": "Liberalio",
-  "c262_01": "Liberalio - Dreaming Lake",
-  "c263_00": "Indivilia",
-  "c270_00": "Blanc",
-  "c270_01": "Blanc - White Rabbit",
-  "c270_02": "Blanc - No. 77 Batter",
-  "c270_03": "Blanc - Fortune Express",
-  "c271_00": "Noir",
-  "c271_01": "Noir - Black Rabbit",
-  "c271_02": "Noir - Baseball Cheerleader",
-  "c272_00": "Rouge",
-  "c272_01": "Rouge - Unlucky Rabbit",
-  "c280_00": "Rosanna",
-  "c280_01": "Rosanna - Ms. Dangerous",
-  "c281_00": "Moran",
-  "c281_01": "Moran - Off-Duty Queen",
-  "c281_02": "Moran - King of Flowers",
-  "c282_00": "Sakura",
-  "c282_01": "Sakura - Midnight Stealth",
-  "c283_00": "Rosanna: Chic Ocean",
-  "c284_00": "Sakura: Bloom in Summer",
-  "c290_00": "Mana",
-  "c290_01": "Mana - Drunken Rabbit",
-  "c291_00": "Ether",
-  "c300_00": "Soldier EG",
-  "c301_00": "Soldier FA",
-  "c302_00": "Product 08",
-  "c303_00": "Product 12",
-  "c304_00": "iDoll Flower",
-  "c305_00": "iDoll Ocean",
-  "c306_00": "Soldier OW",
-  "c307_00": "Product 23",
-  "c308_00": "iDoll Sun",
-  "c310_00": "Ade",
-  "c310_01": "Ade - Maid in Spring",
-  "c311_00": "Cocoa",
-  "c312_00": "Soda",
-  "c313_00": "Privaty: Unkind Maid",
-  "c314_00": "Soda: Twinkling Bunny",
-  "c315_00": "Ade: Agent Bunny",
-  "c316_00": "Velvet",
-  "c316_01": "Velvet - Sensual Rabbit",
-  "c321_00": "Marciana",
-  "c321_01": "Marciana - School Days",
-  "c322_00": "Marciana: Marine Study",
-  "c330_00": "Crown",
-  "c330_01": "Crown - Naked King",
-  "c330_02": "Crown - Glorious King",
-  "c331_00": "Chime",
-  "c350_00": "Mast",
-  "c350_01": "Mast - A Pirate's Heart",
-  "c350_02": "Mast - Mast the Diver",
-  "c351_00": "Anchor",
-  "c351_01": "Anchor - Anchor the Diver",
-  "c352_00": "Helm",
-  "c352_01": "Helm - Chandelier",
-  "c352_02": "Helm - Post-Shower Moment",
-  "c353_00": "Helm: Aquamarine",
-  "c354_00": "Mast: Romantic Maid",
-  "c354_01": "Mast: Romantic Maid - Tea Service",
-  "c355_00": "Anchor: Innocent Maid",
-  "c361_00": "Kilo",
-  "c370_00": "Eternity",
-  "c371_00": "Endless",
-  "c380_00": "Nero",
-  "c381_00": "Biscuit",
-  "c381_01": "Biscuit - Spring Puppy",
-  "c382_00": "Leona",
-  "c382_01": "Leona - Zoo Keeper",
-  "c390_00": "Zwei",
-  "c390_01": "Zwei - First Festa",
-  "c390_02": "Zwei - Spring Stroll",
-  "c391_00": "Ein",
-  "c391_01": "Ein - Handmade Festa",
-  "c392_00": "Rei",
-  "c400_00": "Guilty",
-  "c400_01": "Guilty - Wave of Disbelief",
-  "c401_00": "Sin",
-  "c401_01": "Sin - Backstreet Dream",
-  "c402_00": "Quency",
-  "c403_00": "Quency: Escape Queen",
-  "c403_01": "Quency: Escape Queen - Masquerade Swan",
-  "c404_00": "Guilty: Mighty Bunny",
-  "c405_00": "Sin: Swift Bunny",
-  "c411_00": "Flora",
-  "c411_01": "Flora - Fairy Rabbit",
-  "c412_00": "Trina",
-  "c412_01": "Trina - Natural White",
-  "c430_00": "Noise",
-  "c430_01": "Noise - Cherry Blossom Stage",
-  "c430_02": "Noise - Classic Diva",
-  "c431_00": "Volume",
-  "c431_01": "Volume - Beat the Gun",
-  "c432_00": "Aria",
-  "c440_00": "Eyeri",
-  "c441_00": "Avistar",
-  "c450_00": "Naga",
-  "c450_01": "Naga - Elegant Date",
-  "c450_02": "Naga - Last Girlhood",
-  "c450_03": "Naga - Ring Ensemble",
-  "c451_00": "Tia",
-  "c451_01": "Tia - Lovely Date",
-  "c451_02": "Tia - Sweet Chef",
-  "c451_03": "Tia - Sea Lizzie",
-  "c470_00": "Red Hood",
-  "c470_01": "Red Hood - Nonsense Red",
-  "c470_02": "Red Hood - Retro Days",
-  "c471_00": "Snow White: Heavy Arms",
-  "c471_01": "Snow White: Heavy Arms - Lacrimosa",
-  "c472_00": "Scarlet: Goddeath",
-  "c473_00": "Rapunzel: Sanctuary",
-  "c474_00": "Dorothy (Corrupted)",
-  "c480_00": "Liveryn",
-  "c481_00": "Fragile",
-  "c482_00": "Logey",
-  "c490_00": "Hammering",
-  "c491_00": "Drilley",
-  "c500_00": "Elegg",
-  "c501_00": "Trony",
-  "c501_01": "Trony - Sweet Step",
-  "c502_00": "Elegg: Boom and Shock",
-  "c510_00": "Grave (NPC)",
-  "c511_00": "Cinderella",
-  "c511_01": "Cinderella - Glass Princess",
-  "c511_02": "Cinderella - Beautiful Me",
-  "c511_03": "Cinderella - Glass Curtsy",
-  "c513_00": "Little Mermaid",
-  "c513_01": "Little Mermaid - Abyss Flower",
-  "c513_02": "Little Mermaid - Beautiful Bubble",
-  "c513_03": "Little Mermaid - Shell Princess",
-  "c514_00": "Grave",
-  "c514_01": "Grave - Beautiful You",
-  "c515_00": "Cinderella: Crystal Wave",
-  "c520_00": "Bready",
-  "c520_01": "Bready - Frosty Bite",
-  "c521_00": "Crust",
-  "c521_01": "Crust - Treat Chef",
-  "c530_00": "Sky",
-  "c531_00": "Cielo",
-  "c532_00": "Sora",
-  "c532_01": "Sora - Spring Flight",
-  "c550_00": "Bay",
-  "c550_01": "Bay - Radiant Rabbit",
-  "c551_00": "Clay",
-  "c551_01": "Clay - Cheer Up Training",
-  "c560_00": "Behemoth",
-  "c561_00": "Ziz",
-  "c562_00": "Leviathan",
-  "c563_00": "Bahamut",
-  "c570_00": "Ark Ranger Black",
-  "c570_99": "Ark Ranger Black (Hooded)",
-  "c571_00": "Ark Ranger Red",
-  "c572_00": "Ark Ranger Blue",
-  "c580_00": "Phantom",
-  "c580_01": "Phantom - Saint Thief",
-  "c581_00": "Arcana",
-  "c582_00": "Label",
-  "c582_01": "Label - Occultist",
-  "c583_00": "Arcana: Fortune Mate",
-  "c590_00": "Mori",
-  "c600_00": "Mint",
-  "c600_01": "Mint - Fresh Mint",
-  "c600_02": "Mint (Twinkle Tri Star)",
-  "c601_00": "Prika",
-  "c601_01": "Prika - Cool Paprika",
-  "c601_02": "Prika (Twinkle Tri Star)",
-  "c610_00": "Mekami Shifty",
-  "c620_00": "Snow Crane",
-  "c800_00": "Makima",
-  "c800_01": "Makima - Coat Off",
-  "c801_00": "Power",
-  "c802_00": "Himeno",
-  "c803_00": "Denji",
-  "c804_00": "Aki Hayakawa",
-  "c810_00": "2B",
-  "c810_01": "2B - Metamorphic Damage",
-  "c810_02": "2B - YoRHa Uniform 1",
-  "c810_03": "2B - YoRHa Unofficial Waterfront Gear I",
-  "c811_00": "A2",
-  "c811_01": "A2 - Metamorphic Damage",
-  "c811_02": "A2 - YoRHa Uniform Prototype",
-  "c811_03": "A2 - YoRHa Unofficial Waterfront Gear Prototype",
-  "c812_00": "Pascal",
-  "c813_00": "9S",
-  "c820_00": "Rem",
-  "c820_01": "Rem - Handy Maid",
-  "c820_02": "Rem - Pure Blossom",
-  "c821_00": "Emilia",
-  "c821_01": "Emilia - Clumsy Maid",
-  "c821_02": "Emilia - Spring Breeze",
-  "c822_00": "Ram",
-  "c830_00": "Asuka",
-  "c830_01": "Asuka - Asuka's School Uniform",
-  "c830_02": "Asuka - Cynical Street",
-  "c830_03": "Asuka - Test Plugsuit",
-  "c831_00": "Rei Ayanami",
-  "c831_01": "Rei Ayanami - Rei's School Uniform",
-  "c831_02": "Rei Ayanami - Peaceful Vacation",
-  "c832_00": "Mari",
-  "c832_01": "Mari - Mari's School Uniform",
-  "c832_02": "Mari - Leisure Travel",
-  "c832_03": "Mari - Final Battle: Mari",
-  "c832_04": "Mari - Mystery Muse",
-  "c833_00": "Misato",
-  "c834_00": "Rei Ayanami (Tentative Name)",
-  "c834_01": "Rei Ayanami (Tentative Name) - Miss Lookalike from Village-3",
-  "c834_02": "Rei Ayanami (Tentative Name) - Soul Connect",
-  "c835_00": "Asuka: WILLE",
-  "c835_01": "Asuka: WILLE - Final Battle: Asuka",
-  "c835_02": "Asuka: WILLE - Ocean's Lament",
-  "c836_00": "Sakura Suzuhara",
-  "c840_00": "Ada",
-  "c840_01": "Ada - Separate Ways",
-  "c840_02": "Ada - Dress",
-  "c841_00": "Jill",
-  "c841_01": "Jill - Classic",
-  "c841_02": "Jill - Battle Suit",
-  "c842_00": "Claire",
-  "c850_00": "EVE",
-  "c850_01": "EVE - Keyhole Dress",
-  "c850_02": "EVE - Neurolink Suit",
-  "c850_03": "EVE - Skin Suit",
-  "c851_00": "Raven",
-  "c851_01": "Raven - Planet Diving Suit (6th) V2",
-  "c851_02": "Raven - Midsummer Alice",
-  "c852_00": "Lily",
-  "c853_00": "Adam",
-  "c860_00": "Chisato",
-  "c860_01": "Chisato - DA Training Wear (First)",
-  "c860_02": "Chisato - Red Spark Guitar",
-  "c861_00": "Takina",
-  "c861_01": "Takina - DA Training Wear (Second)",
-  "c861_02": "Takina - Blue Pulse Bass",
-  "c862_00": "Kurumi",
-  "c870_00": "Queen (Makoto)",
-  "c870_01": "Queen (Makoto) - Shujin Academy Student Council President",
-  "c870_02": "Queen (Makoto) - Queen's Pajamas (Ver. NIKKE Collabo)",
-  "c871_00": "Yukiko",
-  "c871_01": "Yukiko - Amagi Inn Kimono",
-  "c871_02": "Yukiko - Winter Roomwear (Ver. NIKKE Collabo)",
-  "c872_00": "Aigis",
-  "c890_00": "Papillon",
-  "c9000_00": "Alfred",
-  "c9000_01": "Neaty",
-  "c9000_02": "Sizzly",
-  "c9000_03": "Fixy",
-  "c9000_05": "Detaily",
-  "c9000_06": "Sellsy",
-  "c9000_07": "Ghost",
-  "c9001_00": "Maya",
-  "c9002_00": "Nora",
-  "c9003_00": "Mrs. Miss",
-  "c9004_00": "Velvet (NPC)",
-  "c9005_00": "Predator",
-  "c9005_01": "Alpha Predator",
-  "c9006_00": "Deipara",
-  "c9008_00": "Nayuta (NPC)",
-  "c9009_00": "Nihilister (Goddess Fall)",
-  "c900_00": "Ingrid",
-  "c9010_00": "Jane",
-  "c9011_00": "Rain",
-  "c9013_00": "Snow White: Heavy Arms (NPC)",
-  "c9014_00": "Mass-Produced Heretic",
-  "c9015_00": "Central Government Platoon Leader",
-  "c9016_00": "V.T.C. Priestess",
-  "c9017_00": "Altruia",
-  "c9018_00": "Princess",
-  "c9019_00": "Stall III",
-  "c901_00": "Syuen",
-  "c9020_00": "Pretty",
-  "c9020_01": "Freesia (Pretty Casual!)",
-  "c9021_00": "Anis (Star Student)",
-  "c9021_01": "Anis (Twinkle Tri Star)",
-  "c9022_00": "Mustang (Shady Past)",
-  "c9023_00": "Hanson",
-  "c9024_00": "Yoyo",
-  "c9025_00": "Egovista",
-  "c9026_00": "Amy",
-  "c9027_00": "Dorothy (Corrupted Nostalgia)",
-  "c9028_00": "Hope",
-  "c9029_00": "Laplace (Young)",
-  "c902_00": "Mustang",
-  "c9030_00": "Enme",
-  "c9031_00": "Syuen (Young)",
-  "c9032_00": "Jien (Young)",
-  "c9034_00": "Penguin No.1",
-  "c9035_00": "Penguin No.2",
-  "c9036_00": "Penguin No.3",
-  "c9037_00": "Penguin No.4",
-  "c9038_00": "Teddie",
-  "c9039_00": "Morgana",
-  "c903_00": "Andersen",
-  "c903_01": "Andersen (Full Fool Day)",
-  "c9040_00": "Morgana (Real)",
-  "c9041_00": "Doctor Maria",
-  "c9042_00": "Bernoullia",
-  "c904_00": "Enikk",
-  "c905_00": "Rian",
-  "c907_00": "Shifty",
-  "c909_00": "Chatterbox",
-  "c910_00": "Manager Sweet Johnny",
-  "c910_01": "Sweet Johnny Ver 2.14",
-  "c911_00": "Generic Male",
-  "c912_00": "Generic Female",
-  "c913_00": "Girl",
-  "c914_00": "Burningum",
-  "c915_00": "Raptillion",
-  "c916_00": "Male Commander",
-  "c917_00": "Female Commander",
-  "c918_00": "Generic Outer Rim A",
-  "c919_00": "Generic Outer Rim B",
-  "c920_00": "Consigliere",
-  "c921_00": "Genzou",
-  "c922_00": "Jin",
-  "c923_00": "Rich Man",
-  "c924_00": "Rich Woman",
-  "c925_00": "Johan",
-  "c928_00": "Einkk",
-  "c929_00": "Cecil",
-  "c930_00": "Beatrice",
-  "c931_00": "Roam",
-  "c931_01": "Com",
-  "c932_00": "Bolt Junior",
-  "c933_00": "Bolt",
-  "c934_00": "Angelina",
-  "c935_00": "Joseph",
-  "c936_00": "Max",
-  "c937_00": "Booboo",
-  "c939_00": "Doban",
-  "c940_00": "E.H. (NPC)",
-  "c941_00": "Pinne",
-  "c942_00": "Legendary Commander",
-  "c942_01": "Legendary Commander (Andersen)",
-  "c943_00": "Liliweiss",
-  "c944_00": "Cinderella (NPC)",
-  "c945_00": "Helper Bot",
-  "c946_00": "Ruru",
-  "c947_00": "Generic Male Bystander",
-  "c948_00": "Generic Female Bystander",
-  "c949_00": "Generic Hoodie Boy",
-  "c951_00": "Generic Boy",
-  "c952_00": "Generic Girl",
-  "c960_00": "Freesia",
-  "c961_00": "Oswald",
-  "c961_01": "Oswald (Casual)",
-  "c962_00": "B-0006",
-  "c963_00": "C-1002",
-  "c964_00": "6000-D",
-  "c965_00": "Scarlet: Black Shadow (NPC)",
-  "c966_00": "Rapunzel: Pure Grace (NPC)",
-  "c967_00": "Lumi (Ghost)",
-  "c968_00": "Lua (Ghost)",
-  "c969_00": "Lena (Ghost)",
-  "c970_00": "Lumi",
-  "c971_00": "Rose",
-  "c971_01": "Rose (Goddess Fall)",
-  "c973_00": "Jien",
-  "c974_00": "Mass-Produced Melee",
-  "c975_00": "Timi",
-  "c976_00": "T.Rony",
-  "c977_00": "Kilo (NPC)",
-  "c979_00": "Abe",
-  "c980_00": "Hansel",
-  "c981_00": "Gretel",
-  "c982_00": "Red Shoes",
-  "c983_00": "Nadia",
-  "c984_00": "Sound Only",
-  "c984_01": "X",
-  "c985_00": "Yuni (Wordless)",
-  "c986_00": "Rapi: Red Hood (Red Hair)",
-  "c988_00": "Village Chief",
-  "c989_00": "Rapi: Red Hood (Beta)",
-  "c990_00": "Rapi (Teen)",
-  "c991_00": "D.E.E.P.",
-  "c992_00": "Rapi (Young)",
-  "c993_00": "Mecha Shifty",
-  "c994_00": "Rapi (Mass-Produced Red)",
-  "c996_00": "Levi",
-  "c997_00": "Only One",
-  "c998_00": "Hermin",
-  "dummy_00": "Placeholder-chan"
+  "playable": [
+    {
+      "id": "c010_00",
+      "baseCode": "c010",
+      "name": "Rapi",
+      "skins": [
+        {
+          "id": "c010_02",
+          "name": "Classic Vacation"
+        },
+        {
+          "id": "c010_01",
+          "name": "White Promise"
+        }
+      ]
+    },
+    {
+      "id": "c011_00",
+      "baseCode": "c011",
+      "name": "Neon",
+      "skins": [
+        {
+          "id": "c011_01",
+          "name": "Bling Bullet"
+        }
+      ]
+    },
+    {
+      "id": "c012_00",
+      "baseCode": "c012",
+      "name": "Anis",
+      "skins": []
+    },
+    {
+      "id": "c014_00",
+      "baseCode": "c014",
+      "name": "Neon: Blue Ocean",
+      "skins": []
+    },
+    {
+      "id": "c015_00",
+      "baseCode": "c015",
+      "name": "Anis: Sparkling Summer",
+      "skins": []
+    },
+    {
+      "id": "c016_00",
+      "baseCode": "c016",
+      "name": "Rapi: Red Hood",
+      "skins": [
+        {
+          "id": "c016_01",
+          "name": "Red Flavor"
+        },
+        {
+          "id": "c016_02",
+          "name": "Cherished Red"
+        },
+        {
+          "id": "c016_03",
+          "name": "Shining Light"
+        }
+      ]
+    },
+    {
+      "id": "c017_00",
+      "baseCode": "c017",
+      "name": "Anis: Star",
+      "skins": [
+        {
+          "id": "c017_02",
+          "name": "T.T. STAR"
+        },
+        {
+          "id": "c017_01",
+          "name": "Starlight"
+        }
+      ]
+    },
+    {
+      "id": "c018_00",
+      "baseCode": "c018",
+      "name": "Neon: Vision Eye",
+      "skins": [
+        {
+          "id": "c018_01",
+          "name": "Dear Grace"
+        }
+      ]
+    },
+    {
+      "id": "c019_00",
+      "baseCode": "c019",
+      "name": "Marian: Queen",
+      "skins": [
+        {
+          "id": "c019_01",
+          "name": "Last Affection"
+        }
+      ]
+    },
+    {
+      "id": "c020_00",
+      "baseCode": "c020",
+      "name": "Delta",
+      "skins": []
+    },
+    {
+      "id": "c022_00",
+      "baseCode": "c022",
+      "name": "Signal",
+      "skins": [
+        {
+          "id": "c022_01",
+          "name": "Dramatic Chocolate"
+        }
+      ]
+    },
+    {
+      "id": "c023_00",
+      "baseCode": "c023",
+      "name": "Delta: Ninja Thief",
+      "skins": [
+        {
+          "id": "c023_01",
+          "name": "Undercover Santa"
+        }
+      ]
+    },
+    {
+      "id": "c030_00",
+      "baseCode": "c030",
+      "name": "Poli",
+      "skins": [
+        {
+          "id": "c030_01",
+          "name": "Sweet Holic"
+        },
+        {
+          "id": "c030_02",
+          "name": "Cheer Up Police"
+        }
+      ]
+    },
+    {
+      "id": "c032_00",
+      "baseCode": "c032",
+      "name": "Miranda",
+      "skins": [
+        {
+          "id": "c032_01",
+          "name": "Thief of Justice"
+        }
+      ]
+    },
+    {
+      "id": "c033_00",
+      "baseCode": "c033",
+      "name": "Quiry",
+      "skins": []
+    },
+    {
+      "id": "c040_00",
+      "baseCode": "c040",
+      "name": "D",
+      "skins": []
+    },
+    {
+      "id": "c041_00",
+      "baseCode": "c041",
+      "name": "K",
+      "skins": [
+        {
+          "id": "c041_01",
+          "name": "Undercover"
+        }
+      ]
+    },
+    {
+      "id": "c043_00",
+      "baseCode": "c043",
+      "name": "D: Killer Wife",
+      "skins": [
+        {
+          "id": "c043_01",
+          "name": "Secret Party Cleaner"
+        },
+        {
+          "id": "c043_02",
+          "name": "Secret Police"
+        }
+      ]
+    },
+    {
+      "id": "c060_00",
+      "baseCode": "c060",
+      "name": "Belorta",
+      "skins": []
+    },
+    {
+      "id": "c061_00",
+      "baseCode": "c061",
+      "name": "Mica",
+      "skins": []
+    },
+    {
+      "id": "c062_00",
+      "baseCode": "c062",
+      "name": "Mica: Snow Buddy",
+      "skins": []
+    },
+    {
+      "id": "c063_00",
+      "baseCode": "c063",
+      "name": "Belorta: Pumpkin Witch",
+      "skins": []
+    },
+    {
+      "id": "c070_00",
+      "baseCode": "c070",
+      "name": "Brid",
+      "skins": [
+        {
+          "id": "c070_01",
+          "name": "Model Worker"
+        },
+        {
+          "id": "c070_02",
+          "name": "Black Moon"
+        }
+      ]
+    },
+    {
+      "id": "c071_00",
+      "baseCode": "c071",
+      "name": "Soline",
+      "skins": []
+    },
+    {
+      "id": "c072_00",
+      "baseCode": "c072",
+      "name": "Diesel",
+      "skins": [
+        {
+          "id": "c072_01",
+          "name": "Strawberry Flower"
+        },
+        {
+          "id": "c072_02",
+          "name": "Black Sunday"
+        },
+        {
+          "id": "c072_04",
+          "name": "Midnight Strawberry"
+        }
+      ]
+    },
+    {
+      "id": "c073_00",
+      "baseCode": "c073",
+      "name": "Brid: Silent Track",
+      "skins": []
+    },
+    {
+      "id": "c074_00",
+      "baseCode": "c074",
+      "name": "Soline: Frost Ticket",
+      "skins": []
+    },
+    {
+      "id": "c075_00",
+      "baseCode": "c075",
+      "name": "Diesel: Winter Sweets",
+      "skins": []
+    },
+    {
+      "id": "c080_00",
+      "baseCode": "c080",
+      "name": "Centi",
+      "skins": [
+        {
+          "id": "c080_02",
+          "name": "Ocean Repair"
+        },
+        {
+          "id": "c080_01",
+          "name": "Supreme Holiday"
+        }
+      ]
+    },
+    {
+      "id": "c082_00",
+      "baseCode": "c082",
+      "name": "Liter",
+      "skins": [
+        {
+          "id": "c082_01",
+          "name": "Guardfish"
+        },
+        {
+          "id": "c082_02",
+          "name": "Cute Sunflower"
+        }
+      ]
+    },
+    {
+      "id": "c090_00",
+      "baseCode": "c090",
+      "name": "Emma",
+      "skins": [
+        {
+          "id": "c090_02",
+          "name": "Office Therapy"
+        },
+        {
+          "id": "c090_01",
+          "name": "Color me Red"
+        }
+      ]
+    },
+    {
+      "id": "c091_00",
+      "baseCode": "c091",
+      "name": "Vesti",
+      "skins": [
+        {
+          "id": "c091_01",
+          "name": "Ark Mage"
+        }
+      ]
+    },
+    {
+      "id": "c092_00",
+      "baseCode": "c092",
+      "name": "Eunhwa",
+      "skins": []
+    },
+    {
+      "id": "c093_00",
+      "baseCode": "c093",
+      "name": "Emma: Tactical Upgrade",
+      "skins": [
+        {
+          "id": "c093_01",
+          "name": "Secret Therapy"
+        }
+      ]
+    },
+    {
+      "id": "c094_00",
+      "baseCode": "c094",
+      "name": "Vesti: Tactical Upgrade",
+      "skins": [
+        {
+          "id": "c094_01",
+          "name": "Pure Beginner"
+        }
+      ]
+    },
+    {
+      "id": "c095_00",
+      "baseCode": "c095",
+      "name": "Eunhwa: Tactical Upgrade",
+      "skins": [
+        {
+          "id": "c095_01",
+          "name": "Day Off"
+        }
+      ]
+    },
+    {
+      "id": "c100_00",
+      "baseCode": "c100",
+      "name": "Laplace",
+      "skins": []
+    },
+    {
+      "id": "c101_00",
+      "baseCode": "c101",
+      "name": "Drake",
+      "skins": [
+        {
+          "id": "c101_02",
+          "name": "Maid For Villain"
+        },
+        {
+          "id": "c101_01",
+          "name": "Villain Racer"
+        }
+      ]
+    },
+    {
+      "id": "c102_00",
+      "baseCode": "c102",
+      "name": "Maxwell",
+      "skins": [
+        {
+          "id": "c102_01",
+          "name": "Mechanic White"
+        }
+      ]
+    },
+    {
+      "id": "c103_00",
+      "baseCode": "c103",
+      "name": "Laplace: Ultimate Hero",
+      "skins": [
+        {
+          "id": "c103_01",
+          "name": "Prototype Hero"
+        }
+      ]
+    },
+    {
+      "id": "c104_00",
+      "baseCode": "c104",
+      "name": "Drake: Great Villain",
+      "skins": []
+    },
+    {
+      "id": "c105_00",
+      "baseCode": "c105",
+      "name": "Maxwell: Ordinary Mechanic",
+      "skins": [
+        {
+          "id": "c105_01",
+          "name": "Chief Researcher"
+        }
+      ]
+    },
+    {
+      "id": "c110_00",
+      "baseCode": "c110",
+      "name": "Crow",
+      "skins": []
+    },
+    {
+      "id": "c111_00",
+      "baseCode": "c111",
+      "name": "Jackal",
+      "skins": [
+        {
+          "id": "c111_01",
+          "name": "Class Troublemaker"
+        }
+      ]
+    },
+    {
+      "id": "c112_00",
+      "baseCode": "c112",
+      "name": "Viper",
+      "skins": [
+        {
+          "id": "c112_02",
+          "name": "Shine of Love"
+        },
+        {
+          "id": "c112_03",
+          "name": "Punky Street"
+        },
+        {
+          "id": "c112_01",
+          "name": "Toxic Rabbit"
+        }
+      ]
+    },
+    {
+      "id": "c113_00",
+      "baseCode": "c113",
+      "name": "E.H.",
+      "skins": [
+        {
+          "id": "c113_01",
+          "name": "Junkyard Vanguard"
+        }
+      ]
+    },
+    {
+      "id": "c120_00",
+      "baseCode": "c120",
+      "name": "N102",
+      "skins": []
+    },
+    {
+      "id": "c121_00",
+      "baseCode": "c121",
+      "name": "Anne: Miracle Fairy",
+      "skins": []
+    },
+    {
+      "id": "c130_00",
+      "baseCode": "c130",
+      "name": "Mary",
+      "skins": [
+        {
+          "id": "c130_01",
+          "name": "Medical Rabbit"
+        }
+      ]
+    },
+    {
+      "id": "c131_00",
+      "baseCode": "c131",
+      "name": "Pepper",
+      "skins": [
+        {
+          "id": "c131_01",
+          "name": "Ocean Vitamin"
+        }
+      ]
+    },
+    {
+      "id": "c132_00",
+      "baseCode": "c132",
+      "name": "Mary: Bay Goddess",
+      "skins": []
+    },
+    {
+      "id": "c140_00",
+      "baseCode": "c140",
+      "name": "Sugar",
+      "skins": [
+        {
+          "id": "c140_02",
+          "name": "Wild Backyard"
+        },
+        {
+          "id": "c140_01",
+          "name": "Hard-Boiled"
+        },
+        {
+          "id": "c140_03",
+          "name": "Killer Rabbit"
+        }
+      ]
+    },
+    {
+      "id": "c141_00",
+      "baseCode": "c141",
+      "name": "Milk",
+      "skins": [
+        {
+          "id": "c141_01",
+          "name": "Extreme Fighter"
+        }
+      ]
+    },
+    {
+      "id": "c142_00",
+      "baseCode": "c142",
+      "name": "Frima",
+      "skins": [
+        {
+          "id": "c142_01",
+          "name": "Sea of Sloth"
+        }
+      ]
+    },
+    {
+      "id": "c143_00",
+      "baseCode": "c143",
+      "name": "Milk: Blooming Bunny",
+      "skins": []
+    },
+    {
+      "id": "c150_00",
+      "baseCode": "c150",
+      "name": "Julia",
+      "skins": [
+        {
+          "id": "c150_02",
+          "name": "Summer Romance"
+        },
+        {
+          "id": "c150_01",
+          "name": "Mild Nocturne"
+        }
+      ]
+    },
+    {
+      "id": "c160_00",
+      "baseCode": "c160",
+      "name": "Yuni",
+      "skins": [
+        {
+          "id": "c160_01",
+          "name": "Pretty in Pink"
+        }
+      ]
+    },
+    {
+      "id": "c161_00",
+      "baseCode": "c161",
+      "name": "Mihara",
+      "skins": []
+    },
+    {
+      "id": "c162_00",
+      "baseCode": "c162",
+      "name": "Mihara: Bonding Chain",
+      "skins": [
+        {
+          "id": "c162_01",
+          "name": "Pain Eater"
+        }
+      ]
+    },
+    {
+      "id": "c170_00",
+      "baseCode": "c170",
+      "name": "Privaty",
+      "skins": [
+        {
+          "id": "c170_01",
+          "name": "Government Grunt"
+        },
+        {
+          "id": "c170_03",
+          "name": "Destined in Blue"
+        },
+        {
+          "id": "c170_04",
+          "name": "Sharp Lesson"
+        },
+        {
+          "id": "c170_02",
+          "name": "Banquet Princess"
+        }
+      ]
+    },
+    {
+      "id": "c171_00",
+      "baseCode": "c171",
+      "name": "Yulha",
+      "skins": []
+    },
+    {
+      "id": "c172_00",
+      "baseCode": "c172",
+      "name": "Admi",
+      "skins": []
+    },
+    {
+      "id": "c180_00",
+      "baseCode": "c180",
+      "name": "Guillotine",
+      "skins": [
+        {
+          "id": "c180_01",
+          "name": "Dark Tracer"
+        }
+      ]
+    },
+    {
+      "id": "c181_00",
+      "baseCode": "c181",
+      "name": "Maiden",
+      "skins": [
+        {
+          "id": "c181_02",
+          "name": "Under The Sun"
+        },
+        {
+          "id": "c181_01",
+          "name": "Covert Nurse"
+        }
+      ]
+    },
+    {
+      "id": "c182_00",
+      "baseCode": "c182",
+      "name": "Guillotine: Winter Slayer",
+      "skins": []
+    },
+    {
+      "id": "c183_00",
+      "baseCode": "c183",
+      "name": "Maiden: Ice Rose",
+      "skins": []
+    },
+    {
+      "id": "c190_00",
+      "baseCode": "c190",
+      "name": "Ludmilla",
+      "skins": []
+    },
+    {
+      "id": "c191_00",
+      "baseCode": "c191",
+      "name": "Alice",
+      "skins": [
+        {
+          "id": "c191_01",
+          "name": "Sweet Home"
+        },
+        {
+          "id": "c191_02",
+          "name": "Märchen Dream"
+        }
+      ]
+    },
+    {
+      "id": "c192_00",
+      "baseCode": "c192",
+      "name": "Tove",
+      "skins": [
+        {
+          "id": "c192_02",
+          "name": "Sunblaze"
+        },
+        {
+          "id": "c192_01",
+          "name": "Baseball Fan"
+        }
+      ]
+    },
+    {
+      "id": "c193_00",
+      "baseCode": "c193",
+      "name": "Neve",
+      "skins": []
+    },
+    {
+      "id": "c194_00",
+      "baseCode": "c194",
+      "name": "Ludmilla: Winter Owner",
+      "skins": []
+    },
+    {
+      "id": "c195_00",
+      "baseCode": "c195",
+      "name": "Alice: Wonderland Bunny",
+      "skins": []
+    },
+    {
+      "id": "c200_00",
+      "baseCode": "c200",
+      "name": "Rupee",
+      "skins": [
+        {
+          "id": "c200_01",
+          "name": "Rabbit Deluxe"
+        }
+      ]
+    },
+    {
+      "id": "c201_00",
+      "baseCode": "c201",
+      "name": "Yan",
+      "skins": [
+        {
+          "id": "c201_01",
+          "name": "Sunrise Market"
+        }
+      ]
+    },
+    {
+      "id": "c202_00",
+      "baseCode": "c202",
+      "name": "Dolla",
+      "skins": [
+        {
+          "id": "c202_01",
+          "name": "Dark Rose"
+        }
+      ]
+    },
+    {
+      "id": "c203_00",
+      "baseCode": "c203",
+      "name": "Rupee: Winter Shopper",
+      "skins": []
+    },
+    {
+      "id": "c210_00",
+      "baseCode": "c210",
+      "name": "Exia",
+      "skins": [
+        {
+          "id": "c210_02",
+          "name": "Gamer"
+        },
+        {
+          "id": "c210_01",
+          "name": "Joy to the Nerds"
+        },
+        {
+          "id": "c210_03",
+          "name": "Hacker Rabbit"
+        }
+      ]
+    },
+    {
+      "id": "c212_00",
+      "baseCode": "c212",
+      "name": "Novel",
+      "skins": [
+        {
+          "id": "c212_01",
+          "name": "Penguin Holmes"
+        },
+        {
+          "id": "c212_02",
+          "name": "Detective Nurse"
+        }
+      ]
+    },
+    {
+      "id": "c220_00",
+      "baseCode": "c220",
+      "name": "Snow White",
+      "skins": [
+        {
+          "id": "c220_01",
+          "name": "White Knight"
+        }
+      ]
+    },
+    {
+      "id": "c221_00",
+      "baseCode": "c221",
+      "name": "Rapunzel",
+      "skins": []
+    },
+    {
+      "id": "c222_00",
+      "baseCode": "c222",
+      "name": "Scarlet",
+      "skins": [
+        {
+          "id": "c222_01",
+          "name": "Racer's High"
+        }
+      ]
+    },
+    {
+      "id": "c223_00",
+      "baseCode": "c223",
+      "name": "Nayuta",
+      "skins": [
+        {
+          "id": "c223_01",
+          "name": "Wu Wei"
+        },
+        {
+          "id": "c223_02",
+          "name": "Trivisa"
+        }
+      ]
+    },
+    {
+      "id": "c224_00",
+      "baseCode": "c224",
+      "name": "Snow White: Innocent Days",
+      "skins": []
+    },
+    {
+      "id": "c225_00",
+      "baseCode": "c225",
+      "name": "Scarlet: Black Shadow",
+      "skins": [
+        {
+          "id": "c225_01",
+          "name": "Longing Flower"
+        }
+      ]
+    },
+    {
+      "id": "c226_00",
+      "baseCode": "c226",
+      "name": "Rapunzel: Pure Grace",
+      "skins": []
+    },
+    {
+      "id": "c230_00",
+      "baseCode": "c230",
+      "name": "Harran",
+      "skins": [
+        {
+          "id": "c230_01",
+          "name": "Banquet Witch"
+        }
+      ]
+    },
+    {
+      "id": "c231_00",
+      "baseCode": "c231",
+      "name": "Isabel",
+      "skins": [
+        {
+          "id": "c231_01",
+          "name": "Honeymoon Party"
+        }
+      ]
+    },
+    {
+      "id": "c232_00",
+      "baseCode": "c232",
+      "name": "Noah",
+      "skins": []
+    },
+    {
+      "id": "c233_00",
+      "baseCode": "c233",
+      "name": "Dorothy",
+      "skins": [
+        {
+          "id": "c233_01",
+          "name": "Nostalgia"
+        },
+        {
+          "id": "c233_02",
+          "name": "Luna Light"
+        }
+      ]
+    },
+    {
+      "id": "c234_00",
+      "baseCode": "c234",
+      "name": "Dorothy: Serendipity",
+      "skins": []
+    },
+    {
+      "id": "c240_00",
+      "baseCode": "c240",
+      "name": "Rumani",
+      "skins": []
+    },
+    {
+      "id": "c241_00",
+      "baseCode": "c241",
+      "name": "Epinel",
+      "skins": []
+    },
+    {
+      "id": "c242_00",
+      "baseCode": "c242",
+      "name": "Folkwang",
+      "skins": [
+        {
+          "id": "c242_01",
+          "name": "Moist Rabbit"
+        }
+      ]
+    },
+    {
+      "id": "c260_00",
+      "baseCode": "c260",
+      "name": "Modernia",
+      "skins": [
+        {
+          "id": "c260_01",
+          "name": "First Affection"
+        },
+        {
+          "id": "c260_02",
+          "name": "Second Affection"
+        }
+      ]
+    },
+    {
+      "id": "c261_00",
+      "baseCode": "c261",
+      "name": "Nihilister",
+      "skins": []
+    },
+    {
+      "id": "c262_00",
+      "baseCode": "c262",
+      "name": "Liberalio",
+      "skins": [
+        {
+          "id": "c262_01",
+          "name": "Dreaming Lake"
+        }
+      ]
+    },
+    {
+      "id": "c270_00",
+      "baseCode": "c270",
+      "name": "Blanc",
+      "skins": [
+        {
+          "id": "c270_01",
+          "name": "White Rabbit"
+        },
+        {
+          "id": "c270_02",
+          "name": "No. 77 Batter"
+        },
+        {
+          "id": "c270_03",
+          "name": "Fortune Express"
+        }
+      ]
+    },
+    {
+      "id": "c271_00",
+      "baseCode": "c271",
+      "name": "Noir",
+      "skins": [
+        {
+          "id": "c271_01",
+          "name": "Black Rabbit"
+        },
+        {
+          "id": "c271_02",
+          "name": "Baseball Cheerleader"
+        }
+      ]
+    },
+    {
+      "id": "c272_00",
+      "baseCode": "c272",
+      "name": "Rouge",
+      "skins": [
+        {
+          "id": "c272_01",
+          "name": "Unlucky Rabbit"
+        }
+      ]
+    },
+    {
+      "id": "c280_00",
+      "baseCode": "c280",
+      "name": "Rosanna",
+      "skins": [
+        {
+          "id": "c280_01",
+          "name": "Ms. Dangerous"
+        }
+      ]
+    },
+    {
+      "id": "c281_00",
+      "baseCode": "c281",
+      "name": "Moran",
+      "skins": [
+        {
+          "id": "c281_01",
+          "name": "Off-Duty Queen"
+        },
+        {
+          "id": "c281_02",
+          "name": "King of Flowers"
+        }
+      ]
+    },
+    {
+      "id": "c282_00",
+      "baseCode": "c282",
+      "name": "Sakura",
+      "skins": [
+        {
+          "id": "c282_01",
+          "name": "Midnight Stealth"
+        }
+      ]
+    },
+    {
+      "id": "c283_00",
+      "baseCode": "c283",
+      "name": "Rosanna: Chic Ocean",
+      "skins": []
+    },
+    {
+      "id": "c284_00",
+      "baseCode": "c284",
+      "name": "Sakura: Bloom in Summer",
+      "skins": []
+    },
+    {
+      "id": "c290_00",
+      "baseCode": "c290",
+      "name": "Mana",
+      "skins": [
+        {
+          "id": "c290_01",
+          "name": "Drunken Rabbit"
+        }
+      ]
+    },
+    {
+      "id": "c291_00",
+      "baseCode": "c291",
+      "name": "Ether",
+      "skins": []
+    },
+    {
+      "id": "c300_00",
+      "baseCode": "c300",
+      "name": "Soldier EG",
+      "skins": []
+    },
+    {
+      "id": "c301_00",
+      "baseCode": "c301",
+      "name": "Soldier FA",
+      "skins": []
+    },
+    {
+      "id": "c302_00",
+      "baseCode": "c302",
+      "name": "Product 08",
+      "skins": []
+    },
+    {
+      "id": "c303_00",
+      "baseCode": "c303",
+      "name": "Product 12",
+      "skins": []
+    },
+    {
+      "id": "c304_00",
+      "baseCode": "c304",
+      "name": "iDoll Flower",
+      "skins": []
+    },
+    {
+      "id": "c305_00",
+      "baseCode": "c305",
+      "name": "iDoll Ocean",
+      "skins": []
+    },
+    {
+      "id": "c306_00",
+      "baseCode": "c306",
+      "name": "Soldier OW",
+      "skins": []
+    },
+    {
+      "id": "c307_00",
+      "baseCode": "c307",
+      "name": "Product 23",
+      "skins": []
+    },
+    {
+      "id": "c308_00",
+      "baseCode": "c308",
+      "name": "iDoll Sun",
+      "skins": []
+    },
+    {
+      "id": "c310_00",
+      "baseCode": "c310",
+      "name": "Ade",
+      "skins": [
+        {
+          "id": "c310_01",
+          "name": "Maid In Spring"
+        }
+      ]
+    },
+    {
+      "id": "c311_00",
+      "baseCode": "c311",
+      "name": "Cocoa",
+      "skins": []
+    },
+    {
+      "id": "c312_00",
+      "baseCode": "c312",
+      "name": "Soda",
+      "skins": []
+    },
+    {
+      "id": "c313_00",
+      "baseCode": "c313",
+      "name": "Privaty: Unkind Maid",
+      "skins": []
+    },
+    {
+      "id": "c314_00",
+      "baseCode": "c314",
+      "name": "Soda: Twinkling Bunny",
+      "skins": []
+    },
+    {
+      "id": "c315_00",
+      "baseCode": "c315",
+      "name": "Ade: Agent Bunny",
+      "skins": []
+    },
+    {
+      "id": "c316_00",
+      "baseCode": "c316",
+      "name": "Velvet",
+      "skins": [
+        {
+          "id": "c316_01",
+          "name": "Sensual Rabbit"
+        }
+      ]
+    },
+    {
+      "id": "c321_00",
+      "baseCode": "c321",
+      "name": "Marciana",
+      "skins": [
+        {
+          "id": "c321_01",
+          "name": "School Days"
+        }
+      ]
+    },
+    {
+      "id": "c322_00",
+      "baseCode": "c322",
+      "name": "Marciana: Marine Study",
+      "skins": []
+    },
+    {
+      "id": "c330_00",
+      "baseCode": "c330",
+      "name": "Crown",
+      "skins": [
+        {
+          "id": "c330_02",
+          "name": "Glorious Flower"
+        },
+        {
+          "id": "c330_01",
+          "name": "Naked King"
+        }
+      ]
+    },
+    {
+      "id": "c331_00",
+      "baseCode": "c331",
+      "name": "Chime",
+      "skins": []
+    },
+    {
+      "id": "c350_00",
+      "baseCode": "c350",
+      "name": "Mast",
+      "skins": [
+        {
+          "id": "c350_01",
+          "name": "A Pirate's Heart"
+        },
+        {
+          "id": "c350_02",
+          "name": "Mast the Diver"
+        }
+      ]
+    },
+    {
+      "id": "c351_00",
+      "baseCode": "c351",
+      "name": "Anchor",
+      "skins": [
+        {
+          "id": "c351_01",
+          "name": "Anchor the Diver"
+        }
+      ]
+    },
+    {
+      "id": "c352_00",
+      "baseCode": "c352",
+      "name": "Helm",
+      "skins": [
+        {
+          "id": "c352_02",
+          "name": "Post-Shower Moment"
+        },
+        {
+          "id": "c352_01",
+          "name": "Chandelier"
+        }
+      ]
+    },
+    {
+      "id": "c353_00",
+      "baseCode": "c353",
+      "name": "Helm: Aquamarine",
+      "skins": []
+    },
+    {
+      "id": "c354_00",
+      "baseCode": "c354",
+      "name": "Mast: Romantic Maid",
+      "skins": [
+        {
+          "id": "c354_01",
+          "name": "Tea Service"
+        }
+      ]
+    },
+    {
+      "id": "c355_00",
+      "baseCode": "c355",
+      "name": "Anchor: Innocent Maid",
+      "skins": []
+    },
+    {
+      "id": "c361_00",
+      "baseCode": "c361",
+      "name": "Kilo",
+      "skins": []
+    },
+    {
+      "id": "c380_00",
+      "baseCode": "c380",
+      "name": "Nero",
+      "skins": []
+    },
+    {
+      "id": "c381_00",
+      "baseCode": "c381",
+      "name": "Biscuit",
+      "skins": [
+        {
+          "id": "c381_01",
+          "name": "Spring Puppy"
+        }
+      ]
+    },
+    {
+      "id": "c382_00",
+      "baseCode": "c382",
+      "name": "Leona",
+      "skins": [
+        {
+          "id": "c382_01",
+          "name": "Zoo Keeper"
+        }
+      ]
+    },
+    {
+      "id": "c390_00",
+      "baseCode": "c390",
+      "name": "Zwei",
+      "skins": [
+        {
+          "id": "c390_01",
+          "name": "First Festa"
+        },
+        {
+          "id": "c390_02",
+          "name": "Spring Stroll"
+        }
+      ]
+    },
+    {
+      "id": "c391_00",
+      "baseCode": "c391",
+      "name": "Ein",
+      "skins": [
+        {
+          "id": "c391_01",
+          "name": "Handmade Festa"
+        }
+      ]
+    },
+    {
+      "id": "c392_00",
+      "baseCode": "c392",
+      "name": "Rei",
+      "skins": []
+    },
+    {
+      "id": "c400_00",
+      "baseCode": "c400",
+      "name": "Guilty",
+      "skins": [
+        {
+          "id": "c400_01",
+          "name": "Wave of Disbelief"
+        }
+      ]
+    },
+    {
+      "id": "c401_00",
+      "baseCode": "c401",
+      "name": "Sin",
+      "skins": [
+        {
+          "id": "c401_01",
+          "name": "Backstreet Dream"
+        }
+      ]
+    },
+    {
+      "id": "c402_00",
+      "baseCode": "c402",
+      "name": "Quency",
+      "skins": []
+    },
+    {
+      "id": "c403_00",
+      "baseCode": "c403",
+      "name": "Quency: Escape Queen",
+      "skins": [
+        {
+          "id": "c403_01",
+          "name": "Masquerade Swan"
+        }
+      ]
+    },
+    {
+      "id": "c404_00",
+      "baseCode": "c404",
+      "name": "Guilty: Mighty Bunny",
+      "skins": []
+    },
+    {
+      "id": "c405_00",
+      "baseCode": "c405",
+      "name": "Sin: Swift Bunny",
+      "skins": []
+    },
+    {
+      "id": "c411_00",
+      "baseCode": "c411",
+      "name": "Flora",
+      "skins": [
+        {
+          "id": "c411_01",
+          "name": "Fairy Rabbit"
+        }
+      ]
+    },
+    {
+      "id": "c412_00",
+      "baseCode": "c412",
+      "name": "Trina",
+      "skins": [
+        {
+          "id": "c412_01",
+          "name": "Natural White"
+        }
+      ]
+    },
+    {
+      "id": "c430_00",
+      "baseCode": "c430",
+      "name": "Noise",
+      "skins": [
+        {
+          "id": "c430_01",
+          "name": "Cherry Blossom Stage"
+        },
+        {
+          "id": "c430_02",
+          "name": "Classic Diva"
+        }
+      ]
+    },
+    {
+      "id": "c431_00",
+      "baseCode": "c431",
+      "name": "Volume",
+      "skins": [
+        {
+          "id": "c431_01",
+          "name": "Beat the Gun"
+        }
+      ]
+    },
+    {
+      "id": "c432_00",
+      "baseCode": "c432",
+      "name": "Aria",
+      "skins": []
+    },
+    {
+      "id": "c441_00",
+      "baseCode": "c441",
+      "name": "Avistar",
+      "skins": []
+    },
+    {
+      "id": "c450_00",
+      "baseCode": "c450",
+      "name": "Naga",
+      "skins": [
+        {
+          "id": "c450_03",
+          "name": "Ring Ensemble"
+        },
+        {
+          "id": "c450_01",
+          "name": "Elegant Date"
+        },
+        {
+          "id": "c450_02",
+          "name": "Last Girlhood"
+        }
+      ]
+    },
+    {
+      "id": "c451_00",
+      "baseCode": "c451",
+      "name": "Tia",
+      "skins": [
+        {
+          "id": "c451_03",
+          "name": "Sea Lizzie"
+        },
+        {
+          "id": "c451_01",
+          "name": "Lovely Date"
+        },
+        {
+          "id": "c451_02",
+          "name": "Sweet Chef"
+        }
+      ]
+    },
+    {
+      "id": "c470_00",
+      "baseCode": "c470",
+      "name": "Red Hood",
+      "skins": [
+        {
+          "id": "c470_02",
+          "name": "Retro Days"
+        },
+        {
+          "id": "c470_01",
+          "name": "Nonsense Red"
+        }
+      ]
+    },
+    {
+      "id": "c471_00",
+      "baseCode": "c471",
+      "name": "Snow White: Heavy Arms",
+      "skins": [
+        {
+          "id": "c471_01",
+          "name": "Lacrimosa"
+        }
+      ]
+    },
+    {
+      "id": "c472_00",
+      "baseCode": "c472",
+      "name": "Scarlet: Goddeath",
+      "skins": []
+    },
+    {
+      "id": "c473_00",
+      "baseCode": "c473",
+      "name": "Rapunzel: Sanctuary",
+      "skins": []
+    },
+    {
+      "id": "c500_00",
+      "baseCode": "c500",
+      "name": "Elegg",
+      "skins": []
+    },
+    {
+      "id": "c501_00",
+      "baseCode": "c501",
+      "name": "Trony",
+      "skins": [
+        {
+          "id": "c501_01",
+          "name": "Sweet Step"
+        }
+      ]
+    },
+    {
+      "id": "c502_00",
+      "baseCode": "c502",
+      "name": "Elegg: Boom and Shock",
+      "skins": []
+    },
+    {
+      "id": "c511_00",
+      "baseCode": "c511",
+      "name": "Cinderella",
+      "skins": [
+        {
+          "id": "c511_02",
+          "name": "Beautiful Me"
+        },
+        {
+          "id": "c511_01",
+          "name": "Glass Princess"
+        },
+        {
+          "id": "c511_03",
+          "name": "Glass Curtsy"
+        }
+      ]
+    },
+    {
+      "id": "c513_00",
+      "baseCode": "c513",
+      "name": "Little Mermaid",
+      "skins": [
+        {
+          "id": "c513_03",
+          "name": "Shell Princess"
+        },
+        {
+          "id": "c513_02",
+          "name": "Beautiful Bubble"
+        },
+        {
+          "id": "c513_01",
+          "name": "Abyss Flower"
+        }
+      ]
+    },
+    {
+      "id": "c514_00",
+      "baseCode": "c514",
+      "name": "Grave",
+      "skins": [
+        {
+          "id": "c514_01",
+          "name": "Beautiful You"
+        }
+      ]
+    },
+    {
+      "id": "c515_00",
+      "baseCode": "c515",
+      "name": "Cinderella: Crystal Wave",
+      "skins": []
+    },
+    {
+      "id": "c520_00",
+      "baseCode": "c520",
+      "name": "Bready",
+      "skins": [
+        {
+          "id": "c520_01",
+          "name": "Frosty Bite"
+        }
+      ]
+    },
+    {
+      "id": "c521_00",
+      "baseCode": "c521",
+      "name": "Crust",
+      "skins": [
+        {
+          "id": "c521_01",
+          "name": "Treat Chef"
+        }
+      ]
+    },
+    {
+      "id": "c532_00",
+      "baseCode": "c532",
+      "name": "Sora",
+      "skins": [
+        {
+          "id": "c532_01",
+          "name": "Spring Flight"
+        }
+      ]
+    },
+    {
+      "id": "c550_00",
+      "baseCode": "c550",
+      "name": "Bay",
+      "skins": [
+        {
+          "id": "c550_01",
+          "name": "Radiant Rabbit"
+        }
+      ]
+    },
+    {
+      "id": "c551_00",
+      "baseCode": "c551",
+      "name": "Clay",
+      "skins": [
+        {
+          "id": "c551_01",
+          "name": "Cheer Up Training"
+        }
+      ]
+    },
+    {
+      "id": "c570_00",
+      "baseCode": "c570",
+      "name": "Ark Ranger Black",
+      "skins": []
+    },
+    {
+      "id": "c580_00",
+      "baseCode": "c580",
+      "name": "Phantom",
+      "skins": [
+        {
+          "id": "c580_01",
+          "name": "Saint Thief"
+        }
+      ]
+    },
+    {
+      "id": "c581_00",
+      "baseCode": "c581",
+      "name": "Arcana",
+      "skins": []
+    },
+    {
+      "id": "c582_00",
+      "baseCode": "c582",
+      "name": "Label",
+      "skins": [
+        {
+          "id": "c582_01",
+          "name": "Occultist"
+        }
+      ]
+    },
+    {
+      "id": "c583_00",
+      "baseCode": "c583",
+      "name": "Arcana: Fortune Mate",
+      "skins": []
+    },
+    {
+      "id": "c590_00",
+      "baseCode": "c590",
+      "name": "Mori",
+      "skins": []
+    },
+    {
+      "id": "c600_00",
+      "baseCode": "c600",
+      "name": "Mint",
+      "skins": [
+        {
+          "id": "c600_01",
+          "name": "Fresh Mint"
+        }
+      ]
+    },
+    {
+      "id": "c601_00",
+      "baseCode": "c601",
+      "name": "Prika",
+      "skins": [
+        {
+          "id": "c601_01",
+          "name": "Cool Paprika"
+        }
+      ]
+    },
+    {
+      "id": "c620_00",
+      "baseCode": "c620",
+      "name": "Snow Crane",
+      "skins": []
+    },
+    {
+      "id": "c800_00",
+      "baseCode": "c800",
+      "name": "Makima",
+      "skins": [
+        {
+          "id": "c800_01",
+          "name": "Coat Off"
+        }
+      ]
+    },
+    {
+      "id": "c801_00",
+      "baseCode": "c801",
+      "name": "Power",
+      "skins": []
+    },
+    {
+      "id": "c802_00",
+      "baseCode": "c802",
+      "name": "Himeno",
+      "skins": []
+    },
+    {
+      "id": "c810_00",
+      "baseCode": "c810",
+      "name": "2B",
+      "skins": [
+        {
+          "id": "c810_01",
+          "name": "Metamorphic Damage"
+        },
+        {
+          "id": "c810_02",
+          "name": "YoRHa Uniform 1"
+        },
+        {
+          "id": "c810_03",
+          "name": "YoRHa Unofficial Waterfront Gear I"
+        }
+      ]
+    },
+    {
+      "id": "c811_00",
+      "baseCode": "c811",
+      "name": "A2",
+      "skins": [
+        {
+          "id": "c811_01",
+          "name": "Metamorphic Damage"
+        },
+        {
+          "id": "c811_02",
+          "name": "YoRHa Uniform Prototype"
+        },
+        {
+          "id": "c811_03",
+          "name": "YoRHa Unofficial Waterfront Gear Prototype"
+        }
+      ]
+    },
+    {
+      "id": "c812_00",
+      "baseCode": "c812",
+      "name": "Pascal",
+      "skins": []
+    },
+    {
+      "id": "c820_00",
+      "baseCode": "c820",
+      "name": "Rem",
+      "skins": [
+        {
+          "id": "c820_01",
+          "name": "Handy Maid"
+        },
+        {
+          "id": "c820_02",
+          "name": "Pure Blossom"
+        }
+      ]
+    },
+    {
+      "id": "c821_00",
+      "baseCode": "c821",
+      "name": "Emilia",
+      "skins": [
+        {
+          "id": "c821_01",
+          "name": "Clumsy Maid"
+        },
+        {
+          "id": "c821_02",
+          "name": "Spring Breeze"
+        }
+      ]
+    },
+    {
+      "id": "c822_00",
+      "baseCode": "c822",
+      "name": "Ram",
+      "skins": []
+    },
+    {
+      "id": "c830_00",
+      "baseCode": "c830",
+      "name": "Asuka",
+      "skins": [
+        {
+          "id": "c830_01",
+          "name": "Asuka's School Uniform"
+        },
+        {
+          "id": "c830_02",
+          "name": "Cynical Street"
+        },
+        {
+          "id": "c830_03",
+          "name": "Test Plugsuit"
+        }
+      ]
+    },
+    {
+      "id": "c831_00",
+      "baseCode": "c831",
+      "name": "Rei",
+      "skins": [
+        {
+          "id": "c831_01",
+          "name": "Rei's School Uniform"
+        },
+        {
+          "id": "c831_02",
+          "name": "Peaceful Vacation"
+        }
+      ]
+    },
+    {
+      "id": "c832_00",
+      "baseCode": "c832",
+      "name": "Mari",
+      "skins": [
+        {
+          "id": "c832_01",
+          "name": "Mari's School Uniform"
+        },
+        {
+          "id": "c832_02",
+          "name": "Leisure Travel"
+        },
+        {
+          "id": "c832_03",
+          "name": "Final Battle: Mari"
+        },
+        {
+          "id": "c832_04",
+          "name": "Mystery Muse"
+        }
+      ]
+    },
+    {
+      "id": "c833_00",
+      "baseCode": "c833",
+      "name": "Misato",
+      "skins": []
+    },
+    {
+      "id": "c834_00",
+      "baseCode": "c834",
+      "name": "Rei (Tentative Name)",
+      "skins": [
+        {
+          "id": "c834_01",
+          "name": "Miss Lookalike from Village-3"
+        },
+        {
+          "id": "c834_02",
+          "name": "Soul Connect"
+        }
+      ]
+    },
+    {
+      "id": "c835_00",
+      "baseCode": "c835",
+      "name": "Asuka: WILLE",
+      "skins": [
+        {
+          "id": "c835_01",
+          "name": "Final Battle: Asuka"
+        },
+        {
+          "id": "c835_02",
+          "name": "Ocean's Lament"
+        }
+      ]
+    },
+    {
+      "id": "c836_00",
+      "baseCode": "c836",
+      "name": "Sakura",
+      "skins": []
+    },
+    {
+      "id": "c840_00",
+      "baseCode": "c840",
+      "name": "Ada",
+      "skins": [
+        {
+          "id": "c840_01",
+          "name": "Separate Ways"
+        },
+        {
+          "id": "c840_02",
+          "name": "Dress"
+        }
+      ]
+    },
+    {
+      "id": "c841_00",
+      "baseCode": "c841",
+      "name": "Jill",
+      "skins": [
+        {
+          "id": "c841_01",
+          "name": "Classic"
+        },
+        {
+          "id": "c841_02",
+          "name": "Battle Suit"
+        }
+      ]
+    },
+    {
+      "id": "c842_00",
+      "baseCode": "c842",
+      "name": "Claire",
+      "skins": []
+    },
+    {
+      "id": "c850_00",
+      "baseCode": "c850",
+      "name": "EVE",
+      "skins": [
+        {
+          "id": "c850_01",
+          "name": "Keyhole Dress"
+        },
+        {
+          "id": "c850_02",
+          "name": "Neurolink Suit"
+        },
+        {
+          "id": "c850_03",
+          "name": "Skin Suit"
+        }
+      ]
+    },
+    {
+      "id": "c851_00",
+      "baseCode": "c851",
+      "name": "Raven",
+      "skins": [
+        {
+          "id": "c851_01",
+          "name": "Planet Diving Suit (6th) V2"
+        },
+        {
+          "id": "c851_02",
+          "name": "Midsummer Alice"
+        }
+      ]
+    },
+    {
+      "id": "c852_00",
+      "baseCode": "c852",
+      "name": "Lily",
+      "skins": []
+    },
+    {
+      "id": "c860_00",
+      "baseCode": "c860",
+      "name": "Chisato",
+      "skins": [
+        {
+          "id": "c860_01",
+          "name": "DA Training Wear (First)"
+        },
+        {
+          "id": "c860_02",
+          "name": "Red Spark Guitar"
+        }
+      ]
+    },
+    {
+      "id": "c861_00",
+      "baseCode": "c861",
+      "name": "Takina",
+      "skins": [
+        {
+          "id": "c861_01",
+          "name": "DA Training Wear (Second)"
+        },
+        {
+          "id": "c861_02",
+          "name": "Blue Pulse Bass"
+        }
+      ]
+    },
+    {
+      "id": "c862_00",
+      "baseCode": "c862",
+      "name": "Kurumi",
+      "skins": []
+    },
+    {
+      "id": "c870_00",
+      "baseCode": "c870",
+      "name": "Queen (Makoto)",
+      "skins": [
+        {
+          "id": "c870_01",
+          "name": "Shujin Academy Student Council President"
+        },
+        {
+          "id": "c870_02",
+          "name": "Queen's Pajamas (Ver. NIKKE Collabo)"
+        }
+      ]
+    },
+    {
+      "id": "c871_00",
+      "baseCode": "c871",
+      "name": "Yukiko",
+      "skins": [
+        {
+          "id": "c871_01",
+          "name": "Amagi Inn Kimono"
+        },
+        {
+          "id": "c871_02",
+          "name": "Winter Roomwear (Ver. NIKKE Collabo)"
+        }
+      ]
+    },
+    {
+      "id": "c872_00",
+      "baseCode": "c872",
+      "name": "Aigis",
+      "skins": []
+    }
+  ],
+  "npcs": [
+    {
+      "id": "c013_00",
+      "baseCode": "c013",
+      "name": "Marian",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c227_00",
+      "baseCode": "c227",
+      "name": "Pinocchio",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c235_00",
+      "baseCode": "c235",
+      "name": "Noah (Reborn)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c236_00",
+      "baseCode": "c236",
+      "name": "Papillon (Reborn)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c250_00",
+      "baseCode": "c250",
+      "name": "Mass-Produced Red",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c251_00",
+      "baseCode": "c251",
+      "name": "Mass-Produced Blue",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c252_00",
+      "baseCode": "c252",
+      "name": "Mass-Produced Orange",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c253_00",
+      "baseCode": "c253",
+      "name": "Mass-Produced Green",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c254_00",
+      "baseCode": "c254",
+      "name": "Mass-Produced Purple",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c255_00",
+      "baseCode": "c255",
+      "name": "Mass-Produced White",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c263_00",
+      "baseCode": "c263",
+      "name": "Indivilia",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c370_00",
+      "baseCode": "c370",
+      "name": "Eternity",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c371_00",
+      "baseCode": "c371",
+      "name": "Endless",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c440_00",
+      "baseCode": "c440",
+      "name": "Eyeri",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c474_00",
+      "baseCode": "c474",
+      "name": "Dorothy (Corrupted)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c480_00",
+      "baseCode": "c480",
+      "name": "Liveryn",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c481_00",
+      "baseCode": "c481",
+      "name": "Fragile",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c482_00",
+      "baseCode": "c482",
+      "name": "Logey",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c490_00",
+      "baseCode": "c490",
+      "name": "Hammering",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c491_00",
+      "baseCode": "c491",
+      "name": "Drilley",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c510_00",
+      "baseCode": "c510",
+      "name": "Grave (NPC)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c530_00",
+      "baseCode": "c530",
+      "name": "Sky",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c531_00",
+      "baseCode": "c531",
+      "name": "Cielo",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c560_00",
+      "baseCode": "c560",
+      "name": "Behemoth",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c561_00",
+      "baseCode": "c561",
+      "name": "Ziz",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c562_00",
+      "baseCode": "c562",
+      "name": "Leviathan",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c563_00",
+      "baseCode": "c563",
+      "name": "Bahamut",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c570_99",
+      "baseCode": "c570",
+      "name": "Ark Ranger Black (Hooded)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c571_00",
+      "baseCode": "c571",
+      "name": "Ark Ranger Red",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c572_00",
+      "baseCode": "c572",
+      "name": "Ark Ranger Blue",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c600_02",
+      "baseCode": "c600",
+      "name": "Mint (Twinkle Tri Star)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c601_02",
+      "baseCode": "c601",
+      "name": "Prika (Twinkle Tri Star)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c610_00",
+      "baseCode": "c610",
+      "name": "Mekami Shifty",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c803_00",
+      "baseCode": "c803",
+      "name": "Denji",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c804_00",
+      "baseCode": "c804",
+      "name": "Aki Hayakawa",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c813_00",
+      "baseCode": "c813",
+      "name": "9S",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c853_00",
+      "baseCode": "c853",
+      "name": "Adam",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c890_00",
+      "baseCode": "c890",
+      "name": "Papillon",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c900_00",
+      "baseCode": "c900",
+      "name": "Ingrid",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c901_00",
+      "baseCode": "c901",
+      "name": "Syuen",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c902_00",
+      "baseCode": "c902",
+      "name": "Mustang",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c903_00",
+      "baseCode": "c903",
+      "name": "Andersen",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c903_01",
+      "baseCode": "c903",
+      "name": "Andersen (Full Fool Day)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c904_00",
+      "baseCode": "c904",
+      "name": "Enikk",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c905_00",
+      "baseCode": "c905",
+      "name": "Rian",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c907_00",
+      "baseCode": "c907",
+      "name": "Shifty",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c909_00",
+      "baseCode": "c909",
+      "name": "Chatterbox",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c910_00",
+      "baseCode": "c910",
+      "name": "Manager Sweet Johnny",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c910_01",
+      "baseCode": "c910",
+      "name": "Sweet Johnny Ver 2.14",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c911_00",
+      "baseCode": "c911",
+      "name": "Generic Male",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c912_00",
+      "baseCode": "c912",
+      "name": "Generic Female",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c913_00",
+      "baseCode": "c913",
+      "name": "Girl",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c914_00",
+      "baseCode": "c914",
+      "name": "Burningum",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c915_00",
+      "baseCode": "c915",
+      "name": "Raptillion",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c916_00",
+      "baseCode": "c916",
+      "name": "Male Commander",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c917_00",
+      "baseCode": "c917",
+      "name": "Female Commander",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c918_00",
+      "baseCode": "c918",
+      "name": "Generic Outer Rim A",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c919_00",
+      "baseCode": "c919",
+      "name": "Generic Outer Rim B",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c920_00",
+      "baseCode": "c920",
+      "name": "Consigliere",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c921_00",
+      "baseCode": "c921",
+      "name": "Genzou",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c922_00",
+      "baseCode": "c922",
+      "name": "Jin",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c923_00",
+      "baseCode": "c923",
+      "name": "Rich Man",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c924_00",
+      "baseCode": "c924",
+      "name": "Rich Woman",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c925_00",
+      "baseCode": "c925",
+      "name": "Johan",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c928_00",
+      "baseCode": "c928",
+      "name": "Einkk",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c929_00",
+      "baseCode": "c929",
+      "name": "Cecil",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c930_00",
+      "baseCode": "c930",
+      "name": "Beatrice",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c931_00",
+      "baseCode": "c931",
+      "name": "Roam",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c931_01",
+      "baseCode": "c931",
+      "name": "Com",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c932_00",
+      "baseCode": "c932",
+      "name": "Bolt Junior",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c933_00",
+      "baseCode": "c933",
+      "name": "Bolt",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c934_00",
+      "baseCode": "c934",
+      "name": "Angelina",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c935_00",
+      "baseCode": "c935",
+      "name": "Joseph",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c936_00",
+      "baseCode": "c936",
+      "name": "Max",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c937_00",
+      "baseCode": "c937",
+      "name": "Booboo",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c939_00",
+      "baseCode": "c939",
+      "name": "Doban",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c940_00",
+      "baseCode": "c940",
+      "name": "E.H. (NPC)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c941_00",
+      "baseCode": "c941",
+      "name": "Pinne",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c942_00",
+      "baseCode": "c942",
+      "name": "Legendary Commander",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c942_01",
+      "baseCode": "c942",
+      "name": "Legendary Commander (Andersen)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c943_00",
+      "baseCode": "c943",
+      "name": "Liliweiss",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c944_00",
+      "baseCode": "c944",
+      "name": "Cinderella (NPC)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c945_00",
+      "baseCode": "c945",
+      "name": "Helper Bot",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c946_00",
+      "baseCode": "c946",
+      "name": "Ruru",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c947_00",
+      "baseCode": "c947",
+      "name": "Generic Male Bystander",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c948_00",
+      "baseCode": "c948",
+      "name": "Generic Female Bystander",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c949_00",
+      "baseCode": "c949",
+      "name": "Generic Hoodie Boy",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c951_00",
+      "baseCode": "c951",
+      "name": "Generic Boy",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c952_00",
+      "baseCode": "c952",
+      "name": "Generic Girl",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c960_00",
+      "baseCode": "c960",
+      "name": "Freesia",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c961_00",
+      "baseCode": "c961",
+      "name": "Oswald",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c961_01",
+      "baseCode": "c961",
+      "name": "Oswald (Casual)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c962_00",
+      "baseCode": "c962",
+      "name": "B-0006",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c963_00",
+      "baseCode": "c963",
+      "name": "C-1002",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c964_00",
+      "baseCode": "c964",
+      "name": "6000-D",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c965_00",
+      "baseCode": "c965",
+      "name": "Scarlet: Black Shadow (NPC)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c966_00",
+      "baseCode": "c966",
+      "name": "Rapunzel: Pure Grace (NPC)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c967_00",
+      "baseCode": "c967",
+      "name": "Lumi (Ghost)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c968_00",
+      "baseCode": "c968",
+      "name": "Lua (Ghost)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c969_00",
+      "baseCode": "c969",
+      "name": "Lena (Ghost)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c970_00",
+      "baseCode": "c970",
+      "name": "Lumi",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c971_00",
+      "baseCode": "c971",
+      "name": "Rose",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c971_01",
+      "baseCode": "c971",
+      "name": "Rose (Goddess Fall)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c973_00",
+      "baseCode": "c973",
+      "name": "Jien",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c974_00",
+      "baseCode": "c974",
+      "name": "Mass-Produced Melee",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c975_00",
+      "baseCode": "c975",
+      "name": "Timi",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c976_00",
+      "baseCode": "c976",
+      "name": "T.Rony",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c977_00",
+      "baseCode": "c977",
+      "name": "Kilo (NPC)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c979_00",
+      "baseCode": "c979",
+      "name": "Abe",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c980_00",
+      "baseCode": "c980",
+      "name": "Hansel",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c981_00",
+      "baseCode": "c981",
+      "name": "Gretel",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c982_00",
+      "baseCode": "c982",
+      "name": "Red Shoes",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c983_00",
+      "baseCode": "c983",
+      "name": "Nadia",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c984_00",
+      "baseCode": "c984",
+      "name": "Sound Only",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c984_01",
+      "baseCode": "c984",
+      "name": "X",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c985_00",
+      "baseCode": "c985",
+      "name": "Yuni (Wordless)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c986_00",
+      "baseCode": "c986",
+      "name": "Rapi: Red Hood (Red Hair)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c988_00",
+      "baseCode": "c988",
+      "name": "Village Chief",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c989_00",
+      "baseCode": "c989",
+      "name": "Rapi: Red Hood (Beta)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c990_00",
+      "baseCode": "c990",
+      "name": "Rapi (Teen)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c991_00",
+      "baseCode": "c991",
+      "name": "D.E.E.P.",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c992_00",
+      "baseCode": "c992",
+      "name": "Rapi (Young)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c993_00",
+      "baseCode": "c993",
+      "name": "Mecha Shifty",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c994_00",
+      "baseCode": "c994",
+      "name": "Rapi (Mass-Produced Red)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c996_00",
+      "baseCode": "c996",
+      "name": "Levi",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c997_00",
+      "baseCode": "c997",
+      "name": "Only One",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c998_00",
+      "baseCode": "c998",
+      "name": "Hermin",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9000_00",
+      "baseCode": "c9000",
+      "name": "Alfred",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9000_01",
+      "baseCode": "c9000",
+      "name": "Neaty",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9000_02",
+      "baseCode": "c9000",
+      "name": "Sizzly",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9000_03",
+      "baseCode": "c9000",
+      "name": "Fixy",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9000_05",
+      "baseCode": "c9000",
+      "name": "Detaily",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9000_06",
+      "baseCode": "c9000",
+      "name": "Sellsy",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9000_07",
+      "baseCode": "c9000",
+      "name": "Ghost",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9001_00",
+      "baseCode": "c9001",
+      "name": "Maya",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9002_00",
+      "baseCode": "c9002",
+      "name": "Nora",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9003_00",
+      "baseCode": "c9003",
+      "name": "Mrs. Miss",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9004_00",
+      "baseCode": "c9004",
+      "name": "Velvet (NPC)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9005_00",
+      "baseCode": "c9005",
+      "name": "Predator",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9005_01",
+      "baseCode": "c9005",
+      "name": "Alpha Predator",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9006_00",
+      "baseCode": "c9006",
+      "name": "Deipara",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9008_00",
+      "baseCode": "c9008",
+      "name": "Nayuta (NPC)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9009_00",
+      "baseCode": "c9009",
+      "name": "Nihilister (Goddess Fall)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9010_00",
+      "baseCode": "c9010",
+      "name": "Jane",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9011_00",
+      "baseCode": "c9011",
+      "name": "Rain",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9013_00",
+      "baseCode": "c9013",
+      "name": "Snow White: Heavy Arms (NPC)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9014_00",
+      "baseCode": "c9014",
+      "name": "Mass-Produced Heretic",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9015_00",
+      "baseCode": "c9015",
+      "name": "Central Government Platoon Leader",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9016_00",
+      "baseCode": "c9016",
+      "name": "V.T.C. Priestess",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9017_00",
+      "baseCode": "c9017",
+      "name": "Altruia",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9018_00",
+      "baseCode": "c9018",
+      "name": "Princess",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9019_00",
+      "baseCode": "c9019",
+      "name": "Stall III",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9020_00",
+      "baseCode": "c9020",
+      "name": "Pretty",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9020_01",
+      "baseCode": "c9020",
+      "name": "Freesia (Pretty Casual!)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9021_00",
+      "baseCode": "c9021",
+      "name": "Anis (Star Student)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9021_01",
+      "baseCode": "c9021",
+      "name": "Anis (Twinkle Tri Star)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9022_00",
+      "baseCode": "c9022",
+      "name": "Mustang (Shady Past)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9023_00",
+      "baseCode": "c9023",
+      "name": "Hanson",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9024_00",
+      "baseCode": "c9024",
+      "name": "Yoyo",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9025_00",
+      "baseCode": "c9025",
+      "name": "Egovista",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9026_00",
+      "baseCode": "c9026",
+      "name": "Amy",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9027_00",
+      "baseCode": "c9027",
+      "name": "Dorothy (Corrupted Nostalgia)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9028_00",
+      "baseCode": "c9028",
+      "name": "Hope",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9029_00",
+      "baseCode": "c9029",
+      "name": "Laplace (Young)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9030_00",
+      "baseCode": "c9030",
+      "name": "Enme",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9031_00",
+      "baseCode": "c9031",
+      "name": "Syuen (Young)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9032_00",
+      "baseCode": "c9032",
+      "name": "Jien (Young)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9034_00",
+      "baseCode": "c9034",
+      "name": "Penguin No.1",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9035_00",
+      "baseCode": "c9035",
+      "name": "Penguin No.2",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9036_00",
+      "baseCode": "c9036",
+      "name": "Penguin No.3",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9037_00",
+      "baseCode": "c9037",
+      "name": "Penguin No.4",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9038_00",
+      "baseCode": "c9038",
+      "name": "Teddie",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9039_00",
+      "baseCode": "c9039",
+      "name": "Morgana",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9040_00",
+      "baseCode": "c9040",
+      "name": "Morgana (Real)",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9041_00",
+      "baseCode": "c9041",
+      "name": "Doctor Maria",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "c9042_00",
+      "baseCode": "c9042",
+      "name": "Bernoullia",
+      "isNpc": true,
+      "skins": []
+    },
+    {
+      "id": "dummy_00",
+      "baseCode": "dummy",
+      "name": "Placeholder-chan",
+      "isNpc": true,
+      "skins": []
+    }
+  ]
 }

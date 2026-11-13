@@ -287,7 +287,7 @@ export const DiagnosticsFAQ: React.FC = () => {
           as="h2"
           className="font-sans font-bold text-3xl sm:text-5xl text-white tracking-tight leading-[1.1]"
         >
-          Straight fixes.<br />
+          Straight fixes for<br />
           <span className="text-neutral-400">Common problems.</span>
         </BlurRevealTitle>
 

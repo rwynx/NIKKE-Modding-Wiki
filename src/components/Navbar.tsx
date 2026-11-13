@@ -109,10 +109,10 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             onClick={onOpenSearch}
             className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.08] text-neutral-300 hover:text-white text-xs font-mono transition-all cursor-pointer"
-            title="Search Nikke IDs"
+            title="Search for a Nikke"
           >
             <Search className="w-3.5 h-3.5 text-neutral-400" />
-            <span className="hidden 2xl:inline">Search {totalCount || 206} Nikkes</span>
+            <span className="hidden 2xl:inline">Find a Nikke...</span>
             <span className="2xl:hidden">Search</span>
             <kbd className="bg-white/[0.08] px-1 py-0.2 rounded text-[10px] text-neutral-400">⌘K</kbd>
           </button>
@@ -177,7 +177,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               }}
               className="w-full py-2 text-center bg-white/[0.05] rounded-lg text-xs font-mono text-white border border-white/[0.08] cursor-pointer"
             >
-              Search Nikkes ({totalCount || 206}) (⌘K)
+              Find a Nikke ({totalCount || 206}) (⌘K)
             </button>
             <a
               href="https://github.com/rwynx/nikke-modding-wiki"

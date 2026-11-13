@@ -71,7 +71,7 @@ export const CharacterLookupModal: React.FC<CharacterLookupModalProps> = ({ isOp
                   Nikke Character &amp; Skin IDs
                 </h3>
                 <span className="text-[11px] px-2 py-0.5 rounded-md font-mono bg-white/[0.06] text-neutral-300 border border-white/[0.08]">
-                  {totalCount || 570} IDs
+                  {totalCount || 394} IDs
                 </span>
                 {isLiveSync && (
                   <span className="text-[10px] px-2 py-0.5 rounded-md font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/25 flex items-center gap-1.5">
