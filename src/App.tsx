@@ -489,13 +489,13 @@ export const App: React.FC = () => {
               </p>
               <p className="text-neutral-400 text-[11.5px]">
                 Built, verified, and maintained by <a href="https://github.com/rwynx" target="_blank" rel="noopener noreferrer" className="text-white hover:text-indigo-300 underline underline-offset-2 decoration-white/30 hover:decoration-indigo-300 transition-colors font-semibold">Rwyn</a>. Gemini assisted in UI layout and React & Vite optimizations.
-              <br />As of Beta 1.2, Gemini DeepMind's total contributions:
-              <strong className="text-white"> 861 lines - around %8 </strong> of the current codebase.
+              <br />As of Beta 2, Gemini DeepMind's total contributions:
+              <strong className="text-white"> 941 lines - around %8 </strong> of the current codebase.
               </p>
             </div>
 
             <div className="text-neutral-400 font-mono text-[10.5px]">
-              <span>Beta-1.2 · 2026</span>
+              <span>Beta-2 · 2026</span>
             </div>
           </div>
 

@@ -97,6 +97,9 @@ export const JukeboxPlayer: React.FC = () => {
   };
 
   useEffect(() => {
+    // desktop only
+    if (typeof window !== 'undefined' && window.innerWidth < 640) return;
+
     if (!document.querySelector('script[src*="youtube.com/iframe_api"]')) {
       const tag = document.createElement('script');
       tag.src = 'https://www.youtube.com/iframe_api';
@@ -318,7 +321,7 @@ export const JukeboxPlayer: React.FC = () => {
   return (
     <>
       {/* jukebox */}
-      <div className={`fixed z-40 select-none font-sans transition-all duration-300 ${
+      <div className={`hidden sm:block fixed z-40 select-none font-sans transition-all duration-300 ${
         isOpen 
           ? 'bottom-12 left-4 sm:left-6' 
           : 'bottom-3 left-4'
