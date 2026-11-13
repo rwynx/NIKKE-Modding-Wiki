@@ -39,7 +39,7 @@ export const NmmSuiteSelector: React.FC = () => {
   );
 
   return (
-    <section id="nmm-suite" className="py-20 border-t border-white/[0.08] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 font-sans">
+    <section id="nmm-suite" className="py-20 scroll-mt-8 border-t border-white/[0.08] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 font-sans">
       
       {/* header */}
       <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-6">

@@ -59,7 +59,7 @@ export const WorkshopMasterclasses: React.FC<WorkshopMasterclassesProps> = ({
   };
 
   return (
-    <section id="legacy-guides" className="py-24 border-t border-white/[0.08] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <section id="legacy-guides" className="py-24 scroll-mt-4 border-t border-white/[0.08] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       {/* legacy #workshop alias */}
       <span id="workshop" className="sr-only" />
       
@@ -348,12 +348,12 @@ export const WorkshopMasterclasses: React.FC<WorkshopMasterclassesProps> = ({
 
                       {/* Image Preview */}
                       {step.image && (
-                        <div className="ml-8 my-3 rounded-xl overflow-hidden border border-white/[0.08] bg-black/40 p-1 max-w-2xl">
+                        <div className="ml-8 my-3 rounded-xl overflow-hidden border border-white/[0.08] bg-black/40 p-1 max-w-2xl aspect-video min-h-[160px] flex flex-col justify-center">
                           <img
                             src={step.image.src}
                             alt={step.image.alt}
-                            loading="lazy"
-                            className="w-full max-h-[320px] object-contain rounded-lg"
+                            decoding="async"
+                            className="w-full h-full max-h-[320px] object-contain rounded-lg"
                           />
                           {step.image.caption && (
                             <p className="text-[11px] font-mono text-neutral-400 text-center py-1">

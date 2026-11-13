@@ -83,7 +83,7 @@ export const AgentRegistrySection: React.FC = () => {
   }, [filteredList]);
 
   return (
-    <section id="characters" className="py-24 border-t border-white/[0.08] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+    <section id="characters" className="py-24 scroll-mt-16 border-t border-white/[0.08] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
       
       {/* header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">

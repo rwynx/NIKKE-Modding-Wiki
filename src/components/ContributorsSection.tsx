@@ -6,7 +6,7 @@ import { BlurRevealTitle } from './BlurRevealTitle';
 
 export const ContributorsSection: React.FC = () => {
   return (
-    <section id="credits" className="py-24 border-t border-white/[0.08] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <section id="credits" className="py-24 scroll-mt-16 border-t border-white/[0.08] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
       {/* header */}
       <div className="space-y-4 max-w-3xl">

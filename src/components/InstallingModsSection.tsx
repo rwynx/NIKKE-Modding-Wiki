@@ -138,16 +138,15 @@ export const InstallingModsSection: React.FC = () => {
   ];
 
   return (
-    <section id="installing-mods" className="max-w-[1060px] mx-auto px-4 sm:px-6 py-16 sm:py-24 space-y-10 sm:space-y-12">
+    <section id="installing-mods" className="max-w-[1060px] mx-auto px-4 sm:px-6 py-16 sm:py-24 scroll-mt-8 space-y-10 sm:space-y-12">
       
       {/* header */}
       <div className="space-y-4">
-        <div className="flex flex-wrap items-center gap-2">
-          <span className="text-[11px] font-sans font-bold px-2.5 py-0.5 rounded-full bg-white/[0.08] text-white border border-white/[0.12] tracking-wider uppercase">
-            [ 02 ] MOD INSTALLATION
-          </span>
+        <p className="text-xs font-sans font-medium tracking-wider text-neutral-400 uppercase flex items-center gap-2">
+          <span className="text-white font-bold">[ 02 ]</span>
+          <span>Mod Installation</span>
           <SectionAnchor id="installing-mods" label="installing-mods" />
-        </div>
+        </p>
 
         <BlurRevealTitle
           as="h2"
