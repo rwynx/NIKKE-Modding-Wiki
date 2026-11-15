@@ -141,7 +141,7 @@ export const tutorialVideos: TutorialVideo[] = [
     description:
       'Step-by-step video guide by Lady explaining why characters turn bright neon pink in-game after major Nikke updates (due to shader unlinking or outdated bundle structures), and demonstrating how to export textures and repack them into clean game containers.',
     downloads: [
-      { label: 'UABEA Modded (42 MB)', url: '/downloads/UABEA-Modded.7z', isDownload: true },
+      { label: 'UABEA Modded (MEGA)', url: 'https://mega.nz/file/d9wyDI7Y#k6aZy3Sg0S5p6JLPzdFKpUNL1vYgXpzOg7bQKFWOgY4', isDownload: false },
       { label: 'Chizuru NMM Auto-Repacker', url: '#nmm-suite' },
       { label: 'Download NMA (MEGA)', url: 'https://mega.nz/folder/KsdjEB4Q#HG-5KEPIOO6MeL33N_BlhQ/folder/q4snTJCT' }
     ]
@@ -498,12 +498,13 @@ export const TutorialWorkbench: React.FC<TutorialWorkbenchProps> = ({ initialVid
                 <ExternalLink className="w-3 h-3 text-neutral-400" />
               </a>
               <a
-                href="/downloads/UABEA-Modded.7z"
-                download
+                href="https://mega.nz/file/d9wyDI7Y#k6aZy3Sg0S5p6JLPzdFKpUNL1vYgXpzOg7bQKFWOgY4"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-between p-2 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] text-neutral-300 hover:text-white transition-colors"
               >
-                <span>UABEA Modded (42 MB)</span>
-                <Download className="w-3 h-3 text-neutral-400" />
+                <span>UABEA Modded (MEGA)</span>
+                <ExternalLink className="w-3 h-3 text-neutral-400" />
               </a>
             </div>
           </div>

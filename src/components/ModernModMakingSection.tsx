@@ -106,12 +106,12 @@ export const ModernModMakingSection: React.FC<ModernModMakingSectionProps> = ({ 
       id: 'tool-uabea',
       name: 'UABEA Modded',
       category: 'CONTAINER & HEX INJECTION',
-      priceTag: 'Free Utility',
+      priceTag: 'Free / MEGA',
       isPaid: false,
       description: 'Unity Asset Bundle Extractor with Avalonia UI. Used to inject edited textures/spine text files back into bundle containers, perform hex edits, and LZ4 compression.',
-      url: '/downloads/UABEA-Modded.7z',
-      buttonLabel: 'Download UABEA (7z)',
-      isDownload: true
+      url: 'https://mega.nz/file/d9wyDI7Y#k6aZy3Sg0S5p6JLPzdFKpUNL1vYgXpzOg7bQKFWOgY4',
+      buttonLabel: 'Download UABEA (MEGA)',
+      isDownload: false
     },
     {
       id: 'tool-nma',

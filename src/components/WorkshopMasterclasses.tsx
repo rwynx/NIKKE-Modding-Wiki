@@ -140,12 +140,13 @@ export const WorkshopMasterclasses: React.FC<WorkshopMasterclassesProps> = ({
                 <span className="text-[10px] font-mono text-neutral-500">Not Hosted</span>
               </div>
               <a
-                href="/downloads/UABEA-Modded.7z"
-                download
+                href="https://mega.nz/file/d9wyDI7Y#k6aZy3Sg0S5p6JLPzdFKpUNL1vYgXpzOg7bQKFWOgY4"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-between p-2 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] text-neutral-300 hover:text-white transition-colors"
               >
-                <span>UABEA Modded (42 MB)</span>
-                <Download className="w-3.5 h-3.5 text-neutral-400" />
+                <span>UABEA Modded (MEGA)</span>
+                <ExternalLink className="w-3.5 h-3.5 text-neutral-400" />
               </a>
               <a
                 href="https://ko-fi.com/silritinix"
@@ -202,12 +203,13 @@ export const WorkshopMasterclasses: React.FC<WorkshopMasterclassesProps> = ({
                   </p>
                 </div>
                 <a
-                  href="/downloads/UABEA-Modded.7z"
-                  download
+                  href="https://mega.nz/file/d9wyDI7Y#k6aZy3Sg0S5p6JLPzdFKpUNL1vYgXpzOg7bQKFWOgY4"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-between w-full px-2.5 py-1.5 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] text-neutral-200 hover:text-white text-[11px] font-mono transition-colors border border-white/[0.06]"
                 >
-                  <span>Download (42 MB)</span>
-                  <Download className="w-3 h-3 text-[rgb(160,225,255)]" />
+                  <span>Download (MEGA)</span>
+                  <ExternalLink className="w-3 h-3 text-[rgb(160,225,255)]" />
                 </a>
               </div>
 

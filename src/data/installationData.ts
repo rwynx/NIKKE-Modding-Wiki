@@ -40,7 +40,7 @@ export const installationSections: GuideSection[] = [
     links: [
       { text: 'Discord Community Server', url: 'https://discord.gg/nikke' },
       { text: 'Free Community Mod Archive (MEGA)', url: 'https://mega.nz/folder/KsdjEB4Q#HG-5KEPIOO6MeL33N_BlhQ' },
-      { text: 'Download Official NMM (v1.x)', url: '/downloads/NMM.zip', isDownload: true }
+      { text: 'Download Official NMM (v1.x - MEGA)', url: 'https://mega.nz/folder/DVNzmLDK#nBifrfbKSPuxmNBujfBxnQ', isDownload: false }
     ]
   },
   {

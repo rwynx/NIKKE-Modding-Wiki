@@ -16,7 +16,7 @@ export const creationSections: GuideSection[] = [
       }
     ],
     links: [
-      { text: 'UABEA Modded (Unity Asset Bundle Extractor)', url: '/downloads/UABEA-Modded.7z', isDownload: true },
+      { text: 'UABEA Modded (Unity Asset Bundle Extractor)', url: 'https://mega.nz/file/d9wyDI7Y#k6aZy3Sg0S5p6JLPzdFKpUNL1vYgXpzOg7bQKFWOgY4', isDownload: false },
       { text: 'Nikke Modding Assistant - NMA (former Nix Multitool)', url: 'https://mega.nz/folder/KsdjEB4Q#HG-5KEPIOO6MeL33N_BlhQ/folder/q4snTJCT' },
       { text: 'Adobe Photoshop (Official)', url: 'https://www.adobe.com/products/photoshop.html' },
       { text: 'Photopea (Free Web Photoshop)', url: 'https://www.photopea.com/' },
