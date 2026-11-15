@@ -179,16 +179,28 @@ export const App: React.FC = () => {
         'main': 'home',
       };
 
-      const targetId = aliasMap[slug] || slug;
+      const pageSlug = aliasMap[slug] || slug;
 
       if (window.location.hash && window.location.hash.includes('/')) {
-        window.history.replaceState(null, '', `/${targetId}/`);
+        window.history.replaceState(null, '', `/${pageSlug}/`);
       }
 
       setView('home');
-      document.title = routeTitles[targetId] || routeTitles.home;
+      document.title = routeTitles[pageSlug] || routeTitles.home;
 
       setTimeout(() => {
+        const currentHash = window.location.hash
+          .replace(/^#+/, '')
+          .split('?')[0]
+          .replace(/^\/+|\/+$/g, '')
+          .trim()
+          .toLowerCase();
+
+        const hashTarget = currentHash ? (aliasMap[currentHash] || currentHash) : null;
+        const targetId = (hashTarget && document.getElementById(hashTarget))
+          ? hashTarget
+          : pageSlug;
+
         if (targetId === 'home' || targetId === 'overview') {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {

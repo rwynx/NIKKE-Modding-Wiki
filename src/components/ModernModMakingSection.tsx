@@ -338,6 +338,14 @@ export const ModernModMakingSection: React.FC<ModernModMakingSectionProps> = ({ 
 
         <a
           href="#recommended-tools"
+          onClick={(e) => {
+            const el = document.getElementById('recommended-tools');
+            if (el) {
+              e.preventDefault();
+              el.scrollIntoView({ behavior: 'smooth' });
+              window.history.pushState(null, '', '#recommended-tools');
+            }
+          }}
           className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-mono text-neutral-400 hover:text-white bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.08] transition-all cursor-pointer"
         >
           <Wrench className="w-3.5 h-3.5 text-[rgb(160,225,255)]" />
