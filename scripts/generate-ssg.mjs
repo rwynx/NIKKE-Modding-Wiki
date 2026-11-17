@@ -38,7 +38,20 @@ const routes = [
           "name": "NIKKE Modding Wiki",
           "alternateName": ["NIKKE Modding", "RWX NIKKE Modding Wiki"],
           "description": "Primary community hub hosting up-to-date NIKKE mod managers, guides, and tutorials for Goddess of Victory: NIKKE.",
-          "inLanguage": "en"
+          "inLanguage": "en",
+          "sameAs": [
+            "https://github.com/rwynx/nikke-modding-wiki",
+            "https://discord.gg/nikke"
+          ],
+          "publisher": {
+            "@type": "Person",
+            "name": "Rwyn",
+            "url": "https://github.com/rwynx",
+            "sameAs": [
+              "https://github.com/rwynx",
+              "https://x.com/imfromdaisyland"
+            ]
+          }
         },
         {
           "@type": "CollectionPage",
