@@ -393,33 +393,96 @@ export const App: React.FC = () => {
             <div className="flex flex-col items-start gap-2.5 text-xs font-sans">
               {/* upper nav links: ending at Credits */}
               <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs text-neutral-400">
-                <button onClick={() => handleNavigateSection('home')} className="hover:text-white transition-colors cursor-pointer">
+                <a
+                  href="/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavigateSection('home');
+                  }}
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
                   Homepage
-                </button>
-                <button onClick={() => handleNavigateSection('nmm-suite')} className="hover:text-white transition-colors cursor-pointer">
+                </a>
+                <a
+                  href="/nmm-suite/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavigateSection('nmm-suite');
+                  }}
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
                   NMM Tools
-                </button>
-                <button onClick={() => handleNavigateSection('installing-mods')} className="hover:text-white transition-colors cursor-pointer">
+                </a>
+                <a
+                  href="/installing-mods/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavigateSection('installing-mods');
+                  }}
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
                   Install Mods
-                </button>
-                <button onClick={() => handleNavigateSection('mod-making')} className="hover:text-white transition-colors cursor-pointer">
+                </a>
+                <a
+                  href="/mod-making/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavigateSection('mod-making');
+                  }}
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
                   Make Mods
-                </button>
-                <button onClick={() => handleNavigateSection('legacy-guides')} className="hover:text-white transition-colors cursor-pointer">
+                </a>
+                <a
+                  href="/legacy-guides/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavigateSection('legacy-guides');
+                  }}
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
                   Legacy Archive
-                </button>
-                <button onClick={() => openWorkbench()} className="text-[rgb(160,225,255)] hover:underline cursor-pointer">
+                </a>
+                <a
+                  href="/workbench/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    openWorkbench();
+                  }}
+                  className="text-[rgb(160,225,255)] hover:underline cursor-pointer"
+                >
                   Video Lab
-                </button>
-                <button onClick={() => handleNavigateSection('characters')} className="hover:text-white transition-colors cursor-pointer">
+                </a>
+                <a
+                  href="/characters/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavigateSection('characters');
+                  }}
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
                   Nikke IDs
-                </button>
-                <button onClick={() => handleNavigateSection('diagnostics')} className="hover:text-white transition-colors cursor-pointer">
+                </a>
+                <a
+                  href="/diagnostics/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavigateSection('diagnostics');
+                  }}
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
                   Troubleshooting
-                </button>
-                <button onClick={() => handleNavigateSection('credits')} className="hover:text-white transition-colors cursor-pointer">
+                </a>
+                <a
+                  href="/credits/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavigateSection('credits');
+                  }}
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
                   Credits
-                </button>
+                </a>
               </div>
 
               {/* lower row: Nikke Discord Link - Legal Notice - Privacy */}
@@ -443,15 +506,29 @@ export const App: React.FC = () => {
 
                 <span className="text-white/[0.1]">•</span>
 
-                <button onClick={openNotice} className="text-neutral-400 hover:text-white font-medium transition-colors cursor-pointer">
+                <a
+                  href="/notice/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    openNotice();
+                  }}
+                  className="text-neutral-400 hover:text-white font-medium transition-colors cursor-pointer"
+                >
                   Legal Notice
-                </button>
+                </a>
 
                 <span className="text-white/[0.1]">•</span>
 
-                <button onClick={openPrivacy} className="text-neutral-400 hover:text-white font-medium transition-colors cursor-pointer">
+                <a
+                  href="/privacy/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    openPrivacy();
+                  }}
+                  className="text-neutral-400 hover:text-white font-medium transition-colors cursor-pointer"
+                >
                   Privacy Policy
-                </button>
+                </a>
               </div>
             </div>
           </div>

@@ -85,9 +85,13 @@ export const SectionNavRail: React.FC<SectionNavRailProps> = ({ onNavigateSectio
           const showLabel = isActive || isHovered;
 
           return (
-            <button
+            <a
               key={sec.id}
-              onClick={() => handleClick(sec.id)}
+              href={sec.id === 'home' ? '/' : `/${sec.id}/`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleClick(sec.id);
+              }}
               onMouseEnter={() => setHoveredId(sec.id)}
               onMouseLeave={() => setHoveredId(null)}
               className="group flex items-center gap-2.5 py-1 text-left cursor-pointer transition-all duration-200 outline-none"
@@ -131,7 +135,7 @@ export const SectionNavRail: React.FC<SectionNavRailProps> = ({ onNavigateSectio
                   {sec.label}
                 </span>
               </div>
-            </button>
+            </a>
           );
         })}
       </div>

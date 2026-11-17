@@ -54,8 +54,9 @@ export const Navbar: React.FC<NavbarProps> = ({
         {/* brand & nav */}
         <div className="flex items-center gap-3 sm:gap-4 flex-1 min-w-0">
           
-          <button 
-            onClick={() => handleLinkClick('home')} 
+          <a 
+            href="/"
+            onClick={(e) => { e.preventDefault(); handleLinkClick('home'); }} 
             className="flex items-center gap-2.5 sm:gap-3 group cursor-pointer text-left shrink-0"
             title="Nikke Modding Wiki Home"
           >
@@ -74,20 +75,21 @@ export const Navbar: React.FC<NavbarProps> = ({
                 Modding Wiki
               </span>
             </div>
-          </button>
+          </a>
 
           <div className="hidden lg:block h-7 w-px bg-gradient-to-b from-transparent via-white/[0.22] to-transparent shrink-0 mx-1 xl:mx-2" />
 
           {/* nav links */}
           <nav className="hidden lg:flex items-center gap-2 xl:gap-3 2xl:gap-4 text-xs xl:text-[13px] font-medium text-neutral-400">
             {navLinks.map((link) => (
-              <button
+              <a
                 key={link.label}
-                onClick={() => handleLinkClick(link.target)}
+                href={link.target === 'home' ? '/' : `/${link.target}/`}
+                onClick={(e) => { e.preventDefault(); handleLinkClick(link.target); }}
                 className="hover:text-white transition-colors tracking-tight cursor-pointer whitespace-nowrap py-1"
               >
                 {link.label}
-              </button>
+              </a>
             ))}
           </nav>
         </div>
@@ -97,14 +99,15 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* separator between page navigation and actions */}
           <div className="hidden lg:block h-7 w-px bg-gradient-to-b from-transparent via-white/[0.22] to-transparent shrink-0 mr-1 xl:mr-1.5" />
 
-          <button
-            onClick={() => onOpenWorkbench()}
+          <a
+            href="/workbench/"
+            onClick={(e) => { e.preventDefault(); onOpenWorkbench(); }}
             className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.08] text-neutral-300 hover:text-white text-xs font-mono transition-all cursor-pointer"
             title="Open Tutorial Theater & Video Lab"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[rgb(160,225,255)] animate-pulse" />
             <span className="hidden xl:inline">Video Lab</span>
-          </button>
+          </a>
 
           <button
             onClick={onOpenSearch}
@@ -117,14 +120,15 @@ export const Navbar: React.FC<NavbarProps> = ({
             <kbd className="bg-white/[0.08] px-1 py-0.2 rounded text-[10px] text-neutral-400">⌘K</kbd>
           </button>
 
-          <button
-            onClick={() => handleLinkClick('nmm-suite')}
+          <a
+            href="/nmm-suite/"
+            onClick={(e) => { e.preventDefault(); handleLinkClick('nmm-suite'); }}
             className="group flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/[0.06] hover:bg-white/[0.12] border border-white/[0.1] hover:border-white/25 text-neutral-200 hover:text-white text-xs font-medium tracking-tight transition-all cursor-pointer whitespace-nowrap active:scale-95"
             title="Download NMM"
           >
             <Download className="w-3.5 h-3.5 text-[rgb(160,225,255)] group-hover:scale-110 transition-transform duration-200" />
             <span>Get NMM</span>
-          </button>
+          </a>
 
           <a
             href="https://github.com/rwynx/nikke-modding-wiki"
@@ -151,17 +155,23 @@ export const Navbar: React.FC<NavbarProps> = ({
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#090a0f] border-b border-white/[0.08] px-4 py-4 space-y-3">
           {navLinks.map((link) => (
-            <button
+            <a
               key={link.label}
-              onClick={() => handleLinkClick(link.target)}
+              href={link.target === 'home' ? '/' : `/${link.target}/`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleLinkClick(link.target);
+              }}
               className="block w-full text-left text-sm text-neutral-300 hover:text-white py-1.5 font-medium cursor-pointer"
             >
               {link.label}
-            </button>
+            </a>
           ))}
           <div className="pt-3 border-t border-white/[0.08] flex flex-col gap-2">
-            <button
-              onClick={() => {
+            <a
+              href="/workbench/"
+              onClick={(e) => {
+                e.preventDefault();
                 onOpenWorkbench();
                 setMobileMenuOpen(false);
               }}
@@ -169,7 +179,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <Film className="w-3.5 h-3.5" />
               <span>Launch Video Lab Theater</span>
-            </button>
+            </a>
             <button
               onClick={() => {
                 onOpenSearch();

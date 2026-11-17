@@ -2,12 +2,12 @@
 
 # NIKKE Modding Wiki
 
-**An open-source, community-driven, non-commercial modding hub for Goddess of Victory: NIKKE.**   Faster modding workflows, automated tools, character information, and archived legacy guides.
+**An open-source, community-driven, non-commercial modding hub for Goddess of Victory: NIKKE.** Faster modding workflows, automated tools, character information, and archived legacy guides.
 
 <br />
 
 [![Status](https://img.shields.io/badge/STATUS-online-success?style=for-the-badge)](https://nikkemodding.rwyn.app)
-[![Release](https://img.shields.io/badge/VERSION-beta--1.2-success?style=for-the-badge)](https://github.com/rwynx/NIKKE-Modding-Wiki/releases)
+[![Release](https://img.shields.io/badge/VERSION-beta--2-success?style=for-the-badge)](https://github.com/rwynx/NIKKE-Modding-Wiki/releases)
 [![License](https://img.shields.io/badge/LICENSE-MIT-informational?style=for-the-badge)](LICENSE)
 [![Discord](https://img.shields.io/badge/DC-Nikke_Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/nikke)
 <br />

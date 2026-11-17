@@ -874,8 +874,51 @@ const aliases = [
   { from: 'contributors', to: 'credits' },
 ];
 
+const staticNavHeader = `
+  <header class="bg-[#07080c] border-b border-white/10 py-3.5 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+      <a href="/" class="font-bold text-white tracking-tight text-sm flex items-center gap-2">
+        <span>NIKKE MODDING WIKI</span>
+      </a>
+      <nav class="flex flex-wrap items-center gap-4 text-xs font-mono text-neutral-300">
+        <a href="/" class="hover:text-white transition-colors">Homepage</a>
+        <a href="/nmm-suite/" class="hover:text-white transition-colors">NMM Tools</a>
+        <a href="/installing-mods/" class="hover:text-white transition-colors">Install Mods</a>
+        <a href="/mod-making/" class="hover:text-white transition-colors">Make Mods</a>
+        <a href="/legacy-guides/" class="hover:text-white transition-colors">Legacy Archive</a>
+        <a href="/characters/" class="hover:text-white transition-colors">Nikke IDs</a>
+        <a href="/diagnostics/" class="hover:text-white transition-colors">Troubleshooting</a>
+        <a href="/workbench/" class="hover:text-white transition-colors">Video Lab</a>
+        <a href="/credits/" class="hover:text-white transition-colors">Credits</a>
+      </nav>
+    </div>
+  </header>
+`;
+
+const staticFooter = `
+  <footer class="border-t border-white/10 bg-[#07080c] py-12 px-4 sm:px-6 lg:px-8 mt-16 text-xs text-neutral-400 font-sans">
+    <div class="max-w-7xl mx-auto space-y-6">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div>
+          <p class="font-bold text-white text-sm">NIKKE MODDING WIKI</p>
+          <p class="text-[11px] text-neutral-400">An independent, non-commercial community wiki for NIKKE Modding.</p>
+        </div>
+        <div class="flex flex-wrap gap-4 text-xs text-neutral-400">
+          <a href="/notice/" class="hover:text-white transition-colors">Legal Notice</a>
+          <a href="/privacy/" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="https://discord.gg/nikke" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Discord (110k+)</a>
+          <a href="https://github.com/rwynx/nikke-modding-wiki" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+`;
+
 function buildPageHtml(route) {
   let html = baseHtml;
+
+  // Guarantee no duplicate noscript across any subpage
+  html = html.replace(/<noscript>[\s\S]*?<\/noscript>/gi, '');
 
   html = html.replace(/<title>.*?<\/title>/s, `<title>${escapeHtml(route.title)}</title>`);
 
@@ -918,7 +961,7 @@ function buildPageHtml(route) {
   const jsonLdTag = `<script type="application/ld+json">\n${jsonLdString}\n    </script>`;
   html = html.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, jsonLdTag);
 
-  const rootReplacement = `<div id="root">${route.prerenderHtml}</div>`;
+  const rootReplacement = `<div id="root">${staticNavHeader}${route.prerenderHtml}${staticFooter}</div>`;
   html = html.replace('<div id="root"></div>', rootReplacement);
 
   return html;

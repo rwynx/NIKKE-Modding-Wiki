@@ -203,20 +203,30 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onExploreWorkshop 
           <div className="pt-2">
             <div className="flex flex-wrap items-center gap-3">
               <a
-                href="#nmm-suite"
+                href="/nmm-suite/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const el = document.getElementById('nmm-suite');
+                  if (el) el.scrollIntoView({ behavior: 'smooth' });
+                  window.history.pushState(null, '', '/nmm-suite/');
+                }}
                 className="group relative px-6 py-3 rounded-xl bg-white/[0.08] hover:bg-white/[0.16] border border-white/[0.2] hover:border-white/50 text-white font-semibold text-sm tracking-tight transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.08)] hover:shadow-[0_0_26px_rgba(255,255,255,0.22)] flex items-center gap-2.5 cursor-pointer backdrop-blur-md active:scale-95"
               >
                 <Download className="w-4 h-4 text-white group-hover:scale-110 group-hover:-translate-y-0.5 transition-all duration-200" />
                 <span>Download NMM</span>
               </a>
 
-              <button
-                onClick={onExploreWorkshop}
+              <a
+                href="/installing-mods/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onExploreWorkshop();
+                }}
                 className="group relative px-6 py-3 rounded-xl bg-white/[0.07] hover:bg-white/[0.14] border border-white/[0.18] hover:border-white/40 text-neutral-100 hover:text-white font-medium text-sm tracking-tight transition-all duration-300 flex items-center gap-2.5 cursor-pointer backdrop-blur-md shadow-[0_0_20px_rgba(255,255,255,0.06)] hover:shadow-[0_0_24px_rgba(255,255,255,0.16)] active:scale-95"
               >
                 <span>Explore 21 Guides</span>
                 <ChevronRight className="w-4 h-4 text-neutral-400 group-hover:text-white group-hover:translate-x-1 transition-all duration-200" />
-              </button>
+              </a>
 
               <a
                 href="https://discord.gg/nikke"
