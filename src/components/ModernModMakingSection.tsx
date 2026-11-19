@@ -354,7 +354,7 @@ export const ModernModMakingSection: React.FC<ModernModMakingSectionProps> = ({ 
       </div>
 
       {/* manual pipeline */}
-      {activeTab === 'manual' && (
+      <div className={activeTab === 'manual' ? 'block' : 'hidden'}>
         <div className="space-y-6">
           <div className="flex items-center justify-between border-b border-white/[0.08] pb-3">
             <div>
@@ -405,10 +405,10 @@ export const ModernModMakingSection: React.FC<ModernModMakingSectionProps> = ({ 
             })}
           </div>
         </div>
-      )}
+      </div>
 
       {/* nma pipeline */}
-      {activeTab === 'auto' && (
+      <div className={activeTab === 'auto' ? 'block' : 'hidden'}>
         <div className="space-y-6">
           <div className="flex items-center justify-between border-b border-white/[0.08] pb-3">
             <div>
@@ -506,7 +506,7 @@ export const ModernModMakingSection: React.FC<ModernModMakingSectionProps> = ({ 
             </div> */}
           </div>
         </div>
-      )}
+      </div>
 
       {/* seireiko spine */}
       <div className="relative rounded-2xl p-6 sm:p-8 bg-gradient-to-r from-[#171b29] via-[#12141f] to-[#0f1118] border border-[rgb(160,225,255)]/[0.25] shadow-xl overflow-hidden flex flex-col md:flex-row items-start md:items-center justify-between gap-6 group">

@@ -64,7 +64,7 @@ export const App: React.FC = () => {
   }, []);
 
   const routeTitles: Record<string, string> = {
-    home: 'NIKKE Modding Wiki • Community Guides & Tutorials',
+    home: 'NIKKE Modding Wiki • Community Guides, Tools & Database',
     'nmm-suite': 'NIKKE Mod Managers: Chizuru, Danieru, na0h & SkinnyMan ModDock • NIKKE Modding Wiki',
     'installing-mods': 'How to Install NIKKE Mods • Step-by-Step Tutorial • NIKKE Modding Wiki',
     'mod-making': 'NIKKE Mod Creation Guide • AssetStudio, UABEA & Spine • NIKKE Modding Wiki',

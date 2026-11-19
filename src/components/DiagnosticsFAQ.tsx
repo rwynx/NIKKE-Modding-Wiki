@@ -321,11 +321,11 @@ export const DiagnosticsFAQ: React.FC = () => {
                 />
               </button>
 
-              {isOpen && (
-                <div className="pt-4 pr-6 sm:pl-7 animate-fade-in font-sans">
-                  {faq.a}
-                </div>
-              )}
+              <div
+                className={`pt-4 pr-6 sm:pl-7 font-sans ${isOpen ? 'block animate-fade-in' : 'hidden'}`}
+              >
+                {faq.a}
+              </div>
             </div>
           );
         })}

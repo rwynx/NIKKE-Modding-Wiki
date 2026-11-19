@@ -25,7 +25,9 @@ const routes = [
     slug: '',
     title: 'NIKKE Modding Wiki • Community Guides, Tools & Database',
     description: 'The primary community hub for Goddess of Victory: NIKKE modding. Modern PC managers (Chizuru NMM, Danieru NMM, Na0h NMM), Android SkinnyMan ModDock, installation guides, and error fixes.',
+    pageUrl: `${BASE_URL}/`,
     canonical: `${BASE_URL}/`,
+    inSitemap: true,
     priority: '1.0',
     changefreq: 'daily',
     structuredData: {
@@ -61,6 +63,156 @@ const routes = [
           "isPartOf": { "@id": `${BASE_URL}/#website` },
           "description": "The primary community hub hosting up-to-date NIKKE mod managers (PC: Chizuru NMM, Danieru NMM, na0h NMM; Mobile: SkinnyMan ModDock), guides, character c-codes, and troubleshooting fixes, backed by the largest NIKKE community (discord.gg/nikke).",
           "inLanguage": "en"
+        },
+        {
+          "@type": "ItemList",
+          "@id": `${BASE_URL}/#tools`,
+          "name": "NIKKE Mod Managers & Docks",
+          "itemListElement": [
+            {
+              "@type": "SoftwareApplication",
+              "position": 1,
+              "name": "Chizuru NMM",
+              "operatingSystem": "Windows 10, Windows 11",
+              "applicationCategory": "GameModTool",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+              "description": "Recommended feature-rich PC NIKKE Mod Manager with automated repacking, hash sync, and Live2D preview."
+            },
+            {
+              "@type": "SoftwareApplication",
+              "position": 2,
+              "name": "SkinnyMan ModDock",
+              "operatingSystem": "Android",
+              "applicationCategory": "GameModTool",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+              "description": "Dedicated Android/mobile NIKKE mod dock enabling mods on mobile without root access using Shizuku."
+            },
+            {
+              "@type": "SoftwareApplication",
+              "position": 3,
+              "name": "Danieru NMM",
+              "operatingSystem": "Windows",
+              "applicationCategory": "GameModTool",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+              "description": "Alternative community Nikke mod manager for PC by Danieru."
+            },
+            {
+              "@type": "SoftwareApplication",
+              "position": 4,
+              "name": "na0h NMM",
+              "operatingSystem": "Windows",
+              "applicationCategory": "GameModTool",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+              "description": "Classic community Nikke mod manager for PC by na0h."
+            }
+          ]
+        },
+        {
+          "@type": "HowTo",
+          "@id": `${BASE_URL}/#howto`,
+          "name": "How to Install NIKKE Mods on PC with Chizuru NMM",
+          "description": "5-step guide to installing character skins, burst cutscenes, and costume mods on PC.",
+          "totalTime": "PT3M",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "position": 1,
+              "name": "Download and run Chizuru NMM",
+              "text": "Download the latest Nikke Mod Manager and run NikkeModManager.exe as Administrator."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 2,
+              "name": "Sync game assets",
+              "text": "If prompted to download and sync assets on first launch, click Yes to synchronize the catalog index."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 3,
+              "name": "Drop mods into mods folder",
+              "text": "Place your downloaded mod folders directly into the NikkeModManager/mods/<ModName>/ directory."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 4,
+              "name": "Toggle mods enable / disable",
+              "text": "Browse your mod list in the manager interface and tick the characters, skins, or cutscenes you want."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 5,
+              "name": "Click Apply & Play",
+              "text": "Click the Apply button, launch Goddess of Victory: NIKKE through the official launcher, and enjoy."
+            }
+          ]
+        },
+        {
+          "@type": "TechArticle",
+          "@id": `${BASE_URL}/#article`,
+          "headline": "Modern NIKKE Mod Creation Workflows",
+          "description": "In-depth guide to extracting assets, modifying Spine 2D skeletons, texture editing in Pre-Multiplied Alpha (PMA), and bundle repacking."
+        },
+        {
+          "@type": "FAQPage",
+          "@id": `${BASE_URL}/#faq`,
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Which NIKKE Mod Manager should I use? Are old GameBanana tools working?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NIKKE Modding Wiki (nikkemodding.rwyn.app) is the only primary hub hosting up-to-date, community-maintained NIKKE mod managers, backed and supported directly within the largest NIKKE community (discord.gg/nikke with 110k+ members). Ancient external releases (like the legacy v0.21 build on GameBanana) are completely obsolete, unmaintained, and broken with modern game catalogs. The community exclusively uses modern tools: Chizuru NMM, Danieru NMM, na0h NMM for PC, and SkinnyMan ModDock for Android."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Loading Screen Stuck at 43% or 4/7: How do I fix it?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This occurs when Unity addressable catalog manifests become mismatched. Close Nikke completely, delete cached files inside %USERPROFILE%\\AppData\\LocalLow\\com_proximabeta\\NIKKE\\com.shiftup.addressables, use the Repair function in the official launcher, launch the game until Tap to Continue, delete UnityCrashHandler64.exe, and re-apply mods as Admin."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why are my character textures completely pink / magenta in-game?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When a character model turns bright neon pink in-game, it means Unity cannot link the texture shader or the mod was built for an older game version. Use Chizuru NMM's automated repacker, Nikke Modding Assistant (NMA), or Doro Repacker to automatically rebuild the broken mods against fresh game catalogs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Sync did not complete: game_addressables_dir_missing",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This error pops up during resource sync when NMM cannot locate your game addressable catalog path automatically. Open manager_config.json in your NMM folder, locate CATALOG_PATH, and manually set it to point to ...\\NIKKE\\Unity\\com_proximabeta_NIKKE\\com.shiftup.patch, then save and restart NMM."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How to move to a new NMM version without losing my settings?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Upgrading Chizuru NMM is completely lossless. Simply move or copy manager_config.json, mod_state.json, and your mods folder into the new version's folder."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why are mods invisible in-game or characters missing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Always verify that in-game Graphics Quality is set to HIGH. On Medium or Low, the game engine bypasses custom Spine mesh texture passes and defaults to fallback low-res LODs, causing mods to become invisible."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "PMA vs Straight Alpha: Why does my mod have black outline halos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nikke Unity textures are stored in Pre-Multiplied Alpha (PMA) format. If you paint soft edges with an editor configured for Straight Alpha, the semi-transparent pixels turn into dark black fringes in the game. Convert textures to Straight Alpha before editing, and back to PMA when finished."
+              }
+            }
+          ]
         }
       ]
     },
@@ -135,7 +287,9 @@ const routes = [
     slug: 'nmm-suite',
     title: 'NIKKE Mod Managers: Chizuru, Danieru, na0h & SkinnyMan ModDock • NIKKE Modding Wiki',
     description: 'Compare and download working NIKKE Mod Managers: Chizuru NMM (auto-repack), Danieru, na0h for PC, and SkinnyMan ModDock for Android. Beware: obsolete GameBanana v0.21 builds no longer function.',
-    canonical: `${BASE_URL}/nmm-suite/`,
+    pageUrl: `${BASE_URL}/nmm-suite/`,
+    canonical: `${BASE_URL}/`,
+    inSitemap: false,
     priority: '0.95',
     changefreq: 'weekly',
     structuredData: {
@@ -256,7 +410,9 @@ const routes = [
     slug: 'installing-mods',
     title: 'How to Install NIKKE Mods (PC & Android) • Step-by-Step Guide • NIKKE Modding Wiki',
     description: 'Complete step-by-step guide to installing NIKKE character skins, cutscenes, and costume mods on PC (Chizuru NMM) and Android (SkinnyMan ModDock + Shizuku).',
-    canonical: `${BASE_URL}/installing-mods/`,
+    pageUrl: `${BASE_URL}/installing-mods/`,
+    canonical: `${BASE_URL}/`,
+    inSitemap: false,
     priority: '0.95',
     changefreq: 'weekly',
     structuredData: {
@@ -370,7 +526,9 @@ const routes = [
     slug: 'mod-making',
     title: 'NIKKE Mod Creation Guide • AssetStudio, UABEA & Spine • NIKKE Modding Wiki',
     description: 'Learn how to make Goddess of Victory: NIKKE mods. Comprehensive workflows for Nikke Modding Assistant (NMA), AssetStudio, UABEA bundle extraction, Spine 4.1 rigging, and texture editing.',
-    canonical: `${BASE_URL}/mod-making/`,
+    pageUrl: `${BASE_URL}/mod-making/`,
+    canonical: `${BASE_URL}/`,
+    inSitemap: false,
     priority: '0.9',
     changefreq: 'monthly',
     structuredData: {
@@ -443,7 +601,9 @@ const routes = [
     slug: 'legacy-guides',
     title: 'NIKKE Legacy Archive & Video Masterclasses • NIKKE Modding Wiki',
     description: 'Archive of advanced NIKKE modding masterclasses, video tutorials, Live2D asset extraction, Spine animation rigging, sound replacement, and community guides.',
-    canonical: `${BASE_URL}/legacy-guides/`,
+    pageUrl: `${BASE_URL}/legacy-guides/`,
+    canonical: `${BASE_URL}/`,
+    inSitemap: false,
     priority: '0.85',
     changefreq: 'monthly',
     structuredData: {
@@ -487,7 +647,9 @@ const routes = [
     slug: 'characters',
     title: 'NIKKE Character & Skin IDs • Asset Codes (c-codes) & Outfits • NIKKE Modding Wiki',
     description: 'Searchable NIKKE character & skin IDs directory. Look up internal character asset codes (c-codes), costume identifiers, skins, and Live2D asset names.',
-    canonical: `${BASE_URL}/characters/`,
+    pageUrl: `${BASE_URL}/characters/`,
+    canonical: `${BASE_URL}/`,
+    inSitemap: false,
     priority: '0.9',
     changefreq: 'weekly',
     structuredData: {
@@ -551,7 +713,9 @@ const routes = [
     slug: 'diagnostics',
     title: 'Fix NIKKE 43% Loading Screen & Pink Textures – Troubleshooting • NIKKE Modding Wiki',
     description: 'Fix common Goddess of Victory: NIKKE modding errors: 43% loading screen stuck bug, pink/magenta character textures repacking fix, game_addressables_dir_missing, and missing mods.',
-    canonical: `${BASE_URL}/diagnostics/`,
+    pageUrl: `${BASE_URL}/diagnostics/`,
+    canonical: `${BASE_URL}/`,
+    inSitemap: false,
     priority: '0.95',
     changefreq: 'weekly',
     structuredData: {
@@ -703,7 +867,9 @@ const routes = [
     slug: 'workbench',
     title: 'Video Lab & Interactive Workbench • NIKKE Modding Wiki',
     description: 'Interactive video learning lab and modding workbench. Watch step-by-step video tutorials alongside interactive code snippets and tool references.',
+    pageUrl: `${BASE_URL}/workbench/`,
     canonical: `${BASE_URL}/workbench/`,
+    inSitemap: true,
     priority: '0.8',
     changefreq: 'monthly',
     structuredData: {
@@ -728,7 +894,9 @@ const routes = [
     slug: 'credits',
     title: 'Credits & Community Contributors • NIKKE Modding Wiki',
     description: 'Special thanks and credits to the creators, developers, researchers, and contributors behind NIKKE Modding tools, guides, and community infrastructure.',
-    canonical: `${BASE_URL}/credits/`,
+    pageUrl: `${BASE_URL}/credits/`,
+    canonical: `${BASE_URL}/`,
+    inSitemap: false,
     priority: '0.7',
     changefreq: 'monthly',
     structuredData: {
@@ -824,7 +992,9 @@ const routes = [
     slug: 'notice',
     title: 'Legal Disclaimer & Community Notice • NIKKE Modding Wiki',
     description: 'Non-commercial community wiki disclaimer for Goddess of Victory: NIKKE. Modding policies, cosmetic guidelines, anti-cheat rules, and copyright notices.',
+    pageUrl: `${BASE_URL}/notice/`,
     canonical: `${BASE_URL}/notice/`,
+    inSitemap: false,
     priority: '0.5',
     changefreq: 'monthly',
     structuredData: {
@@ -850,7 +1020,9 @@ const routes = [
     slug: 'privacy',
     title: 'Privacy Policy • NIKKE Modding Wiki',
     description: 'Privacy policy for NIKKE Modding Wiki. Zero tracking, client-side only local storage, privacy-respecting community platform.',
+    pageUrl: `${BASE_URL}/privacy/`,
     canonical: `${BASE_URL}/privacy/`,
+    inSitemap: false,
     priority: '0.5',
     changefreq: 'monthly',
     structuredData: {
@@ -929,6 +1101,7 @@ const staticFooter = `
 
 function buildPageHtml(route) {
   let html = baseHtml;
+  const pageUrl = route.pageUrl || (route.slug ? `${BASE_URL}/${route.slug}/` : `${BASE_URL}/`);
 
   // Guarantee no duplicate noscript across any subpage
   html = html.replace(/<noscript>[\s\S]*?<\/noscript>/gi, '');
@@ -955,7 +1128,7 @@ function buildPageHtml(route) {
   );
   html = html.replace(
     /<meta property="og:url" content=".*?" \/>/s,
-    `<meta property="og:url" content="${route.canonical}" />`
+    `<meta property="og:url" content="${pageUrl}" />`
   );
   html = html.replace(
     /<meta name="twitter:title" content=".*?" \/>/s,
@@ -967,7 +1140,7 @@ function buildPageHtml(route) {
   );
   html = html.replace(
     /<meta name="twitter:url" content=".*?" \/>/s,
-    `<meta name="twitter:url" content="${route.canonical}" />`
+    `<meta name="twitter:url" content="${pageUrl}" />`
   );
 
   const jsonLdString = JSON.stringify(route.structuredData, null, 2);
@@ -1017,7 +1190,8 @@ for (const alias of aliases) {
     }
     let aliasHtml = buildPageHtml({
       ...targetRoute,
-      canonical: `${BASE_URL}/${targetRoute.slug}/`,
+      pageUrl: `${BASE_URL}/${targetRoute.slug}/`,
+      canonical: targetRoute.canonical,
     });
     const redirectScript = `<script>if(window.location.pathname.startsWith('/${alias.from}')){window.history.replaceState(null,'','/${targetRoute.slug}/'+window.location.search+window.location.hash);}</script>`;
     aliasHtml = aliasHtml.replace('</head>', `${redirectScript}</head>`);
@@ -1031,7 +1205,8 @@ fs.copyFileSync(path.join(distDir, 'index.html'), path.join(distDir, '404.html')
 console.log('  [OK] 404 SPA fallback (dist/404.html)');
 
 // sitemap
-const sitemapEntries = routes.map(r => {
+const sitemapRoutes = routes.filter(r => r.inSitemap);
+const sitemapEntries = sitemapRoutes.map(r => {
   const loc = r.slug ? `${BASE_URL}/${r.slug}/` : `${BASE_URL}/`;
   return `  <url>
     <loc>${loc}</loc>
@@ -1049,6 +1224,6 @@ ${sitemapEntries}
 
 fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemapContent, 'utf-8');
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapContent, 'utf-8');
-console.log('  [OK] sitemap.xml generated in dist/ and public/ (10 canonical routes)');
+console.log(`  [OK] sitemap.xml generated in dist/ and public/ (${sitemapRoutes.length} canonical routes)`);
 
 console.log('Static Site Generation (SSG) completed successfully!');

@@ -210,7 +210,7 @@ export const InstallingModsSection: React.FC = () => {
       </div>
 
       {/* chizuru */}
-      {activeTab === 'chizuru' && (
+      <div className={activeTab === 'chizuru' ? 'block' : 'hidden'}>
         <div className="space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-xl bg-white/[0.02] border border-white/[0.06]">
             <div>
@@ -311,10 +311,10 @@ export const InstallingModsSection: React.FC = () => {
             </div>
           </div>
         </div>
-      )}
+      </div>
 
       {/* danieru */}
-      {activeTab === 'danieru' && (
+      <div className={activeTab === 'danieru' ? 'block' : 'hidden'}>
         <div className="space-y-6">
           <div className="p-4 rounded-xl bg-amber-500/[0.05] border border-amber-500/20 text-xs text-amber-300 font-sans flex items-start gap-3">
             <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5 text-amber-400" />
@@ -367,10 +367,10 @@ export const InstallingModsSection: React.FC = () => {
             })}
           </div>
         </div>
-      )}
+      </div>
 
       {/* moddock */}
-      {activeTab === 'skinnyman' && (
+      <div className={activeTab === 'skinnyman' ? 'block' : 'hidden'}>
         <div className="space-y-6">
           <div className="p-4 rounded-xl bg-sky-500/[0.05] border border-sky-500/20 text-xs text-sky-200 font-sans flex items-start gap-3">
             <Smartphone className="w-4 h-4 shrink-0 mt-0.5 text-sky-400" />
@@ -434,7 +434,7 @@ export const InstallingModsSection: React.FC = () => {
             </div>
           </div>
         </div>
-      )}
+      </div>
 
     </section>
   );

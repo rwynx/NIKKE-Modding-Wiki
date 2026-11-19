@@ -46,11 +46,12 @@ export const tutorialVideos: TutorialVideo[] = [
     seriesName: 'Nikke Modding Assistant',
     badge: 'NMA GUIDE',
     title: 'NMA Walkthrough & Automated Swapper Guide',
-    duration: '27 MB',
+    duration: '11:30',
     instructor: 'Nix',
     instructorRole: 'Creator of NMA',
-    videoSrc: '/videos/nma-tutorial.mp4',
-    isEmbed: false,
+    videoSrc: 'https://mega.nz/embed/A9JlQK6D#vy4zroBN7nKM1rx5ATurntTMPPHStRDKNJIkuEeCGaQ',
+    isEmbed: true,
+    embedType: 'mega',
     description:
       'Official walkthrough compiled by Nix demonstrating the complete Nikke Modding Assistant (NMA) workflow.',
     downloads: [

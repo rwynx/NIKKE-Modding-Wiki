@@ -155,6 +155,8 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onExploreWorkshop 
           <video
             ref={videoRef}
             src="/videos/nikke-opening-new.webm"
+            poster="/LobbyBackgroundMod/LobbyBackgroundOG.webp"
+            preload="metadata"
             autoPlay
             loop
             muted

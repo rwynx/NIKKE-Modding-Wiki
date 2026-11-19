@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { NmmTool } from '../types';
+import { defaultNmmTools } from '../data/nmmCompareData';
 import { Download, Check, AlertCircle, DollarSign, Smartphone } from 'lucide-react';
 import { SectionAnchor } from './SectionAnchor';
 import { BlurRevealTitle } from './BlurRevealTitle';
 import { NikkeIcon } from './NikkeIcon';
 
 export const NmmSuiteSelector: React.FC = () => {
-  const [tools, setTools] = useState<NmmTool[]>([]);
+  const [tools, setTools] = useState<NmmTool[]>(defaultNmmTools);
   const [mode, setMode] = useState<'all' | 'unique'>('all');
   const [showPaid, setShowPaid] = useState<boolean>(false);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     fetch('/api/nmmCompare.json')
