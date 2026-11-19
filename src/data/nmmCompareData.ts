@@ -4,7 +4,6 @@ export const defaultNmmTools: NmmTool[] = [
   {
     name: 'Chizuru NMM',
     maintainer: 'Chizuru',
-    version: 'v1.2.1',
     features: [
       'Aim/Cover/Standing Mod',
       'Burst Animation Mod',
@@ -27,12 +26,13 @@ export const defaultNmmTools: NmmTool[] = [
       'Built-in Events Calendar',
       'Built-in Maintenance Reminder',
       'Particle Atlas Mode (Fullscreen BG)',
-      'Voiceovers and Subtitles'
+      'Voiceovers and Subtitles',
+      'Windows & Linux Support'
     ],
     downloads: [
       {
-        label: 'Google Drive',
-        href: 'https://drive.google.com/file/d/1AFG8MK3koseG5g_xy4ENtiPu1vRjj0Tr/view?usp=sharing'
+        label: 'Google Drive (Folder)',
+        href: 'https://drive.google.com/drive/folders/1VfDfShORxS7PVPgZ256ydTpyvJ5Gvk1R'
       }
     ]
   },
@@ -86,7 +86,7 @@ export const defaultNmmTools: NmmTool[] = [
   },
   {
     name: 'Na0h NMM',
-    note: 'Free version not updated',
+    note: 'Free version not updated.',
     maintainer: 'Na0h',
     features: [
       'Aim/Cover/Standing Mod',

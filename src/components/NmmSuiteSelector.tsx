@@ -199,6 +199,13 @@ export const NmmSuiteSelector: React.FC = () => {
                     </p>
                   </div>
 
+                  {isChizuru && (
+                    <div className="flex items-center gap-2 p-2 rounded-lg bg-[rgb(95,227,103)]/[0.08] border border-[rgb(95,227,103)]/25 text-[rgb(95,227,103)] text-[11px] font-sans">
+                      <NikkeIcon className="w-3.5 h-3.5 shrink-0 text-[rgb(95,227,103)]" />
+                      <span className="font-medium">Supported on both Windows and Linux.</span>
+                    </div>
+                  )}
+
                   {tool.note && !isSkinnyMan && (
                     <div className="flex items-center gap-2 p-2.5 rounded-lg bg-amber-500/[0.08] border border-amber-500/20 text-amber-300 text-xs font-sans">
                       <AlertCircle className="w-3.5 h-3.5 shrink-0" />
@@ -215,7 +222,7 @@ export const NmmSuiteSelector: React.FC = () => {
 
                   {isDanieru && (
                     <div className="flex items-center gap-2 p-2 rounded-lg bg-neutral-800/60 border border-neutral-700/60 text-neutral-400 text-[11px] font-sans">
-                      <span className="whitespace-pre-line">Legacy tool · Downloads temporarily paused</span>
+                      <span className="whitespace-pre-line">Legacy tool · Downloads temporarily paused.</span>
                     </div>
                   )}
 

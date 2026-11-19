@@ -73,10 +73,10 @@ const routes = [
               "@type": "SoftwareApplication",
               "position": 1,
               "name": "Chizuru NMM",
-              "operatingSystem": "Windows 10, Windows 11",
+              "operatingSystem": "Windows 10, Windows 11, Linux",
               "applicationCategory": "GameModTool",
               "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-              "description": "Recommended feature-rich PC NIKKE Mod Manager with automated repacking, hash sync, and Live2D preview."
+              "description": "Recommended feature-rich Windows & Linux NIKKE Mod Manager with automated repacking, hash sync, and Live2D preview."
             },
             {
               "@type": "SoftwareApplication",
@@ -312,10 +312,10 @@ const routes = [
               "@type": "SoftwareApplication",
               "position": 1,
               "name": "Chizuru NMM",
-              "operatingSystem": "Windows 10, Windows 11",
+              "operatingSystem": "Windows 10, Windows 11, Linux",
               "applicationCategory": "GameModTool",
               "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-              "description": "Recommended feature-rich PC NIKKE Mod Manager with automated repacking, hash sync, and Live2D preview."
+              "description": "Recommended feature-rich Windows & Linux NIKKE Mod Manager with automated repacking, hash sync, and Live2D preview."
             },
             {
               "@type": "SoftwareApplication",
@@ -363,8 +363,8 @@ const routes = [
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
             <div class="p-4 rounded-xl bg-white/[0.03] border border-white/[0.08]">
-              <div class="text-emerald-400 font-bold mb-1">🖥️ PC Players: Chizuru NMM (Recommended)</div>
-              <p class="text-neutral-300">Best for 95% of PC players. Includes <strong>Automated Repacking</strong> (rebuilds broken mods after game patches in 1 click), asset hash verification, and Live2D spine preview.</p>
+              <div class="text-emerald-400 font-bold mb-1">🖥️ Windows &amp; Linux: Chizuru NMM (Recommended)</div>
+              <p class="text-neutral-300">Best for Windows and Linux players. Includes <strong>Automated Repacking</strong> (rebuilds broken mods after game patches in 1 click), asset hash verification, Live2D spine preview, and <strong>official Linux support</strong>.</p>
             </div>
             <div class="p-4 rounded-xl bg-white/[0.03] border border-white/[0.08]">
               <div class="text-amber-400 font-bold mb-1">📱 Android Players: SkinnyMan ModDock</div>
@@ -374,9 +374,10 @@ const routes = [
         </div>
 
         <section class="space-y-4">
-          <h2 class="text-2xl font-bold text-white">Chizuru NMM (PC • Recommended)</h2>
+          <h2 class="text-2xl font-bold text-white">Chizuru NMM (Windows &amp; Linux • Recommended)</h2>
           <p class="text-neutral-300">The most widely used and actively maintained mod manager in the community. Features include:</p>
           <ul class="list-disc list-inside space-y-1.5 text-neutral-400 pl-2">
+            <li><strong>Cross-Platform Support:</strong> Native releases for both Windows and Linux</li>
             <li><strong>Automated repacker:</strong> Rebuilds broken mods after game patches in one click</li>
             <li><strong>Addressable catalog hash sync:</strong> Prevents 43% loading screen errors</li>
             <li><strong>Live2D preview:</strong> Test animations and character motions before launching</li>

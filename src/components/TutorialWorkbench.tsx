@@ -486,7 +486,7 @@ export const TutorialWorkbench: React.FC<TutorialWorkbenchProps> = ({ initialVid
                 onClick={onBack}
                 className="flex items-center justify-between p-2 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] text-neutral-300 hover:text-white transition-colors"
               >
-                <span>Chizuru NMM (v1.2.1)</span>
+                <span>Chizuru NMM</span>
                 <ExternalLink className="w-3 h-3 text-neutral-400" />
               </a>
               <a

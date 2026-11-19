@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { SectionAnchor } from './SectionAnchor';
 import { BlurRevealTitle } from './BlurRevealTitle';
+import { LinuxIcon } from './LinuxIcon';
 import { 
   Play, 
   RefreshCw, 
@@ -222,6 +223,10 @@ export const InstallingModsSection: React.FC = () => {
             <div className="flex flex-wrap gap-2">
               <span className="text-[11px] font-mono text-[rgb(95,227,103)] bg-[rgb(95,227,103)]/10 px-2.5 py-1 rounded-full border border-[rgb(95,227,103)]/20">
                 ✓ Auto Asset Sync & Faster Updates
+              </span>
+              <span className="text-[11px] font-mono text-[rgb(160,225,255)] bg-[rgb(160,225,255)]/10 px-2.5 py-1 rounded-full border border-[rgb(160,225,255)]/20 inline-flex items-center gap-1.5">
+                <LinuxIcon className="w-3 h-3 text-[rgb(160,225,255)] shrink-0" />
+                <span>Windows &amp; Linux Supported</span>
               </span>
             </div>
           </div>
